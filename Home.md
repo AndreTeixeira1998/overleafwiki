@@ -1,1 +1,3 @@
-Welcome to the sharelatex wiki!
+Useful pages:
+
+[[ShareLaTeX Development Environment]]
