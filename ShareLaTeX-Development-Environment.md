@@ -14,3 +14,19 @@ When you run `grunt install`, we automatically compile all the coffeescript in e
     $ grunt compile
 
 You'll need to do this each time you make any changes. In the case of changes to the serverside files, you'll also need to restart the server.
+
+Unit Tests
+----------
+
+Every ShareLaTeX service has a suite of unit tests which we are militant about keeping passing at all times. To run the tests, change into the corresponding service directory and run `grunt test:unit`. Eg.
+
+    $ cd web/
+    $ grunt test:unit
+
+The Gruntfiles can be inconsistent sometimes, so check `grunt help` for the possible test tasks. You can specify individual tests to run with:
+
+    $ grunt test:unit --grep="<expression>"
+
+where `<expression>` matches the test description. This will speed up things in repositories like web-sharelatex, with a large test suite.
+
+New features and code should come with corresponding unit tests. See the existing tests in the `test/unit/coffee` directories of any service for an understanding of how to lay out new tests. We use a module called `sandboxed-module` to inject mock dependencies into each file when unit testing.
