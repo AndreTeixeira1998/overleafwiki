@@ -3,11 +3,7 @@ When you checkout and install ShareLaTeX using the instructions in the README of
 Config
 ------
 
-Rather than modify `config/settings.development.coffee` (which is in git but shouldn't be changed!), you can set the SHARELATEX_CONFIG environment variable to point to your own copy, which you can modify freely:
-
-    $ export SHARELATEX_CONFIG=~/config/sharelatex.local.coffee # or wherever your file is
-
-Put this line in your `.profile` or `.bashrc` file for ease of use.
+When you run `grunt install`, it should copy the example config into `config/settings.development.coffee`. This file is ignored by git, so you can customise it for your local set up without causing conflicts. Make sure not to check it in though!
 
 Recompiling coffeescript -> js
 ------------------------------
