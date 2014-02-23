@@ -1,3 +1,3 @@
 Useful pages:
 
-[[ShareLaTeX Development Environment]]
+[[Developer guidelines]]
