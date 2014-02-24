@@ -30,3 +30,8 @@ The Gruntfiles can be inconsistent sometimes, so check `grunt help` for the poss
 where `<expression>` matches the test description. This will speed up things in repositories like web-sharelatex, with a large test suite.
 
 New features and code should come with corresponding unit tests. See the existing tests in the `test/unit/coffee` directories of any service for an understanding of how to lay out new tests. We use a module called `sandboxed-module` to inject mock dependencies into each file when unit testing.
+
+What to work on
+---------------
+
+If you want to help out with ShareLaTeX but aren't sure what to work on, then have a look at our [[Development Roadmap]], or the open issues in each repository under the [ShareLaTeX organisation](https://github.com/sharelatex)
