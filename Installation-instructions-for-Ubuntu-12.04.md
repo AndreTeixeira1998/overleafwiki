@@ -23,6 +23,10 @@ If you develop ShareLaTeX often, add it to your `.bashrc`:
 
 ## Installing Grunt
 
+Once you've installed Node via `nvm`, install Grunt via:
+
+    npm install -g grunt-cli
+
 ## Installing Redis
 
     sudo apt-get install -y redis-server
