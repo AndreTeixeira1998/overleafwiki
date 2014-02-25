@@ -25,7 +25,7 @@ If you develop ShareLaTeX often, add it to your `.bashrc`:
 
 ## Installing Redis
 
-Note: must be 2.6 or later
+    sudo aptitude install -y redis-server
 
 ## Installing Mongodb
 
