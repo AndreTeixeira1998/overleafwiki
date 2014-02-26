@@ -35,3 +35,10 @@ Once you've installed Node via `nvm`, install Grunt via:
 
 ## Installing TexLive 2013
 
+# Vagrant install 
+
+An experimental vagrant installer is developed at  
+
+* https://github.com/laszewsk/vagrant-sharelatex
+
+It includes the steps listed above and could serve as a template. It starts up the server, but I think it is still incomplete in some aspects for setting up REDIS and or MONGODB as well as the configuration files
