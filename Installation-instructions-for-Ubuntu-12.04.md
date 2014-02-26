@@ -35,6 +35,21 @@ Once you've installed Node via `nvm`, install Grunt via:
 
 ## Installing TexLive 2013
 
+TeX Live installation 2013 is painful in Ubuntu 12.04 as there is no simple package install for it.
+
+If you are just developing, a possible workaround is to simply grab the default provided TeX Live 2009 via:
+
+    sudo apt-get install texlive-latex-base
+
+since it should be mostly compatible, and then install `latexmk` with:
+
+```bash
+mkdir -p ~/bin 
+curl http://mirror.physik-pool.tu-berlin.de/tex-archive/support/latexmk/latexmk.pl > ~/bin/latexmk
+chmod a+x ~/bin/latexmk
+export PATH=~/bin:$PATH
+```
+
 # Vagrant install 
 
 An experimental vagrant installer is developed at  
