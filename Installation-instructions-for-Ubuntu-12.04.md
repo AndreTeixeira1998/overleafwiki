@@ -49,6 +49,18 @@ curl http://mirror.physik-pool.tu-berlin.de/tex-archive/support/latexmk/latexmk.
 chmod a+x ~/bin/latexmk
 export PATH=~/bin:$PATH
 ```
+If you want to be a good boy / girl and install the correct version do:
+
+    wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+    tar xjf install-tl-unx.tar.gz
+    cd install-tl-*
+    echo i | sudo ./install-tl
+    echo '
+    # Texlive
+    PATH=$PATH:/usr/local/texlive/2013/bin/i386-linux
+    ' >> ~/.profile
+
+This will take a while.
 
 # Vagrant install 
 
