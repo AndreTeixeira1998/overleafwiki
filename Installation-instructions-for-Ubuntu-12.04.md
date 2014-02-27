@@ -57,7 +57,9 @@ If you want to be a good boy / girl and install the correct version do:
     echo i | sudo ./install-tl
     echo '
     # Texlive
-    PATH=$PATH:/usr/local/texlive/2013/bin/i386-linux
+    export PATH=$PATH:/usr/local/texlive/2013/bin/i386-linux
+    export MANPATH=$MANPATH:/usr/local/texlive/2013/texmf-dist/doc/man
+    export INFOPATH=$INFOPATH:/usr/local/texlive/2013/texmf-dist/doc/info
     ' >> ~/.profile
 
 This will take a while.
