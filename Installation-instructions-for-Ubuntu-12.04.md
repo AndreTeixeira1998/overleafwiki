@@ -33,6 +33,8 @@ Once you've installed Node via `nvm`, install Grunt via:
 
 ## Installing Mongodb
 
+    sudo apt-get install -y mongodb
+
 ## Installing TexLive 2013
 
 TeX Live installation 2013 is painful in Ubuntu 12.04 as there is no simple package install for it.
