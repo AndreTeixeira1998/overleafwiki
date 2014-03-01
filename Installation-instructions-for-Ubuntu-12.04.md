@@ -29,7 +29,15 @@ Once you've installed Node via `nvm`, install Grunt via:
 
 ## Installing Redis
 
-    sudo apt-get install -y redis-server
+The packaged version in 12.04 is too old. There are instructions [here](http://redis.io/topics/quickstart) on how to install the latest stable version. `build-essential` will provide all the packages you need to compile it
+
+    sudo apt-get install -y build-essential
+    wget http://download.redis.io/redis-stable.tar.gz
+    tar zxf redis-stable.tar.gz
+    cd redis-stable
+    make
+
+will compile `redis-server` and `redis-cli` - either use them directly, or follow the instructions in the above link to set up the config + init.d scripts
 
 ## Installing Mongodb
 
