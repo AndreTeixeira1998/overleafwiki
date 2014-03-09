@@ -49,7 +49,7 @@ If you want to save time:
 
 - download the TeX Live ISO via torrent:
 
-    wget -O /tmp/texlive2013.torrent https://www.tug.org/texlive/files/texlive2013.iso.torrent
+        wget -O /tmp/texlive2013.torrent https://www.tug.org/texlive/files/texlive2013.iso.torrent
 
 - put it in the current directory with exact name `texlive2013.iso`
 
