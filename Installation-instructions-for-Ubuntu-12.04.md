@@ -51,9 +51,9 @@ If you want to save time:
 
     wget -O /tmp/texlive2013.torrent https://www.tug.org/texlive/files/texlive2013.iso.torrent
 
-- put it in the current directory with exact name `texlive`
+- put it in the current directory with exact name `texlive2013.iso`
 
-And then:
+and then:
 
     if [ ! -f texlive2013.iso ]; then
       wget texlive2013.iso http://mirrors.linsrv.net/tex-archive/systems/texlive/Images/texlive2013.iso
