@@ -43,7 +43,34 @@ will compile `redis-server` and `redis-cli` - either use them directly, or follo
 
     sudo apt-get install -y mongodb
 
-## Installing TexLive 2013
+## Installing TeX Live 2013
+
+If you want to save time:
+
+- download the TeX Live ISO via torrent:
+
+    wget -O /tmp/texlive2013.torrent https://www.tug.org/texlive/files/texlive2013.iso.torrent
+
+- put it in the current directory with exact name `texlive`
+
+And then:
+
+    if [ ! -f texlive2013.iso ]; then
+      wget texlive2013.iso http://mirrors.linsrv.net/tex-archive/systems/texlive/Images/texlive2013.iso
+    fi
+    sudo mkdir -p /media/texlive2013
+    sudo mount -t iso9660 -o ro,loop,noauto texlive2013.iso /media/texlive2013
+    echo i | sudo /media/texlive2013/install-tl
+    sudo umount /media/texlive2013
+    sudo rmdir /media/texlive2013
+    echo '
+    # Texlive
+    export PATH=$PATH:/usr/local/texlive/2013/bin/i386-linux
+    export MANPATH=$MANPATH:/usr/local/texlive/2013/texmf-dist/doc/man
+    export INFOPATH=$INFOPATH:/usr/local/texlive/2013/texmf-dist/doc/info
+    ' >> ~/.profile
+
+### 2009 workaround
 
 TeX Live installation 2013 is painful in Ubuntu 12.04 as there is no simple package install for it.
 
@@ -59,20 +86,6 @@ curl http://mirror.physik-pool.tu-berlin.de/tex-archive/support/latexmk/latexmk.
 chmod a+x ~/bin/latexmk
 export PATH=~/bin:$PATH
 ```
-If you want to be a good boy / girl and install the correct version do:
-
-    wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
-    tar xjf install-tl-unx.tar.gz
-    cd install-tl-*
-    echo i | sudo ./install-tl
-    echo '
-    # Texlive
-    export PATH=$PATH:/usr/local/texlive/2013/bin/i386-linux
-    export MANPATH=$MANPATH:/usr/local/texlive/2013/texmf-dist/doc/man
-    export INFOPATH=$INFOPATH:/usr/local/texlive/2013/texmf-dist/doc/info
-    ' >> ~/.profile
-
-This will take a while.
 
 # Vagrant install 
 
