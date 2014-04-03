@@ -1,6 +1,7 @@
 ### Installation instructions
 
 * [[Installation Instructions for Ubuntu 12.04]]
+* [[Installation Instructions for Ubuntu 13.10]]
 
 ### Deploying ShareLaTeX in Production
 
