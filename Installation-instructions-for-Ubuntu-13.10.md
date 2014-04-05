@@ -131,7 +131,7 @@ module.exports =
                 parameters:
                         # important if you use Sendmail because the parameters option
                         # cannot be empty
-                        args: []
+                        path: "sendmail"
 
         # ...
 
