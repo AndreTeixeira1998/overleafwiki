@@ -14,3 +14,6 @@ The new version of history is [open sourced](https://github.com/sharelatex/track
 
 # artwork
 We do not own the rights to redistribute a lot of the artwork so different versions are included in the github repos.
+
+# static pages
+Pages like the home page are not included any more, this is because they are generally not needed by sites other than sharelatex.com, it also reduces confusion for our users and minimises and SEO issues. We may look into having a different home page which can be customised to your needs in the future.
