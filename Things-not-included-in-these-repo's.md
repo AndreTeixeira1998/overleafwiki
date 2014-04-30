@@ -9,6 +9,10 @@ This is our wiki, it is just an instance of media wiki. There are no plans to al
 # /dropbox
 we are planning a big rewrite of dropbox soon to work with there real time api, we will likely open source it when development starts on this.
 
+# chat and spellcheck
+
+These are two separate APIs. Both have a complicated set up and need a bit of TLC before we comfortable supporting them as open-source projects. They should be available soon though.
+
 # snapshots - history
 The new version of history is [open sourced](https://github.com/sharelatex/track-changes-sharelatex) with the previous version being deprecated.
 
