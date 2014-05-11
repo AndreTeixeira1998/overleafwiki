@@ -2,7 +2,7 @@ Admin users have the capability to access any project and can go to /admin which
 
 
 	mongo
-	user sharelatex
+	use sharelatex
 	db.users.update({email:"INSERT_EMAIL_HERE"}, {"$set":{isAdmin:true}})
 
 you will need to log out then log back in again after running this.
