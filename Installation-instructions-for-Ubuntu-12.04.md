@@ -111,6 +111,12 @@ to check:
 
 If everything is ok, your sharelatex installation should be accessible on port 3000 ...
 
+# Updating existing sharelatex installation
+
+    cd /path/to/sharelatex
+    git pull
+    grunt update
+
 # Vagrant install 
 
 An experimental vagrant installer is developed at  
