@@ -1,5 +1,9 @@
 If you've successfully installed ShareLaTeX on Ubuntu 12.04, please edit this page to document your success!
 
+## Install packages from the standard repository
+
+    sudo apt-get install mongodb-server texlive make git build-essential unzip
+
 ## Check out repository
 
     git clone https://github.com/sharelatex/sharelatex.git
@@ -10,17 +14,19 @@ If you've successfully installed ShareLaTeX on Ubuntu 12.04, please edit this pa
 Do not use the packaged version as it is too old. Use `nvm` instead.
 Note: Your current directory _must_ be the "sharelatex" directory from the previous step!
 
-    curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+    git clone https://github.com/creationix/nvm.git ~/.nvm
     source ~/.nvm/nvm.sh
     nvm install
 
 Before you run ShareLaTeX, you must run once per shell:
+(Of course, you replace '/path/to' with ...)
 
     source ~/.nvm/nvm.sh
-    nvm use "$(cat .nvmrc)"
+    cd /path/to/sharelatex
+    nvm use
 
 If you develop ShareLaTeX often, add it to your `.bashrc`:
-(That's optional and needs to be done only once per box)
+(That's optional and needs to be done only once per box and you need to put .nvmrc containing the node version you wish to ue into your home directory)
 
     echo "
     source ~/.nvm/nvm.sh
@@ -37,17 +43,12 @@ Once you've installed Node via `nvm`, install Grunt via:
 
 The packaged version in 12.04 is too old. There are instructions [here](http://redis.io/topics/quickstart) on how to install the latest stable version. `build-essential` will provide all the packages you need to compile it
 
-    sudo apt-get install -y build-essential
     wget http://download.redis.io/redis-stable.tar.gz
     tar zxf redis-stable.tar.gz
     cd redis-stable
     make
 
 will compile `redis-server` and `redis-cli` - either use them directly, or follow the instructions in the above link to set up the config + init.d scripts
-
-## Installing Mongodb
-
-    sudo apt-get install -y mongodb
 
 ## Installing TeX Live 2013
 
