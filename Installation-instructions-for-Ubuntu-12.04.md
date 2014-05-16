@@ -102,9 +102,11 @@ export PATH=~/bin:$PATH
     grunt install
 
 to check:
+
     grunt check --force
 
 ... and start:
+
     grunt run
 
 If everything is ok, your sharelatex installation should be accessible on port 3000 ...
