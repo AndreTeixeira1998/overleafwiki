@@ -94,6 +94,21 @@ chmod a+x ~/bin/latexmk
 export PATH=~/bin:$PATH
 ```
 
+## Finalize sharelatex installation
+(Of course you replace '/path/to/' with ...)
+
+    cd /path/to/sharelatex
+    npm install
+    grunt install
+
+to check:
+    grunt check --force
+
+... and start:
+    grunt run
+
+If everything is ok, your sharelatex installation should be accessible on port 3000 ...
+
 # Vagrant install 
 
 An experimental vagrant installer is developed at  
