@@ -1,13 +1,18 @@
 If you've successfully installed ShareLaTeX on Ubuntu 12.04, please edit this page to document your success!
 
+## Check out repository
+
+    git clone https://github.com/sharelatex/sharelatex.git
+    cd sharelatex
+
 ## Installing Node
 
-Do not use the packaged version as it is too old. Use `nvm` instead:
+Do not use the packaged version as it is too old. Use `nvm` instead.
+Note: Your current directory _must_ be the "sharelatex" directory from the previous step!
 
-    cd sharelatex
     curl https://raw.github.com/creationix/nvm/master/install.sh | sh
     source ~/.nvm/nvm.sh
-    nvm install "$(cat .nvmrc)"
+    nvm install
 
 Before you run ShareLaTeX, you must run once per shell:
 
@@ -15,6 +20,7 @@ Before you run ShareLaTeX, you must run once per shell:
     nvm use "$(cat .nvmrc)"
 
 If you develop ShareLaTeX often, add it to your `.bashrc`:
+(That's optional and needs to be done only once per box)
 
     echo "
     source ~/.nvm/nvm.sh
