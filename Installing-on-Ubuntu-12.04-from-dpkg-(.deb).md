@@ -1,3 +1,5 @@
+_Note this page is a work in progress, and the dpkg is not quite ready for use_
+
 ## Installing Node.js
 
 ```sh
