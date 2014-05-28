@@ -33,4 +33,11 @@ cd install-tl-*
 sudo ./install-tl
 ```
 
-Go through the interactive installer. Make sure to install the `TeX auxiliary programs` package as it contains the `latexmk` program which is needed by ShareLaTeX. We recommend using the `scheme-full` installation since this will give you a comprehensive LaTeX environment, but at over 3Gb it may be too large for some users.
+Go through the interactive installer. We recommend using the `scheme-full` installation since this will give you a comprehensive LaTeX environment, but at over 3Gb it may be too large for some users. Whichever scheme you choose, make sure to also select the `TeX auxiliary programs` package as it contains the `latexmk` program which is needed by ShareLaTeX. 
+
+Now make sure that LaTeX and latexmk are available in your path system-wide. Edit `/etc/environment` to include the TeXLive binary directory:
+
+```sh
+# cat /etc/environment 
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/texlive/2013/bin/x86_64-linux/"
+```
