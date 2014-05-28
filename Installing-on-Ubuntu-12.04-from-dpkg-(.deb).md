@@ -43,3 +43,11 @@ Now make sure that LaTeX and latexmk are available in your path system-wide. Edi
 # cat /etc/environment 
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/texlive/2013/bin/x86_64-linux/"
 ```
+
+__There is still an issue with the compiler finding latexmk in the path__. Possibly the upstart file needs modified, but this is tricky because LaTeX may be installed somewhere else. A setting in the CLSI config perhaps?
+
+## Installing ShareLaTeX
+
+```sh
+dpkg -i sharelatex_0.0.1_amd64.deb
+```
