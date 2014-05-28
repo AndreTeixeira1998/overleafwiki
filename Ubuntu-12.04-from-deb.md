@@ -33,4 +33,4 @@ cd install-tl-*
 sudo ./install-tl
 ```
 
-Go through the interactive installer. Make sure to install the `binextra` package as it contains the `latexmk` program which is needed by ShareLaTeX. We recommend using the `scheme-full` installation since this will give you a comprehensive LaTeX environment, but at over 3Gb it may be too large for some users.
+Go through the interactive installer. Make sure to install the `TeX auxiliary programs` package as it contains the `latexmk` program which is needed by ShareLaTeX. We recommend using the `scheme-full` installation since this will give you a comprehensive LaTeX environment, but at over 3Gb it may be too large for some users.
