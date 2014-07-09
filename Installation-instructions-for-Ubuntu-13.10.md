@@ -47,6 +47,7 @@ Pull the source and install the node modules and then, with grunt (which
 is one of the installed node modules), install the rest.
 
 ``` {.sourceCode .shell-session}
+$ sudo apt-get install git
 $ git clone https://github.com/sharelatex/sharelatex.git
 $ cd sharelatex
 $ npm install
