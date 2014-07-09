@@ -51,6 +51,7 @@ $ sudo apt-get install git
 $ git clone https://github.com/sharelatex/sharelatex.git
 $ cd sharelatex
 $ npm install
+$ sudo npm install -g grunt-cli  
 $ grunt install
 ```
 
