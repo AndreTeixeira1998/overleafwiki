@@ -2,7 +2,6 @@
 
 * [[Production Installations Instructions]]
 * [[Dependencies]]
-* [[Example upstart file]]
 * [[Nginx as a Reverse Proxy]]
 
 ### For Developers
