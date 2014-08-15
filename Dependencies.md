@@ -31,3 +31,19 @@ $ sudo apt-add-repository ppa:chris-lea/node.js
 $ sudo apt-get update
 $ sudo apt-get install nodejs
 ```
+
+Once Node.js is installed, you'll also need to install the grunt command line tools (use sudo if Node.js is installed system wide):
+
+```sh
+$ npm install -g grunt-cli
+```
+
+### Redis
+
+The Redis version provided by Ubuntu 12.04 is also too old for ShareLaTeX so you will need to install a newer custom version:
+
+```sh
+$ sudo apt-add-repository ppa:chris-lea/redis-server
+$ sudo apt-get update
+$ sudo apt-get install redis-server
+```
