@@ -7,4 +7,3 @@
 ### For Developers
 
 * [[Setting up a Development Environment]]
-* [[Development Roadmap]]
