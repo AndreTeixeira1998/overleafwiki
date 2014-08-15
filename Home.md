@@ -1,5 +1,6 @@
 ### Installation instructions
 
+* [[Dependencies]]
 * [[Installation Instructions for Ubuntu 12.04]]
 * [[Installation Instructions for Ubuntu 13.10]]
 
