@@ -1,8 +1,10 @@
-Below is an example nginx config file which is not dissimilar to the one used to run www.sharelatex.com. You will need to have nginx 1.4 or greater for websocket support. 
+The ShareLaTeX web service runs on port 3000 by default. We recommend running a reverse proxy in front of it which listens on port 80.
+
+Below is an example Nginx config file which is similar to the one used at http://www.sharelatex.com. You will need to have Nginx 1.4 or greater for websocket support. 
 
 	server {
 		listen         80;
-		server_name    custom.sharelatex.com;
+		server_name    my.domain.example.com;
 
 		set $static_path /PATH_TO_SHARELATEX/public;
 
