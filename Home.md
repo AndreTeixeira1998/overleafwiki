@@ -1,15 +1,11 @@
-### Installation instructions
+### ShareLaTeX in Production
 
+* [[Production Installations Instructions]]
 * [[Dependencies]]
-* [[Installation Instructions for Ubuntu 12.04]]
-* [[Installation Instructions for Ubuntu 13.10]]
-
-### Deploying ShareLaTeX in Production
-
 * [[Example upstart file]]
-* [[nginx as a reverse proxy]]
+* [[Nginx as a Reverse Proxy]]
 
 ### For Developers
 
-* [[Developer guidelines]]
+* [[Setting up a Development Environment]]
 * [[Development Roadmap]]
