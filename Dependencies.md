@@ -47,3 +47,56 @@ $ sudo apt-add-repository ppa:chris-lea/redis-server
 $ sudo apt-get update
 $ sudo apt-get install redis-server
 ```
+
+### MongoDB
+
+The latest version of MongoDB can be installed from the MongoDB repository (http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/):
+
+```sh
+$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+$ echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
+$ sudo apt-get update
+$ sudo apt-get install mongodb-org
+```
+
+### Aspell
+
+Aspell is a nice stable bit of software so can be got directly from Ubuntu's repositories:
+
+```sh
+$ sudo apt-get install aspell
+```
+
+There are lots of additional dictionaries available, which can be listed with:
+
+```sh
+$ apt-cache search aspell | grep aspell
+```
+
+## Installing Dependencies on Mac OS X
+
+Redis, MongoDB and Aspell are easiest to install with [Homebrew](http://brew.sh/). Once Homebrew is installed:
+
+```sh
+$ brew install redis mongodb aspell
+```
+
+Node.js can be installed with [nvm](https://github.com/creationix/nvm) or direct from the [Node.js website](http://nodejs.org/).
+
+## Installing TeXLive
+
+We recommend installing the latest version of TeXLive manually via the instructions at https://www.tug.org/texlive/quickinstall.html
+
+Once TeXLive is installed, make sure that it is available in your path:
+
+```sh
+$ export PATH=/usr/local/texlive/2014/bin/i386-linux:$PATH # Linux
+$ export PATH=/usr/local/texlive/2014/bin/x86_64-linux:$PATH # Linux 64-bit
+$ export PATH=/usr/local/texlive/2014/bin/x86_64-darwin:$PATH # Mac OS X
+```
+
+and that `latexmk` is installed:
+
+```sh
+$ tlmgr install latexmk
+```
