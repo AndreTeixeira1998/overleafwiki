@@ -87,3 +87,7 @@ The above upstart script will cause the ShareLaTeX processes to log out to `/var
 ### User and Group
 
 The above upstart script will run the ShareLaTeX services as `www-data:www-data`. You should make sure that the sharelatex files and directories are owned or accessible by this user/group combination.
+
+### Accessing ShareLaTeX on port 80
+
+By default ShareLaTeX runs the web interface on port 3000. We recommend running a reverse proxy like Nginx or Apache in front of ShareLaTeX to serve it on port 80. More details can be found in [[Running Nginx as a Reverse Proxy]].
