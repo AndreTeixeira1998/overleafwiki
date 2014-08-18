@@ -49,8 +49,13 @@ Make sure that these directories exist and are read/writeable by the ShareLaTeX 
 
 ```bash
 $ sudo mkdir -p /var/lib/sharelatex/data
+$ sudo mkdir -p /var/lib/sharelatex/data/user_files
+$ sudo mkdir -p /var/lib/sharelatex/data/compiles
+$ sudo mkdir -p /var/lib/sharelatex/data/cache
 $ sudo mkdir -p /var/lib/sharelatex/tmp
-$ sudo chown sharelatex:sharelatex /var/lib/sharelatex
+$ sudo mkdir -p /var/lib/sharelatex/tmp/uploads
+$ sudo mkdir -p /var/lib/sharelatex/tmp/dumpFolder
+$ sudo chown -R sharelatex:sharelatex /var/lib/sharelatex
 ```
 
 ### Running ShareLaTeX
