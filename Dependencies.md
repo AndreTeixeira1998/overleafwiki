@@ -17,7 +17,7 @@ Make sure that you've got the basic development tools installed like `git` and `
 
 ```sh
 $ sudo apt-get update
-$ sudo apt-get install git build-essential curl python-software-properties
+$ sudo apt-get install git build-essential curl python-software-properties zlib1g-dev
 ```
 
 ### Node.js
