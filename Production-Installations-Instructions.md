@@ -71,18 +71,21 @@ respawn
 limit nofile 8192 8192
 
 pre-start script
-	mkdir -p /var/log/sharelatex
+    mkdir -p /var/log/sharelatex
 end script
 
 script
-	SERVICE=web
-	USER=www-data
-	GROUP=www-data
-	NODE=node # You may need to replace with an absolute path to Node if it's not in your PATH.
+    SERVICE=web
+    USER=sharelatex
+    GROUP=sharelatex
+    # You may need to replace this with an absolute 
+    # path to Node.js if it's not in your system PATH.
+    NODE=node
+    SHARELATEX_CONFIG=/etc/sharelatex/settings.coffee
 
-	echo $$ > /var/run/sharelatex-$SERVICE.pid
-	chdir /var/www/sharelatex/$SERVICE
-	exec sudo -u $USER -g $GROUP env SHARELATEX_CONFIG=/etc/sharelatex/settings.coffee NODE_ENV=production $NODE app.js >> /var/log/sharelatex/$SERVICE.log 2>&1
+    echo $$ > /var/run/sharelatex-$SERVICE.pid
+    chdir /var/www/sharelatex/$SERVICE
+    exec sudo -u $USER -g $GROUP env SHARELATEX_CONFIG=$SHARELATEX_CONFIG NODE_ENV=production $NODE app.js >> /var/log/sharelatex/$SERVICE.log 2>&1
 end script
 ```
 
@@ -90,11 +93,11 @@ You can find a collection of upstart scripts for each service in [sharelatex/pac
 
 ### Logs
 
-The above upstart script will cause the ShareLaTeX processes to log out to `/var/log/sharelatex/sharelatex-SERVICE.log` where `SERVICE` is one of `web`, `docstore`, `chat`, etc.
+The above upstart script will cause the ShareLaTeX processes to log out to `/var/log/sharelatex/SERVICE.log` where `SERVICE` is one of `web`, `docstore`, `chat`, etc.
 
 ### User and Group
 
-The above upstart script will run the ShareLaTeX services as `www-data:www-data`. You should make sure that the sharelatex files and directories are owned or accessible by this user/group combination.
+The above upstart script will run the ShareLaTeX services as `sharelatex:sharelatex`. You should make sure that the sharelatex files and directories are owned or accessible by this user/group combination.
 
 ### Accessing ShareLaTeX on port 80
 
