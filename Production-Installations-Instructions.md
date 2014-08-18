@@ -9,6 +9,7 @@ Make sure you have all the of the required [[Dependencies]] installed.
 First checkout the ShareLaTeX Repository:
 
 ```bash
+$ sudo mkdir -p /var/www
 $ sudo git clone https://github.com/sharelatex/sharelatex.git /var/www/sharelatex
 $ cd /var/www/sharelatex
 ```
@@ -23,7 +24,8 @@ $ sudo grunt install
 It is a good idea to run the ShareLaTeX files as a non-root user. I.e.
 
 ```sh
-$ sudo chown -R www-data:www-data /var/www/sharelatex
+$ sudo adduser --system --home /var/www/sharelatex --no-create-home --group sharelatex
+$ sudo chown -R sharelatex:sharelatex /var/www/sharelatex
 ```
 
 ### Config file
