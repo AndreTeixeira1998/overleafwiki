@@ -1,6 +1,6 @@
 ### ShareLaTeX in Production
 
-* [[Production Installations Instructions]]
+* [[Production Installation Instructions]]
 * [[Dependencies]]
 * [[Nginx as a Reverse Proxy]]
 
