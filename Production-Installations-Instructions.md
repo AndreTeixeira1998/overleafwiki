@@ -37,7 +37,7 @@ $ sudo mkdir /etc/sharelatex
 $ sudo mv config/settings.development.coffee /etc/sharelatex/settings.coffee
 ```
 
-You should open this file, review the default settings, and make any modifications that you need. Note that you will likely want to change `DATA_DIR` and `TMP_DIR`. E.g.
+You should open this file, review the default settings, and make any modifications that you need. Note that you will need to change `DATA_DIR` and `TMP_DIR` to point to a system-wide path. E.g.
 
 ```
 # In /etc/sharelatex/settings.coffee
@@ -45,7 +45,13 @@ DATA_DIR = '/var/lib/sharelatex/data'
 TMP_DIR  = '/var/lib/sharelatex/tmp'
 ```
 
-You should make sure that these directories exist.
+Make sure that these directories exist and are read/writeable by the ShareLaTeX user:
+
+```bash
+$ sudo mkdir -p /var/lib/sharelatex/data
+$ sudo mkdir -p /var/lib/sharelatex/tmp
+$ sudo chown sharelatex:sharelatex /var/lib/sharelatex
+```
 
 ### Running ShareLaTeX
 
