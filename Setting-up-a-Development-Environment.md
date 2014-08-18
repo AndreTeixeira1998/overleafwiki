@@ -1,4 +1,35 @@
-When you checkout and install ShareLaTeX using the instructions in the README of sharelatex/sharelatex, you've successfully set up a development environment to use. There are a few things that you need to know though, so read on!
+
+First, check out a local copy of this repository:
+
+```bash
+$ git clone https://github.com/sharelatex/sharelatex.git
+$ cd sharelatex
+```
+
+Next install all the node modules and ShareLaTeX services:
+
+```bash
+$ npm install
+$ grunt install
+```
+
+This will create a config file in `config/settings.development.coffee`. You should open
+this now and configure your AWS S3 credentials, and other custom settings.
+
+Now check that your system is set up correctly to run ShareLaTeX (checks that you have
+the required dependencies installed.) Watch out for any failures.
+
+```bash
+$ grunt check --force
+```
+
+When that has finished, run ShareLaTeX with
+
+```bash
+$ grunt run
+```
+
+ShareLaTeX should now be running at http://localhost:3000.
 
 Config
 ------
