@@ -1,4 +1,4 @@
-ShareLaTeX is supported on OS X and Linux. You will need the following dependencies installed:
+ShareLaTeX is supported on Linux and OS X. You will need the following dependencies installed:
 
 * [Node.js](http://nodejs.org/) 0.10 or greater. [nvm](https://github.com/creationix/nvm) provides an easy way to install and manage Node.js in a development environment.
 * [Grunt](http://gruntjs.com/) command line tools (Run `npm install -g grunt-cli` to install them)
@@ -24,7 +24,7 @@ $ sudo apt-get install git build-essential curl python-software-properties
 
 For development purposes, you can use [nvm](https://github.com/creationix/nvm) to easily manage and install Node.js.
 
-For production, you will need a system wide Node.js installation. The Node.js version provided by Ubuntu 12.04 is too old for ShareLaTeX so you will need to install a newer custom version:
+For production, you will need a system wide Node.js installation. The Node.js version provided by Ubuntu 12.04 is too old for ShareLaTeX so you will need to install a newer version. You can do this directly from the [Node.js website](http://nodejs.org/), or via a custom PPA in Ubuntu:
 
 ```sh
 $ sudo apt-add-repository ppa:chris-lea/node.js
@@ -35,12 +35,12 @@ $ sudo apt-get install nodejs
 Once Node.js is installed, you'll also need to install the grunt command line tools (use sudo if Node.js is installed system wide):
 
 ```sh
-$ npm install -g grunt-cli
+$ sudo npm install -g grunt-cli
 ```
 
 ### Redis
 
-The Redis version provided by Ubuntu 12.04 is also too old for ShareLaTeX so you will need to install a newer custom version:
+The Redis version provided by Ubuntu 12.04 is also too old for ShareLaTeX so you will need to install a newer version. The latest version of Redis can be downloaded and compiled from source via the [Redis website](http://redis.io/), or with a custom PPA on Ubuntu:
 
 ```sh
 $ sudo apt-add-repository ppa:chris-lea/redis-server
@@ -85,8 +85,14 @@ Node.js can be installed with [nvm](https://github.com/creationix/nvm) or direct
 
 ## Installing TeXLive
 
-We recommend installing the latest version of TeXLive manually via the instructions at https://www.tug.org/texlive/quickinstall.html
+ShareLaTeX needs a LaTeX backend to run the compiles, and you must have the `latexmk` program installed as part of this. We recommend installing the latest version of TeXLive manually (more detailed instructions at https://www.tug.org/texlive/quickinstall.html):
 
+```sh
+$ wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+$ tar -xvf install-tl-unx.tar.gz
+$ cd install-tl-*
+$ sudo ./install-tl
+```
 Once TeXLive is installed, make sure that it is available in your path:
 
 ```sh
