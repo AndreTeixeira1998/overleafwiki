@@ -1,5 +1,7 @@
 This guide assumes that you want to install ShareLaTeX at `/var/www/sharelatex`. There's nothing special about this path, but you'll need to customize the instructions yourself if you want to install it elsewhere.
 
+*NB. We have an Ubuntu 12.04 package which performs all of these steps automatically: [[Installing on Ubuntu 12.04 from dpkg (.deb)]]*
+
 ### Dependencies
 
 Make sure you have all the of the required [[Dependencies]] installed.
