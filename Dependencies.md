@@ -107,7 +107,7 @@ and that `latexmk` is installed:
 $ sudo tlmgr install latexmk
 ```
 
-## Installating ShareLaTeX
+## Installing ShareLaTeX
 
 Now that you've got all the dependencies installed, have a look at either:
 
