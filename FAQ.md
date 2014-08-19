@@ -4,6 +4,18 @@
 
 There is probably a run away ShareLaTeX process running on one of the ports. Run `killall node` to get rid off it and try again.
 
+**I get an "Error: Could not load the bindings file" error**
+
+For some reason the bcrypt library does not always install correctly when running `grunt install`. You can reinstall it manually in the web directory:
+
+```bash
+$ cd web
+$ rm -r node_modules/bcrypt
+$ npm install bcrypt
+```
+
+If anyone can figure out why this happens I will be very grateful, because I don't know why this happens.
+
 **Syncing between code and PDF doesn't work**
 
 This relies on a custom binary to work. Go into the clsi directory and run `grunt compile:bin`. If there are warnings, then it will hopefully give you a clue what to fix. Note that you need the zlib headers:
