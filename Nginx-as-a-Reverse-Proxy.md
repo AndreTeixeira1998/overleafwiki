@@ -5,9 +5,9 @@ Below is an example Nginx config file which is similar to the one used at http:/
 ```
 server {
 	listen         80;
-	server_name    my.domain.example.com;
+	server_name    _; # Catch all, see http://nginx.org/en/docs/http/server_names.html
 
-	set $static_path /PATH_TO_SHARELATEX/public;
+	set $static_path /var/www/sharelatex/web/public;
 
 	location / {
 		proxy_pass http://localhost:3000;
@@ -15,6 +15,9 @@ server {
 		proxy_http_version 1.1;
 		proxy_set_header Upgrade $http_upgrade;
 		proxy_set_header Connection "upgrade";
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		proxy_read_timeout 3m;
+		proxy_send_timeout 3m;
 	}
 
 	location /stylesheets {
