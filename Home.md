@@ -7,3 +7,7 @@
 ### For Developers
 
 * [[Setting up a Development Environment]]
+
+### Problems?
+
+Please read out our [[FAQ]] page before opening a ticket.
