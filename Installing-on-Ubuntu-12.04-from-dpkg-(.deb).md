@@ -1,53 +1,17 @@
-_Note this page is a work in progress, and the dpkg is not quite ready for use_
+We have created an easy to install package for Ubuntu 12.04, 64-bit. (It may work more recent versions as well, but we have only tested with 12.04). You can download the latest release from the Github releases page: https://github.com/sharelatex/sharelatex/releases.
 
-## Installing Node.js
+### Dependencies
 
-```sh
-sudo apt-get install python-software-properties
-sudo add-apt-repository ppa:chris-lea/node.js
-sudo apt-get update
-sudo apt-get install nodejs
-```
+Make sure you have all the of the required [[Dependencies]] installed. These are (redis-server > 2.6.12, mongodb-org > 2.4.0, nodejs > 0.10.0).
 
-## Installing Mongo
+### Installing
+
+After downloading the .deb packages, install it with `dkpg`:
 
 ```sh
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
-echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
-sudo apt-get update
-sudo apt-get install mongodb-org
+$ sudo dpkg -i sharelatex_VERSION_amd64.deb
 ```
 
-## Installing Redis
+### Setting up Nginx
 
-```sh
-sudo add-apt-repository ppa:chris-lea/redis-server
-sudo apt-get update
-sudo apt-get install redis-server
-```
-
-## Installing TexLive 2013
-
-```sh
-wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
-tar -xvf install-tl-unx.tar.gz
-cd install-tl-*
-sudo ./install-tl
-```
-
-Go through the interactive installer. We recommend using the `scheme-full` installation since this will give you a comprehensive LaTeX environment, but at over 3Gb it may be too large for some users. Whichever scheme you choose, make sure to also select the `TeX auxiliary programs` package as it contains the `latexmk` program which is needed by ShareLaTeX. 
-
-Now make sure that LaTeX and latexmk are available in your path system-wide. Edit `/etc/environment` to include the TeXLive binary directory:
-
-```sh
-# cat /etc/environment 
-PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/texlive/2013/bin/x86_64-linux/"
-```
-
-__There is still an issue with the compiler finding latexmk in the path__. Possibly the upstart file needs modified, but this is tricky because LaTeX may be installed somewhere else. A setting in the CLSI config perhaps?
-
-## Installing ShareLaTeX
-
-```sh
-dpkg -i sharelatex_0.0.1_amd64.deb
-```
+The package contains an Nginx config file which will tell Nginx to act as a reverse HTTP proxy to the ShareLaTeX instance running on port 3000. This config file is installed at `/etc/nginx/conf.d/sharelatex.conf`. You will still need to manually install Nginx (> 1.4.0 for websocket support) though. For more information, see [[Nginx as a Reverse Proxy]]
