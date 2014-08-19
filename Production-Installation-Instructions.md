@@ -6,11 +6,11 @@ Make sure you have all the of the required [[Dependencies]] installed.
 
 ### Downloading and Compiling ShareLaTeX
 
-First checkout the ShareLaTeX Repository:
+First checkout the release branch of the ShareLaTeX Repository:
 
 ```bash
 $ sudo mkdir -p /var/www
-$ sudo git clone https://github.com/sharelatex/sharelatex.git /var/www/sharelatex
+$ sudo git clone -b release https://github.com/sharelatex/sharelatex.git /var/www/sharelatex
 $ cd /var/www/sharelatex
 ```
 
