@@ -10,4 +10,4 @@
 
 ### Problems?
 
-Please read out our [[FAQ]] page before opening a ticket.
+Please read our [[FAQ]] page before opening a ticket.
