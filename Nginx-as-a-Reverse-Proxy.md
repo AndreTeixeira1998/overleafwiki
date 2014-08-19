@@ -1,4 +1,4 @@
-The ShareLaTeX web service runs on port 3000 by default. We recommend running a Nginx as a reverse proxy in front of it which listens on port 80 and proxies requests through the local sharelatex process on port 3000.
+The ShareLaTeX web service runs on port 3000 by default. We recommend running Nginx as a reverse proxy in front of ShareLaTeX which listens on port 80 (standard HTTP port) and proxies requests through to the local sharelatex process on port 3000.
 
 ShareLaTeX uses websockets, which are only supported in Nginx 1.4 and above. The default installation of Nginx on Ubuntu 12.04 is too old, so you'll need to either install Nginx from source (http://nginx.org/), or install it via an official Nginx build for Ubuntu:
 
