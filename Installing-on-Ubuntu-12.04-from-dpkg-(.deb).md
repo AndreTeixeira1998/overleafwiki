@@ -2,7 +2,7 @@ We have created an easy to install package for Ubuntu 12.04, 64-bit. (It may wor
 
 ### Dependencies
 
-Make sure you have all the of the required [[Dependencies]] installed. These are (redis-server > 2.6.12, mongodb-org > 2.4.0, nodejs > 0.10.0).
+Make sure you have all the of the required [[Dependencies]] installed. The hard-coded dpkg dependencies are redis-server > 2.6.12, mongodb-org > 2.4.0, and nodejs > 0.10.0.
 
 ### Installing
 
