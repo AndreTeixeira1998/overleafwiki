@@ -45,3 +45,10 @@ server {
 	}
 }
 ```
+
+Note that you may need to remove the default nginx config to get this to work:
+
+```bash
+$ sudo rm /etc/nginx/conf.d/default.conf
+$ sudo /etc/init.d/nginx reload
+```
