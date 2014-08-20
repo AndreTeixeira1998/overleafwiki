@@ -7,6 +7,7 @@
 * [[Nginx as a Reverse Proxy]]
 * [[Configuring SMTP Email]]
 * [[Secondary database server]]
+* [[Running as non-privileged user]]
 
 ### For Developers
 
