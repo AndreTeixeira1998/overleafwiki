@@ -9,5 +9,9 @@ create unprivileged user:
 start using that user
 ```
 		screen -U -S sharelatex
-		sudo -u sharelatex grunt run
+		sudo -u sharelatex grunt run 
+```
+or to suppress logging:
+```
+                sudo -u sharelatex grunt run > /dev/null
 ```
