@@ -52,3 +52,6 @@ to let ShareLaTeX know that it can trust the X-Forwarded-Proto header and should
 ```
 secureCookie: true
 ```
+
+#### Web Browser Compatability
+Sharelatex works well with browsers that support modern standards, including Chrome/Chromium, Firefox and Safari.  It does not work well with Internet Explorer (with the possible exception of version 10).
