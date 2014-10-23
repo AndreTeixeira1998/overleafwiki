@@ -20,6 +20,7 @@ server {
 
 	location / {
 		proxy_pass http://localhost:3000;
+		proxy_set_header X-Forwarded-Proto $scheme;
 		proxy_set_header Host $http_x_forwarded_host;
 		proxy_http_version 1.1;
 		proxy_set_header Upgrade $http_upgrade;
