@@ -37,7 +37,7 @@ logpath = /var/log/mongodb/mongod.log
 logappend = true
 ```
 
-Now take a look at the MongoDB service file. It should appear similar to:
+Now take a look at the MongoDB service file. It is placed in `/usr/lib/systemd/system/mongodb.service`. It should appear similar to:
 ```
 [Unit]
 Description=High-performance, schema-free document-oriented database
