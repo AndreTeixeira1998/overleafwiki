@@ -18,6 +18,8 @@ server {
 
 	set $static_path /var/www/sharelatex/web/public;
 
+	client_max_body_size 50M;
+
 	location / {
 		proxy_pass http://localhost:3000;
 		proxy_set_header X-Forwarded-Proto $scheme;
