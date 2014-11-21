@@ -32,6 +32,20 @@ server {
 		proxy_send_timeout 3m;
 	}
 
+	# websocket connections need routing to the real-time-sharelatex service,
+	# running at localhost:3026 by default.
+	location /socket.io {
+		proxy_pass http://localhost:3026;
+		proxy_set_header X-Forwarded-Proto $scheme;
+		proxy_set_header Host $http_x_forwarded_host;
+		proxy_http_version 1.1;
+		proxy_set_header Upgrade $http_upgrade;
+		proxy_set_header Connection "upgrade";
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		proxy_read_timeout 3m;
+		proxy_send_timeout 3m;
+	}
+
 	location /stylesheets {
 		expires 1y;
 		root $static_path/;
