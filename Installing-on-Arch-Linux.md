@@ -132,3 +132,48 @@ sharelatex_service_start.sh track-changes
 sharelatex_service_start.sh web             
 ```
 Obviously, it is preferable to automate the daemons execution by means of systemd, but my tentatives have been unsuccessful. 
+
+### Setting Up and Run the Sharelatex with Systemd 
+Here is a template for unit file service :
+```bash
+[Unit]
+Description=ShareLatex-web-NAME
+After=network.target
+After=redis.service
+After=mongodb.service
+[Service]
+Type=simple
+User=sharelatex
+Group=sharelatex
+ExecStart=/usr/bin/node /PATH_TO_SHARELATEX_PARENT_FOLDER/sharelatex/NAME/app.js
+Environment=NODE_ENV=production
+Environment=SHARELATEX_CONFIG=/etc/sharelatex/settings.coffee
+#Restart=always
+[Install]
+WantedBy=multi-user.target
+```
+**Be carrefull :** you need to change all NAME (2x) with the name of sharelatex service's and /PATH_TO_SHARELATEX_SUB_FOLDER/
+
+Example for chat service:
+`/etc/systemd/system/sharelatex-chat.service`
+```bash
+[Unit]
+Description=ShareLatex-web-chat
+After=network.target
+After=redis.service
+After=mongodb.service
+[Service]
+Type=simple
+User=sharelatex
+Group=sharelatex
+ExecStart=/usr/bin/node /srv/webapps/sharelatex/chat/app.js
+Environment=NODE_ENV=production
+Environment=SHARELATEX_CONFIG=/etc/sharelatex/settings.coffee
+#Restart=always
+[Install]
+WantedBy=multi-user.target
+```
+
+If you name units files service in `/etc/systemd/system/` with prefix `sharelatex-` you can start/enable all sharelatex services with : 
+
+`sudo systemctl start $(ls /etc/systemd/system/sharelatex-*)`
