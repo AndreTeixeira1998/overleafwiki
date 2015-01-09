@@ -11,23 +11,23 @@ Make sure you have all the of the required [[Dependencies]] installed.
 First checkout the release branch of the ShareLaTeX Repository:
 
 ```bash
-$ sudo mkdir -p /var/www
-$ sudo git clone -b release https://github.com/sharelatex/sharelatex.git /var/www/sharelatex
-$ cd /var/www/sharelatex
+sudo mkdir -p /var/www
+sudo git clone -b release https://github.com/sharelatex/sharelatex.git /var/www/sharelatex
+cd /var/www/sharelatex
 ```
 
 Next install all the node modules and ShareLaTeX services:
 
 ```bash
-$ sudo npm install
-$ sudo grunt install
+sudo npm install
+sudo grunt install
 ```
 
 It is a good idea to run the ShareLaTeX files as a non-root user. I.e.
 
 ```sh
-$ sudo adduser --system --home /var/www/sharelatex --no-create-home --group sharelatex
-$ sudo chown -R sharelatex:sharelatex /var/www/sharelatex
+sudo adduser --system --home /var/www/sharelatex --no-create-home --group sharelatex
+sudo chown -R sharelatex:sharelatex /var/www/sharelatex
 ```
 
 ### Config file
@@ -35,8 +35,8 @@ $ sudo chown -R sharelatex:sharelatex /var/www/sharelatex
 The installation step should have generated a default config file in `config/settings.development.coffee`. You can place this anywhere, and tell ShareLaTeX where to find it with the `SHARELATEX_CONFIG` environment variable. On a server, somewhere like `/etc/sharelatex/settings.coffee` makes sense:
 
 ```sh
-$ sudo mkdir /etc/sharelatex
-$ sudo mv config/settings.development.coffee /etc/sharelatex/settings.coffee
+sudo mkdir /etc/sharelatex
+sudo mv config/settings.development.coffee /etc/sharelatex/settings.coffee
 ```
 
 You should open this file, review the default settings, and make any modifications that you need. Note that you will need to change `DATA_DIR` and `TMP_DIR` to point to a system-wide path. E.g.
@@ -50,14 +50,14 @@ TMP_DIR  = '/var/lib/sharelatex/tmp'
 Make sure that these directories exist and are read/writeable by the ShareLaTeX user:
 
 ```bash
-$ sudo mkdir -p /var/lib/sharelatex/data
-$ sudo mkdir -p /var/lib/sharelatex/data/user_files
-$ sudo mkdir -p /var/lib/sharelatex/data/compiles
-$ sudo mkdir -p /var/lib/sharelatex/data/cache
-$ sudo mkdir -p /var/lib/sharelatex/tmp
-$ sudo mkdir -p /var/lib/sharelatex/tmp/uploads
-$ sudo mkdir -p /var/lib/sharelatex/tmp/dumpFolder
-$ sudo chown -R sharelatex:sharelatex /var/lib/sharelatex
+sudo mkdir -p /var/lib/sharelatex/data
+sudo mkdir -p /var/lib/sharelatex/data/user_files
+sudo mkdir -p /var/lib/sharelatex/data/compiles
+sudo mkdir -p /var/lib/sharelatex/data/cache
+sudo mkdir -p /var/lib/sharelatex/tmp
+sudo mkdir -p /var/lib/sharelatex/tmp/uploads
+sudo mkdir -p /var/lib/sharelatex/tmp/dumpFolder
+sudo chown -R sharelatex:sharelatex /var/lib/sharelatex
 ```
 
 ### Running ShareLaTeX
