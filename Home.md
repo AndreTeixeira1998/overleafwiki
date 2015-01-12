@@ -1,6 +1,7 @@
 ### ShareLaTeX in Production
 
 * [[Production Installation Instructions]]
+* [[Security Considerations]]
 * [[Updating]]
 * [[Installing on Ubuntu 12.04 from dpkg (.deb)]]
 * [[Installing on Arch Linux]]
