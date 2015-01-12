@@ -99,6 +99,9 @@ end script
 
 You can find a collection of upstart scripts for each service in [sharelatex/package/upstart](https://github.com/sharelatex/sharelatex/tree/master/package/upstart).
 
+### Security Considerations
+
+Please acquaint yourself with [[Security Considerations]].
 ### Logs
 
 The above upstart script will cause the ShareLaTeX processes to log out to `/var/log/sharelatex/SERVICE.log` where `SERVICE` is one of `web`, `docstore`, `chat`, etc.
