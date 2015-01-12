@@ -1,0 +1,5 @@
+**ShareLaTeX provides an environment which allows anyone to run arbitrary code on your server, and read arbitrary files!** This is due to the way that LaTeX works, and allows arbitrary code to be run, and arbitrary files to be accessed. You should only provide access to a self-hosted ShareLaTeX instance to people that you would trust to run code on your server directly.
+
+In practice this probably means only running it locally, running it behind a firewall which makes it internal to your organisation/university, or setting up HTTP authentication in a reverse proxy like Nginx in front of ShareLaTeX.
+
+At www.sharelatex.com we use Docker to sandbox LaTeX environments securely, but unfortunately this is quite tied to our specific architecture and would not be much use to others even if open sourced.
