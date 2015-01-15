@@ -48,6 +48,10 @@ $ sudo apt-get update
 $ sudo apt-get install redis-server
 ```
 
+We recommend you have the append only option enabled so redis persists to disk. If you do not have this enabled a restart may mean you loose some document updates.
+
+    appendonly yes
+ 
 ### MongoDB
 
 The latest version of MongoDB can be installed from the MongoDB repository (http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/):
