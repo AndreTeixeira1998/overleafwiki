@@ -27,7 +27,7 @@ For development purposes, you can use [nvm](https://github.com/creationix/nvm) t
 For production, you will need a system wide Node.js installation. The Node.js version provided by Ubuntu 12.04 is too old for ShareLaTeX so you will need to install a newer version. You can do this directly from the [Node.js website](http://nodejs.org/), or via a custom PPA in Ubuntu:
 
 ```sh
-$ sudo apt-add-repository ppa:chris-lea/node.js
+$ sudo add-apt-repository ppa:chris-lea/node.js
 $ sudo apt-get update
 $ sudo apt-get install nodejs
 ```
@@ -43,7 +43,7 @@ $ sudo npm install -g grunt-cli
 The Redis version provided by Ubuntu 12.04 is also too old for ShareLaTeX so you will need to install a newer version. The latest version of Redis can be downloaded and compiled from source via the [Redis website](http://redis.io/), or with a custom PPA on Ubuntu:
 
 ```sh
-$ sudo apt-add-repository ppa:chris-lea/redis-server
+$ sudo add-apt-repository ppa:chris-lea/redis-server
 $ sudo apt-get update
 $ sudo apt-get install redis-server
 ```
