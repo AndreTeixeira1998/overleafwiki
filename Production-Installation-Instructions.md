@@ -1,6 +1,8 @@
-This guide assumes that you want to install ShareLaTeX at `/var/www/sharelatex`. There's nothing special about this path, but you'll need to customize the instructions yourself if you want to install it elsewhere.
+**The recommend way to install ShareLaTeX Community Edition is via our official Docker image: https://github.com/sharelatex/sharelatex-docker-image.**
 
-*NB. We have a Docker image for the ShareLaTeX Community Edition which comes with all of this set up: https://github.com/sharelatex/sharelatex-docker-image.*
+Continue reading if you would prefer to install ShareLaTeX manually.
+
+This guide assumes that you want to install ShareLaTeX at `/var/www/sharelatex`. There's nothing special about this path, but you'll need to customize the instructions yourself if you want to install it elsewhere.
 
 ### Dependencies
 
