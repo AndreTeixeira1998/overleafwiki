@@ -112,9 +112,9 @@ openin_any = p
 ...
 ```
 
-This restricts reading of files to local directory and LaTeX style/class/font files.
+This restricts reading of files to the local directory and LaTeX system files like classes/fonts/etc.
 
-Note that LaTeX is a complex piece of software that allows users to create infinite loops and unbounded memory usage. Please make sure that you are familiar with the implications of this and the security model of LaTeX before allowing any users to have access to your ShareLaTeX install.
+Note that LaTeX is a complex piece of software that allows users to create infinite loops and unbounded memory usage from within their tex code. Please make sure that you are familiar with the implications of this and the security model of LaTeX before allowing any users to have access to your ShareLaTeX install.
 
 ### Logs
 
