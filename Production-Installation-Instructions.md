@@ -101,9 +101,21 @@ end script
 
 You can find a collection of upstart scripts for each service in [sharelatex/package/upstart](https://github.com/sharelatex/sharelatex/tree/master/package/upstart).
 
-### Security Considerations
+### Securing LaTeX
 
-Please acquaint yourself with [[Security Considerations]].
+By default LaTeX allows the end user to read any readable file on your system. To protect against this, find your texmf.cnf file (likely in a directory like /usr/local/texlive/2014/texmf-dist/web2c/texmf.cnf) and change the `openin_any` setting to `p` for paranoid. 
+
+```
+# texmf.cnf
+...
+openin_any = p
+...
+```
+
+This restricts reading of files to local directory and LaTeX style/class/font files.
+
+Note that LaTeX is a complex piece of software that allows users to create infinite loops and unbounded memory usage. Please make sure that you are familiar with the implications of this and the security model of LaTeX before allowing any users to have access to your ShareLaTeX install.
+
 ### Logs
 
 The above upstart script will cause the ShareLaTeX processes to log out to `/var/log/sharelatex/SERVICE.log` where `SERVICE` is one of `web`, `docstore`, `chat`, etc.
