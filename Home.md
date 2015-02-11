@@ -3,7 +3,6 @@
 * [[Production Installation Instructions]]
 * [[Security Considerations]]
 * [[Updating]]
-* [[Installing on Ubuntu 12.04 from dpkg (.deb)]]
 * [[Installing on Arch Linux]]
 * [[Dependencies]]
 * [[Nginx as a Reverse Proxy]]
