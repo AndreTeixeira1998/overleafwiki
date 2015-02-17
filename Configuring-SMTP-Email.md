@@ -37,4 +37,4 @@ Important notes:
 
 ### Editing templates
 
-You may also like to edit the file: `/web/app/coffee/Features/Email/EmailBuilder.coffee`. This will allow you to format emails to your liking.
+You may also like to edit the file: `/web/app/coffee/Features/Email/EmailBuilder.coffee`. This will allow you to format emails to your liking. A recompile will be needed after editing this file with grunt compile:server
