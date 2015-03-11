@@ -108,7 +108,7 @@ You can also instruct systemd to start the service at boot, like so
 ```
   systemctl enable sharelatex@web.service
 ```
-Remember that you have to do this for each and every service you intend to start. As of release 1.1 the following services exist
+Remember that you have to do this for each and every service you intend to start. As of release 1.3 the following services exist
 * chat
 * clsi
 * docstore
@@ -119,3 +119,4 @@ Remember that you have to do this for each and every service you intend to start
 * template
 * track-changes
 * web
+* real-time
