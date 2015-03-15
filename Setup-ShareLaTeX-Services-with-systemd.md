@@ -62,7 +62,7 @@ chmod +x /etc/sharelatex/start_module.sh
 #### Create a systemd template
 Now we create a template for systemd that we can then call on later to start, stop, and reload the individual ShareLaTeX services.  Edit the following file (notice and keep the **@** symbol, as it defines the template:
 ```
-/etc/system/systemd/sharelatex@.service
+/etc/systemd/system/sharelatex@.service
 ```
 and now paste the following onto that file:
 ```
