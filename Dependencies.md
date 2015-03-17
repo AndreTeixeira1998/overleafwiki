@@ -38,6 +38,12 @@ Once Node.js is installed, you'll also need to install the grunt command line to
 $ sudo npm install -g grunt-cli
 ```
 
+You'll also need node-gyp which may not come prepackaged in your distribution:
+
+```sh
+$ sudo npm install -g node-gyp
+```
+
 ### Redis
 
 The Redis version provided by Ubuntu 12.04 is also too old for ShareLaTeX so you will need to install a newer version. The latest version of Redis can be downloaded and compiled from source via the [Redis website](http://redis.io/), or with a custom PPA on Ubuntu:
