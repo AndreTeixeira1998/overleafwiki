@@ -16,6 +16,7 @@
 
 ### Release Notes
 
+* [[Release Notes - 0.1.3 and 0.1.4]]
 * [[Release Notes - 0.1.2]]
 
 ### ShareLaTeX Server Pro
