@@ -53,6 +53,10 @@ $ grunt run:docstore
 $ # etc...
 ```
 
+### Logging in for the first time
+
+Before you can log in, you will need to create your first admin user to manage the site. See [[Creating and managing users]] for details.
+
 Recompiling coffeescript -> js
 ------------------------------
 
