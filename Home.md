@@ -1,6 +1,7 @@
 ### ShareLaTeX in Production
 
 * [[Production Installation Instructions]]
+* [[Creating and managing users]]
 * [[Updating]]
 * [[Installing on Arch Linux]]
 * [[Dependencies]]
