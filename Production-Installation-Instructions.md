@@ -128,6 +128,10 @@ The above upstart script will run the ShareLaTeX services as `sharelatex:sharela
 
 By default ShareLaTeX runs the web interface on port 3000. We recommend running a reverse proxy like Nginx (version >=1.4) or Apache in front of ShareLaTeX to serve it on port 80. More details can be found at: [[Nginx as a Reverse Proxy]].
 
+### Logging in for the first time
+
+Before you can log in, you will need to create your first admin user to manage the site. See [[Creating and managing users]] for details.
+
 ### Problems
 
 If you have any problems getting ShareLaTeX to work, the first place to check is our [[FAQ]]. Lots of common problems and solutions are listed there.
