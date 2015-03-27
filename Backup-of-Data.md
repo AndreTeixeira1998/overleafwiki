@@ -4,14 +4,17 @@ The sequence should also be applicable to migration.
 Eventually it would be good to write a BASH script to run backups automatically.
 
 ## Locations
-We will assume that your sharelatex installation is at /opt/sharelatex
+We will assume that your sharelatex installation is at `/opt/sharelatex`
+and that your backups are stored in `/backup/sharelatex`
 please adjust the instructions below if this is not your location.
 
 ## Shutdown Sharelatex
 `sudo killall node`
 
 ## Backup your config files
-
+`cd /opt/sharelatex
+cp -a config /backup/sharelatex/
+`
 
 ## Backup redis
  copy redis and mongo data to the new server
