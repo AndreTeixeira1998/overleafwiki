@@ -9,6 +9,7 @@
 * [[Configuring SMTP Email]]
 * [[Secondary database server]]
 * [[Running as non-privileged user]]
+* [[Backup of Data]]
 
 ### For Developers
 
