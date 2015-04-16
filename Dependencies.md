@@ -3,7 +3,7 @@ ShareLaTeX is supported on Linux and OS X. You will need the following dependenc
 * [Node.js](http://nodejs.org/) 0.10 or greater. [nvm](https://github.com/creationix/nvm) provides an easy way to install and manage Node.js in a development environment.
 * [Grunt](http://gruntjs.com/) command line tools (Run `npm install -g grunt-cli` to install them)
 * [Redis](http://redis.io/topics/quickstart) (version 2.6.12 or later)
-* [MongoDB](http://docs.mongodb.org/manual/installation/) (version 2.4 or later)
+* [MongoDB](http://docs.mongodb.org/manual/installation/) (version 2.4 or later. Note that 3.x is not currently supported.)
 * [TeXLive](https://www.tug.org/texlive/) 2013 or later with the `latexmk` program installed.
 * [Aspell](http://aspell.net/) for spell checking, with appropriate dictionaries installed.
 * imagemagick and optipng for previewing PDF/EPS files in the editor.
