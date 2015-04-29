@@ -28,7 +28,7 @@ Important notes:
                               }
                         # Secure connections:
                         # NB: nodemailer can have some issues with SSLv3
-                        secureConnection: false
+                        secure: false
         #               secureProtocol: "SSLv3_method"
         #               tls:  {
         #                       ciphers: 'SSLv3'
