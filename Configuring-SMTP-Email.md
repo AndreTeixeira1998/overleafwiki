@@ -35,6 +35,18 @@ Important notes:
         #                     }
 ```
 
+The following configuration was successfully tested using `postfix/sendmail` where `postfix` was configured as a relay, i.e., using an external smtp and might work for different `postfix` configurations as well:
+
+
+```coffee
+        email:
+                fromAddress: "from@example.com"
+                replyTo: "sharelatex_support@example.com"
+                transport: "Sendmail"
+                parameters:
+                        path: "/path/to/sendmail" # i.e. "/usr/sbin/sendmail"
+```
+
 ### Editing templates
 
 You may also like to edit the file: `/web/app/coffee/Features/Email/EmailBuilder.coffee`. This will allow you to format emails to your liking. A recompile will be needed after editing this file with grunt compile:server
