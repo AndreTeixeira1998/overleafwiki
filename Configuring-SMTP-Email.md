@@ -35,6 +35,7 @@ Important notes:
         #                     }
 ```
 
+
 The following configuration was successfully tested using `postfix/sendmail` where `postfix` was configured as a relay, i.e., using an external smtp and might work for different `postfix` configurations as well:
 
 
@@ -44,7 +45,7 @@ The following configuration was successfully tested using `postfix/sendmail` whe
                 replyTo: "sharelatex_support@example.com"
                 transport: "Sendmail"
                 parameters:
-                        path: "/path/to/sendmail" # i.e. "/usr/sbin/sendmail"
+                        path: "/path/to/sendmail" # e.g. "/usr/sbin/sendmail"
 ```
 
 ### Editing templates
