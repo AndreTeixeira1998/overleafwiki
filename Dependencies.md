@@ -7,6 +7,7 @@ ShareLaTeX is supported on Linux and OS X. You will need the following dependenc
 * [TeXLive](https://www.tug.org/texlive/) 2013 or later with the `latexmk` program installed.
 * [Aspell](http://aspell.net/) for spell checking, with appropriate dictionaries installed.
 * imagemagick and optipng for previewing PDF/EPS files in the editor.
+* [QPDF](http://qpdf.sourceforge.net/) used for optimising the pdf pre download
 
 ## Installing dependencies on Ubuntu
 
