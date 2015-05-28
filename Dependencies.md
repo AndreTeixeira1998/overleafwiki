@@ -6,7 +6,7 @@ ShareLaTeX is supported on Linux and OS X. You will need the following dependenc
 * [MongoDB](http://docs.mongodb.org/manual/installation/) (version 2.4 or later. Note that 3.x is not currently supported.)
 * [TeXLive](https://www.tug.org/texlive/) 2013 or later with the `latexmk` program installed.
 * [Aspell](http://aspell.net/) for spell checking, with appropriate dictionaries installed.
-* imagemagick and optipng for previewing PDF/EPS files in the editor.
+* imagemagick, optipng and ghostscript for previewing PDF/EPS files in the editor.
 * [QPDF](http://qpdf.sourceforge.net/) used for optimising the pdf pre download
 
 ## Installing dependencies on Ubuntu
