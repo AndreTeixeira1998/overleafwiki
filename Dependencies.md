@@ -116,7 +116,7 @@ $ export PATH=/usr/local/texlive/2014/bin/x86_64-darwin:$PATH # Mac OS X
 and that `latexmk` is installed:
 
 ```sh
-$ sudo tlmgr install latexmk
+$ apt-get install latexmk
 ```
 
 ## Installing ShareLaTeX
