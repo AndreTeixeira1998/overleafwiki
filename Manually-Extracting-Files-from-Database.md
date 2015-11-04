@@ -47,6 +47,8 @@ TODO: What is docs.bson for? It doesn't seem to contain any user .tex files.
 
 TODO: Support sub-folders.
 
+This is it. The following gives pointers for further analysis, e.g. to find files in sub-folders.
+
 ## Pretty-Converting BSON to JSON
 
 It's a lot easier to read the json files and to understand the structure as a human if they are pretty-printed.
@@ -69,3 +71,10 @@ If you don't have it yet.
     cat README.md 
     . ./set_gopath.sh
     go build -o ~/bin/bsondump bsondump/main/bsondump.go 
+
+### Example Usage: Get E-mail List
+
+    bsondump --pretty users.bson users.json
+    grep email users-pretty.json | cut -d\" -f4 | sort
+
+TODO: Does this include past users? Can users have multiple e-mail addresses? Create separate wiki page for this topic?
