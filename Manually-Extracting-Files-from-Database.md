@@ -41,6 +41,8 @@ Check that you only got one project:
             out.write('\n')
         out.close()
 
+TODO: Support sub-folders.
+
 ## Pretty-Converting BSON to JSON
 
 It's a lot easier to read the json files and to understand the structure as a human if they are pretty-printed.
