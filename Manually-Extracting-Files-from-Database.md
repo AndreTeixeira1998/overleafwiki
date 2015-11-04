@@ -51,7 +51,7 @@ It's a lot easier to read the json files and to understand the structure as a hu
 If your bsondump doesn't support the "--pretty" option.
 
 #### Install Go Compiler
-If you don't have it yet.
+If you don't have it yet. Check https://golang.org/ for versions. (Using binaries here as installing from source seems to be more complicated then usual as Go is written in Go. The docs point to a bootstrap script but the instructions are not crystal-clear how to use it.)
 
     wget https://storage.googleapis.com/golang/go1.5.1.linux-amd64.tar.gz
     tar -xzf go1.5.1.linux-amd64.tar.gz
