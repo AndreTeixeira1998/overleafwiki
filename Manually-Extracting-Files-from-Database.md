@@ -1,5 +1,7 @@
 The following worked for me to get my .tex files back after I messed up my sharelatex installation.
 
+Comments and improvements welcome.
+
 ## Dump Database Contents
 ``mongodump``
 (no parameters needed; creates folder "dump")
