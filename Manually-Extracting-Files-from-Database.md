@@ -13,7 +13,7 @@ The following worked for me to get my .tex files back after I messed up my share
 ``grep My-Title-or-Something-Else projects.json >my-project.json``
 
 Check that you only got one project:
-``wc -l my-project.json
+``wc -l my-project.json``
 
 ## Extract Files from Root Folder 
 
