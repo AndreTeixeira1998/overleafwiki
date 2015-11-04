@@ -17,6 +17,8 @@ Comments and improvements welcome.
 Check that you only got one project:
 ``wc -l my-project.json``
 
+TODO: What is docs.bson for? It doesn't seem to contain any user .tex files.
+
 ## Extract Files from Root Folder 
 
     mkdir my-project
