@@ -45,7 +45,10 @@ Check that you only got one project:
 
 It's a lot easier to read the json files and to understand the structure as a human if they are pretty-printed.
 
-### Install Go Compiler
+### Install Recent Bsondump
+If your bsondump doesn't support --pretty
+
+#### Install Go Compiler
 If you don't have it yet.
 
     wget https://storage.googleapis.com/golang/go1.5.1.linux-amd64.tar.gz
@@ -53,8 +56,7 @@ If you don't have it yet.
     export GOROOT=$HOME/go
     export PATH=$PATH:$GOROOT/bin
 
-### Install Recent Bsondump
-If your bsondump doesn't support --pretty
+#### Compile Bsondump
 
     git clone https://github.com/mongodb/mongo-tools.git
     cd mongo-tools/
