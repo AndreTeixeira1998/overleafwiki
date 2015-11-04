@@ -1,11 +1,11 @@
 The following worked for me to get my .tex files back after I messed up my sharelatex installation.
 
 ## Dump Database Contents
-``mongodump
+``mongodump``
 
 ## Convert Project Store to JSON Format
-``cd dump/sharelatex/
-``bsondump projects.bson projects.json
+``cd dump/sharelatex/``
+``bsondump projects.bson projects.json``
 
 ## Find Project
 
