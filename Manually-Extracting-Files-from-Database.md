@@ -27,15 +27,9 @@ TODO: What is docs.bson for? It doesn't seem to contain any user .tex files.
     import json
     f = open('my-project.json', 'rb')
     j = json.load(f)
-    j.keys()
-    j['name']
     rf = j['rootFolder']
-    rf.keys()
-    len(rf)
     docs = rf[0]
-    docs.keys()
     docs2 = docs['docs']
-    len(docs2)
     for item in docs2:
         name = item['name']
         lines = item['lines']
@@ -54,7 +48,7 @@ This is it. The following gives pointers for further analysis, e.g. to find file
 It's a lot easier to read the json files and to understand the structure as a human if they are pretty-printed.
 
 ### Install Recent Bsondump
-If your bsondump doesn't support --pretty
+If your bsondump doesn't support the "--pretty" option.
 
 #### Install Go Compiler
 If you don't have it yet.
