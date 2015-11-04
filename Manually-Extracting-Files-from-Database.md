@@ -75,6 +75,6 @@ If you don't have it yet.
 ### Example Usage: Get E-mail List
 
     bsondump --pretty users.bson users.json
-    grep email users-pretty.json | cut -d\" -f4 | sort
+    grep \"email\" users.json | cut -d\" -f4 | sort
 
 TODO: Does this include past users? Can users have multiple e-mail addresses? Create separate wiki page for this topic?
