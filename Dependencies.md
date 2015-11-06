@@ -8,6 +8,7 @@ ShareLaTeX is supported on Linux and OS X. You will need the following dependenc
 * [Aspell](http://aspell.net/) for spell checking, with appropriate dictionaries installed.
 * imagemagick, optipng and ghostscript for previewing PDF/EPS files in the editor.
 * [QPDF](http://qpdf.sourceforge.net/) used for optimising the pdf pre download
+* libkrb5-dev / krb5-devel
 
 1: How much greater? Sharelatex issues have been reported with up-to-date node js and somewhere else I read that 0.10.x must be used. (Comment added by a user.)
 
