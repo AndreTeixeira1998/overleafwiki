@@ -1,6 +1,6 @@
 ShareLaTeX is supported on Linux and OS X. You will need the following dependencies installed:
 
-* [Node.js](http://nodejs.org/) 0.10 or greater. [nvm](https://github.com/creationix/nvm) provides an easy way to install and manage Node.js in a development environment.
+* [Node.js](http://nodejs.org/) 0.10 or greater.^1 [nvm](https://github.com/creationix/nvm) provides an easy way to install and manage Node.js in a development environment.
 * [Grunt](http://gruntjs.com/) command line tools (Run `npm install -g grunt-cli` to install them)
 * [Redis](http://redis.io/topics/quickstart) (version 2.6.12 or later)
 * [MongoDB](http://docs.mongodb.org/manual/installation/) (version 2.4 or later. Note that 3.x is not currently supported.)
@@ -8,6 +8,8 @@ ShareLaTeX is supported on Linux and OS X. You will need the following dependenc
 * [Aspell](http://aspell.net/) for spell checking, with appropriate dictionaries installed.
 * imagemagick, optipng and ghostscript for previewing PDF/EPS files in the editor.
 * [QPDF](http://qpdf.sourceforge.net/) used for optimising the pdf pre download
+
+1: How much greater? Sharelatex issues have been reported with up-to-date node js and somewhere else I read that 0.10.x must be used.
 
 ## Installing dependencies on Ubuntu
 
