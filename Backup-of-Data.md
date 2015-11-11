@@ -3,6 +3,9 @@ Please check each step before using.
 The sequence should also be applicable to migration.
 Eventually it would be good to write a BASH script to run backups automatically.
 
+Also included are restore instructions (assuming you installed a fresh sharelatex system). 
+See also [Manually Extracting Files from Database] for recovery.
+
 ## Locations
 We will assume that your sharelatex installation is at `/opt/sharelatex`
 and that your backups are stored in `/backup/sharelatex`
