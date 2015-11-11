@@ -22,17 +22,17 @@ cp -a config /backup/sharelatex/
 ## Backup redis
 
 source system:
-* redis-cli ↵ AUTH ... ↵ SAVE ↵ quit
+* ``redis-cli`` ↵ ``AUTH ...`` ↵ ``SAVE`` ↵ ``quit``
 
 target system:
 * "appendonly no" in /etc/redis/bin.conf
-* systemctl stop redis@bin.service
+* ``systemctl stop redis@bin.service``
 * delete appendonly.aof
 * copy dump.rdb from source system, overwriting existing very small dump.rdb
-* systemctl start redis@bin.service
-* redis-cli ↵ AUTH ... ↵ config set appendonly yes ↵ quit ↵
+* ``systemctl start redis@bin.service``
+* ``redis-cli`` ↵ ``AUTH ...`` ↵ ``config set appendonly yes`` ↵ ``quit`` ↵
 * "appendonly yes" in /etc/redis/bin.conf (if you want it on)
-* systemctl restart redis@bin.service
+* ``systemctl restart redis@bin.service``
 * You should now see a new appendonly.aof bigger than dump.rdb
 
 Inspiration:
