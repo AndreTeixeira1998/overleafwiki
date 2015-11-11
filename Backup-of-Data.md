@@ -20,18 +20,18 @@ cp -a config /backup/sharelatex/
  copy redis and mongo data to the new server
 
 source system:
-redis-cli AUTH ...; SAVE; quit;
+1. redis-cli AUTH ...; SAVE; quit;
 
 target system:
-"appendonly no" in /etc/redis/bin.conf
-systemctl stop redis@bin.service
-delete appendonly.aof
-copy dump.rdb from source system, overwriting existing very small dump.rdb
-systemctl start redis@bin.service
-redis-cli AUTH ...; config set appendonly yes; quit;
-"appendonly yes" in /etc/redis/bin.conf (if you want it on)
-systemctl restart redis@bin.service
-You should now see a new appendonly.aof bigger than dump.rdb
+1. "appendonly no" in /etc/redis/bin.conf
+1. systemctl stop redis@bin.service
+1. delete appendonly.aof
+1. copy dump.rdb from source system, overwriting existing very small dump.rdb
+1. systemctl start redis@bin.service
+1. redis-cli AUTH ...; config set appendonly yes; quit;
+1. "appendonly yes" in /etc/redis/bin.conf (if you want it on)
+1. systemctl restart redis@bin.service
+1. You should now see a new appendonly.aof bigger than dump.rdb
 
 Inspiration:
 http://stackoverflow.com/questions/6004915/how-do-i-move-a-redis-database-from-one-server-to-another
