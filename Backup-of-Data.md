@@ -41,6 +41,7 @@ http://stackoverflow.com/questions/6004915/how-do-i-move-a-redis-database-from-o
 
 ## Backup mongo
 
+https://docs.mongodb.org/manual/tutorial/backup-and-restore-tools/
 
 ## Backup filesystem data 
 The path where your files are stored is specified in your settings file.
