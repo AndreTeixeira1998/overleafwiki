@@ -40,6 +40,15 @@ http://stackoverflow.com/questions/6004915/how-do-i-move-a-redis-database-from-o
 
 ## Backup mongo
 
+source system:
+* stop sharelatex but not mongod (restart mongod if necessary)
+* ``mongodump``
+* copy folder "dump" to target system
+
+target system:
+* start mongod
+* ``mongorestore dump``
+
 https://docs.mongodb.org/manual/tutorial/backup-and-restore-tools/
 
 ## Backup filesystem data 
