@@ -20,7 +20,6 @@ cp -a config /backup/sharelatex/
 `
 
 ## Backup redis
- copy redis and mongo data to the new server
 
 source system:
 * redis-cli ↵ AUTH ... ↵ SAVE ↵ quit
