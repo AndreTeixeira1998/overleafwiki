@@ -20,7 +20,7 @@ cp -a config /backup/sharelatex/
  copy redis and mongo data to the new server
 
 source system:
-* redis-cli AUTH ...; SAVE; quit;
+* redis-cli <enter> AUTH ... <enter> SAVE <enter> quit
 
 target system:
 * "appendonly no" in /etc/redis/bin.conf
@@ -28,7 +28,7 @@ target system:
 * delete appendonly.aof
 * copy dump.rdb from source system, overwriting existing very small dump.rdb
 * systemctl start redis@bin.service
-* redis-cli AUTH ...; config set appendonly yes; quit;
+* redis-cli <enter> AUTH ... <enter> config set appendonly yes <enter> quit <enter>
 * "appendonly yes" in /etc/redis/bin.conf (if you want it on)
 * systemctl restart redis@bin.service
 * You should now see a new appendonly.aof bigger than dump.rdb
