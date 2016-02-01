@@ -1,5 +1,3 @@
-# Database Migrations
-
 Some times we need to change the schema of data in the database as we evolve ShareLaTeX, migration scripts are used to automate this process. They will have been run on ShareLaTeX.com first which is the largest instance of ShareLaTeX in the world so most eventualities will have been encounter already, however we make no guarantees over your data. Please backup before running any migrations.
 
 ### BEFORE RUNNING ANY MIGRATIONS BACKUP YOUR DATA!!!
