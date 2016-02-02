@@ -3,7 +3,7 @@ To run a ShareLaTeX Docker image on HTTPS a reverse proxy will need to be added 
 
 ## Example Nginx SSL config
 
-This Nginx config is a good foundation for setting up ShareLaTeX with HTTPS, it will deal with websockets correctly and has some sane defaults.
+This Nginx config is a good foundation for setting up ShareLaTeX with HTTPS, it will deal with websockets correctly and has some sane defaults. It assumes nginx is running on the same host as the docker container, if this is not the case change the `proxy_pass http://localhost:5000;` accordingly.
 
 
 	server {
@@ -33,7 +33,7 @@ This Nginx config is a good foundation for setting up ShareLaTeX with HTTPS, it 
 		client_max_body_size 50M;
 
 		location / {
-			proxy_pass http://localhost:5000; # change to whatever port/host the docker container is listening on.
+			proxy_pass http://localhost:5000; # change to whatever host/port the docker container is listening on.
 			proxy_set_header X-Forwarded-Proto $scheme;
 			proxy_http_version 1.1;
 			proxy_set_header Upgrade $http_upgrade;
