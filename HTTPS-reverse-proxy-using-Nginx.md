@@ -33,7 +33,7 @@ This Nginx config is a good foundation for setting up ShareLaTeX with HTTPS, it 
 		client_max_body_size 50M;
 
 		location / {
-			proxy_pass http://localhost:80;
+			proxy_pass http://localhost:5000;
 			proxy_set_header X-Forwarded-Proto $scheme;
 			proxy_http_version 1.1;
 			proxy_set_header Upgrade $http_upgrade;
