@@ -2,13 +2,9 @@
 
 * [[Production Installation Instructions]]
 * [[Creating and managing users]]
-* [[Updating]]
-* [[Installing on Arch Linux]]
 * [[Dependencies]]
-* [[Nginx as a Reverse Proxy]]
 * [[Configuring SMTP Email]]
 * [[Secondary database server]]
-* [[Running as non-privileged user]]
 * [[Backup of Data]]
 
 ### For Developers
