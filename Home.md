@@ -12,7 +12,7 @@
 * [[Setting up a Development Environment]]
 
 ### Release Notes
-
+* [[Release-Notes--0.2.0]]
 * [[Release Notes - 0.1.3 and 0.1.4]]
 * [[Release Notes - 0.1.2]]
 
