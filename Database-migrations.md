@@ -9,4 +9,4 @@ Some times we need to change the schema of data in the database as we evolve Sha
 When upgrading to a new docker image any migrations which have not yet been run will be automatically executed, this may take some time depending on the size of your dataset, tailing the logs will let you know how it is going.
 
 ##### Running your own instances of ShareLaTeX
-If you do not use the recommended docker install and instead choose to run the processes yourself the the grunt command `grunt migrate` will run the migrations for you.
+If you do not use the recommended docker install and instead choose to run the update processes yourself the the grunt command `grunt migrate` will run the migrations for you, e.g., after upgrading from v0.1.4 to v.0.2.0.
