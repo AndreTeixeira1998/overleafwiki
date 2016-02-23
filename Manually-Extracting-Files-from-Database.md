@@ -8,7 +8,7 @@ Comments and improvements welcome.
 
 ## Convert Project Store to JSON Format
     cd dump/sharelatex/
-    bsondump projects.bson projects.json
+    bsondump projects.bson > projects.json
 
 ## Find Project
 
