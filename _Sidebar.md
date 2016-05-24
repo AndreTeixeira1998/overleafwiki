@@ -3,8 +3,7 @@
 - [Email](https://github.com/sharelatex/sharelatex/wiki/Configuring-SMTP-Email)
 - [SSL & Nginx reverse proxy](https://github.com/sharelatex/sharelatex/wiki/HTTPS-reverse-proxy-using-Nginx)
 - [Database & Dependencies](https://github.com/sharelatex/sharelatex/wiki/Dependencies)
-
-
+- [Load Balancing with HAproxy](https://github.com/sharelatex/sharelatex/wiki/Load-balancing-ShareLaTeX-and-Haproxy)
 ## Server Pro:
 - [Getting started](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-getting-started)
 - [Secure Compiles](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-secure-compiles)
