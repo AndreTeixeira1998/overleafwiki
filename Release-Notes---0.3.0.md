@@ -1,0 +1,1 @@
+All configuration of ShareLaTeX is now done via Environmental variables.
