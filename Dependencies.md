@@ -2,13 +2,16 @@
 
 ShareLaTeX has many depenencies. If you are running via the recommended docker way you will only have to install Redis and Mongodb.
 
-
+* [Docker](https://www.docker.com/) (1.9.0 or later)
 * [Redis](http://redis.io/topics/quickstart) (version 2.6.12 or later)
 * [MongoDB](http://docs.mongodb.org/manual/installation/) (3.x is recommended)
 
 ## Installing dependencies on Ubuntu
 
 These instructions are appropriate for Ubuntu 12.04, but should also work on more recent versions.
+
+### Docker
+To install docker see the [https://docs.docker.com/engine/installation/linux/ubuntulinux/](official guide)
 
 
 ### Redis
