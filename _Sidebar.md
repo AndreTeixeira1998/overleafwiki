@@ -7,7 +7,7 @@
 
 ## Server Pro:
 - [Getting started](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-getting-started)
-- [Secure Compiles & full tex install](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-secure-compiles)
+- [Secure Compiles](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-secure-compiles)
 - [LDAP](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-LDAP-Config)
 - [Templates System](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-Setting-up-templates)
 
