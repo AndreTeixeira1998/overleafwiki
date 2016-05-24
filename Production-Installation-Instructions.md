@@ -1,6 +1,3 @@
-ShareLaTeX Community Docker Image
-=======================
-
 **Please read this entire file before installing ShareLaTeX via Docker. It's only
 short but contains some important information.**
 
