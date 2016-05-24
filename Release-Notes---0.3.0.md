@@ -2,3 +2,4 @@
 - Much better LaTeX error parsing, include .bbl files
 - Snappier feedback when changing image
 - Prevention against massive projects effecting system
+- Multiple small bug fixes
