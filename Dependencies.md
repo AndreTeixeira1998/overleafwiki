@@ -1,53 +1,15 @@
-ShareLaTeX is supported on Linux and OS X. You will need the following dependencies installed:
 
-* [Node.js](http://nodejs.org/) 0.10 or greater.^1 [nvm](https://github.com/creationix/nvm) provides an easy way to install and manage Node.js in a development environment.
-* [Grunt](http://gruntjs.com/) command line tools (Run `npm install -g grunt-cli` to install them)
+
+ShareLaTeX has many depenencies. If you are running via the recommended docker way you will only have to install Redis and Mongodb.
+
+
 * [Redis](http://redis.io/topics/quickstart) (version 2.6.12 or later)
-* [MongoDB](http://docs.mongodb.org/manual/installation/) (version 2.4 or later. Note that 3.x is not currently supported.)
-* [TeXLive](https://www.tug.org/texlive/) 2013 or later with the `latexmk` program installed.
-* [Aspell](http://aspell.net/) for spell checking, with appropriate dictionaries installed.
-* imagemagick, optipng and ghostscript for previewing PDF/EPS files in the editor.
-* [QPDF](http://qpdf.sourceforge.net/) used for optimising the pdf pre download
-* libkrb5-dev / krb5-devel
-
-1: How much greater? Sharelatex issues have been reported with up-to-date node js and somewhere else I read that 0.10.x must be used. (Comment added by a user.)
+* [MongoDB](http://docs.mongodb.org/manual/installation/) (3.x is recommended)
 
 ## Installing dependencies on Ubuntu
 
 These instructions are appropriate for Ubuntu 12.04, but should also work on more recent versions.
 
-### Basic build system
-
-Make sure that you've got the basic development tools installed like `git` and `make`:
-
-```sh
-$ sudo apt-get update
-$ sudo apt-get install git build-essential curl python-software-properties zlib1g-dev zip unzip
-```
-
-### Node.js
-
-For development purposes, you can use [nvm](https://github.com/creationix/nvm) to easily manage and install Node.js.
-
-For production, you will need a system wide Node.js installation. The Node.js version provided by Ubuntu 12.04 is too old for ShareLaTeX so you will need to install a newer version. You can do this directly from the [Node.js website](http://nodejs.org/), or via a custom PPA in Ubuntu:
-
-```sh
-$ sudo add-apt-repository ppa:chris-lea/node.js
-$ sudo apt-get update
-$ sudo apt-get install nodejs
-```
-
-Once Node.js is installed, you'll also need to install the grunt command line tools (use sudo if Node.js is installed system wide):
-
-```sh
-$ sudo npm install -g grunt-cli
-```
-
-You'll also need node-gyp which may not come prepackaged in your distribution:
-
-```sh
-$ sudo npm install -g node-gyp
-```
 
 ### Redis
 
@@ -73,6 +35,20 @@ $ echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' 
 $ sudo apt-get update
 $ sudo apt-get install mongodb-org
 ```
+
+
+## Optional Dependencies for non docker installs
+
+If you run ShareLaTeX directly and are not using the recommended Docker Container then following are required:
+
+* [Node.js](http://nodejs.org/) 0.10 or greater.^1 [nvm](https://github.com/creationix/nvm) provides an easy way to install and manage Node.js in a development environment.
+* [Grunt](http://gruntjs.com/) command line tools (Run `npm install -g grunt-cli` to install them)
+* [TeXLive](https://www.tug.org/texlive/) 2013 or later with the `latexmk` program installed.
+* [Aspell](http://aspell.net/) for spell checking, with appropriate dictionaries installed.
+* imagemagick, optipng and ghostscript for previewing PDF/EPS files in the editor.
+* [QPDF](http://qpdf.sourceforge.net/) used for optimising the pdf pre download
+* libkrb5-dev / krb5-devel
+
 
 ### Aspell
 
