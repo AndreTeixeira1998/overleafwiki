@@ -7,8 +7,7 @@
 * [[Secondary database server]]
 * [[Backup of Data]]
 
-Keeping up to date
-------------
+### Keeping up to date
 Sign up to the [mailing list](http://eepurl.com/bPWeiH) to get updates on ShareLaTeX Releases and development
 
 ### Release Notes
