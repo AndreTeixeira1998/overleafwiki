@@ -18,7 +18,7 @@
 
 ### ShareLaTeX Server Pro
 
-If you want help installing and maintaining ShareLaTeX at your university or workplace, we offer an officially supported version called ShareLaTeX Server Pro. It also comes with extra security and admin features. [Click here to find out more!](https://www.sharelatex.com/university/onsite.html).
+ShareLaTeX offers a premium onsite version with extra security and admin features. [Click here to find out more!](https://www.sharelatex.com/university/onsite.html). This is a drop in replacement for the community version.
 
 ### Problems?
 
