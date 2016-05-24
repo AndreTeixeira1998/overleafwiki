@@ -31,7 +31,6 @@ LDAP Config Example
 The following is an example basic config using the public accessible forumsys.com server. You can test LDAP is setup with this config, login using a username of `einstein` and password of `password`
 
 ```
-#!javascript
 --env SHARELATEX_LDAP_HOST='ldap://ldap.forumsys.com' 
 --env SHARELATEX_LDAP_DN='uid=:userKey,dc=example,dc=com' 
 --env SHARELATEX_LDAP_BASE_SEARCH='dc=example,dc=com' 
