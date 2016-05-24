@@ -8,4 +8,4 @@
 ## Server Pro:
 
 - [LDAP](https://github.com/sharelatex/sharelatex/wiki/LDAP-Config)
-- [Secure Compiles](https://github.com/sharelatex/sharelatex/wiki/docker-in-docker)
+- [Secure Compiles](https://github.com/sharelatex/sharelatex/wiki/secure-compiles)
