@@ -1,1 +1,4 @@
-All configuration of ShareLaTeX is now done via Environmental variables.
+- All configuration of ShareLaTeX is now done via Environmental variables.
+- Much better LaTeX error parsing, include .bbl files
+- Snappier feedback when changing image
+- Prevention against massive projects effecting system
