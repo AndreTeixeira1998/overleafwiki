@@ -9,5 +9,5 @@
 
 - [LDAP](https://github.com/sharelatex/sharelatex/wiki/LDAP-Config)
 - [Secure Compiles](https://github.com/sharelatex/sharelatex/wiki/secure-compiles)
-- [Templates System](https://github.com/sharelatex/sharelatex/wiki/Setting-up-templates)
+- [Templates System](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-Setting-up-templates)
 
