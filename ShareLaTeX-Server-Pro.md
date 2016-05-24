@@ -1,2 +1,0 @@
-- LDAP
-- Docker in Docker
