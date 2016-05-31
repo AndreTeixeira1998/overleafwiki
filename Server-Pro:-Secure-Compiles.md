@@ -5,9 +5,4 @@ ShareLaTeX Server Pro comes with the option to run compiles in a secured sandbox
 To enable this set `--env DOCKER_IN_DOCKER='true'` when creating the container
 
 
-
-##### Build Image
-
-Once the container has been created you can build the secure image with the following command:
-
-`docker exec sharelatex docker build --tag sharelatex-texlive /root/docker-image`
+**Once the docker container is running it will take 10-15 minutes for compiles to work as the secure version of texlive is installed**
