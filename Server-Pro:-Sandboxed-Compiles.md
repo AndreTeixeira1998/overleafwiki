@@ -5,4 +5,4 @@ ShareLaTeX Server Pro comes with the option to run compiles in a secured sandbox
 To enable this set `--env SANDBOXED_COMPILES='true'` when creating the container
 
 
-**Once the docker container is running it will take 10-15 minutes for compiles to work as the secure version of texlive is installed**
+Once the docker container is running it will take **10-15 minutes for compiles to work** while secure version of texlive is installed in the background
