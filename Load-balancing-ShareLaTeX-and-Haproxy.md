@@ -5,13 +5,18 @@ ShareLaTeX can be easily run on multiple hosts to scale horizontally. The main t
 * the ShareLaTeX Session Secret needs to be set the same
 
 
-## Setting same Session Secret
+## Setting same Session Secret & Behind Proxy
 
-The sessionSecret needs to be set the same on all docker instances. By default a random string is generated for you. The environment variable SHARELATEX_SESSION_SECRET can be used to set this.
+The sessionSecret needs to be set the same on all docker instances. By default a random string is generated for you. The environment variable SHARELATEX_SESSION_SECRET can be used to set this. 
 
-		security:
-				sessionSecret: process.env["SHARELATEX_SESSION_SECRET"] or "IDWD1nDX2KUxmHEFtpDx6MPTdAgMTa4DgeQSI1He50" # This was randomly generated for you
+`--env SHARELATEX_SESSION_SECRET=something_random`
+
+`--env SHARELATEX_BEHIND_PROXY=true`
+
+`--env SHARELATEX_SECURE_COOKIE=true #only if using SSL`
+
 	
+
 
 ## Haproxy
 
