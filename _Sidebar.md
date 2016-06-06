@@ -5,6 +5,7 @@
 - [Database & Dependencies](https://github.com/sharelatex/sharelatex/wiki/Dependencies)
 - [Load Balancing with HAproxy](https://github.com/sharelatex/sharelatex/wiki/Load-balancing-ShareLaTeX-and-Haproxy)
 - [Backing up data](https://github.com/sharelatex/sharelatex/wiki/Backup-of-Data)
+- [F.A.Q](https://github.com/sharelatex/sharelatex/wiki/FAQ)
 
 
 ## Server Pro:
