@@ -14,7 +14,7 @@ Config
 * `SHARELATEX_LDAP_EMAIL_ATT`: The email attribute the LDAP server will return, defaults to `mail`
 * `SHARELATEX_LDAP_NAME_ATT`: The property name holding the name of the user which is used in the application.  
 * `SHARELATEX_LDAP_LAST_NAME_ATT`: If your LDAP server has a first and last name then this can be used in conjutor with `SHARELATEX_LDAP_NAME_ATT`
-
+* `SHARELATEX_LDAP_PLACEHOLDER`: The placeholder for the login form, defaults to email@example.com
 
 * `SHARELATEX_LDAP_ADMIN_DN`: Used if an admin DN is needed e.g. 'cn=read-only-admin,dc=example,dc=com'
 * `SHARELATEX_LDAP_ADMIN_PW`: Password used for an Admin DN. 
