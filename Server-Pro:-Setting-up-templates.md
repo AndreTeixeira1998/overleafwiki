@@ -1,4 +1,4 @@
-A single ShareLaTeX user is responsible to publishing templates which are visable of /templates. To set this use the env var `SHARELATEX_TEMPLATES_USER_ID`
+A single ShareLaTeX user is responsible to publishing the curated list templates which are visable of /templates. To set this use the env var `SHARELATEX_TEMPLATES_USER_ID`
 
 `--env SHARELATEX_TEMPLATES_USER_ID=56a8865231faeb5f07d69959`
 
