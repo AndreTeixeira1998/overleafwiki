@@ -10,7 +10,12 @@ ShareLaTeX Server Pro's admin panel has the option to delete users, it can also 
 `db.users.remove({email:"delete_this_user@gmail.com"})`
 
 ## Maximum size of projects in ShareLaTeX
-The maximum amount of editable data in ShareLaTeX is 5mb, this does not include images or other large non editable files.
+* The maximum amount of editable data in ShareLaTeX is 5mb, this does not include images or other large non editable files.
+* The maximum number of entities is 2000 per project (folder, docs, images)
+* The maximum size of an non editable entity is 50mb
+
+## Maximum size of uploads
+Uploads are limited to 50mb per entity.
 
 ## What is a public project?
 A public project is a project which has had all authentication removed from it so anyone can access it. It will not show up on other users project lists.
