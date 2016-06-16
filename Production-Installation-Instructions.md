@@ -168,11 +168,11 @@ configured correctly!
 * `SHARELATEX_SECURE_COOKIE`: Set this to something non-zero to use a secure cookie.
   Only use this if your ShareLaTeX instance is running behind a reverse proxy with SSL configured.
 
-Other settings such as email setup need to be edited in the docker container at /etc/sharelatex/settings.coffee. We realise this is not an ideal solution and are working on a more streamlined settings file approach.
+Other settings such as email setup and LDAP (Server Pro only) can also be configured via environmental variables, documentation of how todo this can be found on there dedicated pages.
 
 ### Creating and Managing users
 
-Uun the following command to create your first user and make them an admin:
+The following command to create your first user and make them an admin:
 
 ```
 $ docker exec sharelatex /bin/bash -c "cd /var/www/sharelatex/web; grunt create-admin-user --email joe@example.com"
