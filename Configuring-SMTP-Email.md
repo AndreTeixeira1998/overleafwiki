@@ -5,7 +5,7 @@ ShareLaTeX only supports SMTP and AWS SES. If an e-mail server is enabled on you
 
 Email can be configured via environmental vars passed to the docker container
 
-* `SHARELATEX_EMAIL_FROM_ADDRESS`: The from address e.g. `'support@mycompany.com'` **REQUIRED**
+* `SHARELATEX_EMAIL_FROM_ADDRESS`: REQUIRED - The from address e.g. `'support@mycompany.com'` 
 * `SHARELATEX_EMAIL_REPLY_TO`: The reply to address e.g. `'noreply@mycompany.com'`
 
 ##### AWS SES
