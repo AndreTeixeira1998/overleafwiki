@@ -17,3 +17,13 @@ This data needs to be valid json to work, with quotes escaped when passed throug
 
 
 `--env SHARELATEX_LEFT_FOOTER='[{"text": "Powered by <a href=\"https://www.sharelatex.com\">ShareLaTeX</a> © 2016"},{"text": "Another page I want to link to can be found <a href=\"here\">here</a>"},{"text": "I want the entire text to be a link", "url": "http://all-text-is-url.com"} ]'`
+
+
+## Custom logo
+You can set a custom header with the variable SHARELATEX_HEADER_IMAGE_URL this points to an externally hosted image
+
+`
+--env SHARELATEX_HEADER_IMAGE_URL='https://mysite.somewhere.com/img/logo.png'
+`
+
+
