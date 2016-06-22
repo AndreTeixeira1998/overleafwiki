@@ -5,9 +5,9 @@
 - [Email](https://github.com/sharelatex/sharelatex/wiki/Configuring-SMTP-Email)
 - [SSL & Nginx reverse proxy](https://github.com/sharelatex/sharelatex/wiki/HTTPS-reverse-proxy-using-Nginx)
 - [Database & Dependencies](https://github.com/sharelatex/sharelatex/wiki/Dependencies)
-- [Load Balancing with HAproxy](https://github.com/sharelatex/sharelatex/wiki/Load-balancing-ShareLaTeX-and-Haproxy)
+- [Load Balancing with HAproxy](https://github.com/sharelatex/sharelatex/wiki/Load-balancingh-ShareLaTeX-and-Haproxy)
 - [Backing up data](https://github.com/sharelatex/sharelatex/wiki/Backup-of-Data)
-- [Configuring Footers](https://github.com/sharelatex/sharelatex/wiki/Configuring-Footers)
+- [Configuring Headers, Footers & Logo](https://github.com/sharelatex/sharelatex/wiki/Configuring-Headers,-Footers-&-Logo)
 - [F.A.Q](https://github.com/sharelatex/sharelatex/wiki/FAQ)
 
 
