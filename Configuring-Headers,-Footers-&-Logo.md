@@ -1,6 +1,6 @@
 ## Header
 
-### Site title
+#### Site title
 
 The nav title can be set with SHARELATEX_NAV_TITLE, this is used in the top left corner of navigation if a logo is not set.
 
@@ -9,7 +9,7 @@ The nav title can be set with SHARELATEX_NAV_TITLE, this is used in the top left
 `
 
 
-### Logo
+#### Logo
 You can set a custom logo rather than using text with the variable SHARELATEX_HEADER_IMAGE_URL this points to an externally hosted image
 
 `
