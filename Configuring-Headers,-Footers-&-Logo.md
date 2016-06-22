@@ -19,7 +19,7 @@ You can set a custom logo rather than using text with the variable SHARELATEX_HE
 
 ## Footers
 
-It is possible to customise both the left and smaller right footer which is found on pages like `/project` using the environmental variables `SHARELATEX_LEFT_FOOTER` and `SHARELATEX_RIGHT_FOOTER`
+It is possible to customise both the left and smaller right footer which is found on pages like `/project` using the environmental variables `SHARELATEX_LEFT_FOOTER` and the smaller `SHARELATEX_RIGHT_FOOTER`
 
 Both expect an array of JSON which will be inserted.
 
