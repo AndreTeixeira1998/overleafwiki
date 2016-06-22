@@ -50,8 +50,3 @@ As LDAP is heavily configurable and flexable by nature it can be a good starting
 #!bash
 ldapsearch -H ldap://ad.mydomain.com:389 -x -D ENUMuser@mydomain.com -w ENUMpass  -b ou=people,dc=mydomain,dc=com "CN=\*ENUMuser\*" mail
 ```
-
-License
--------
-
-Copyright (c) ShareLaTeX, 2015.
