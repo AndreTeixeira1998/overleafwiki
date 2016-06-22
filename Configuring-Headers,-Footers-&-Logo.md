@@ -1,4 +1,4 @@
-## Custom Headers
+## Header
 
 ### Site title
 
