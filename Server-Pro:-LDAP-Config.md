@@ -24,7 +24,7 @@ Config
 * `SHARELATEX_LDAP_TLS`: Used to turn on starttls, defaults to false
 * `SHARELATEX_LDAP_TLS_OPTS_REJECT_UNAUTH`: If true, the server certificate is verified against the list of supplied CAs.
 
-* `SHARELATEX_LDAP_TLS_OPTS_CA_PATH`: A JSON array of paths to the CA file for TLS, must be accessible to the docker container. E.g. `-env SHARELATEX_LDAP_TLS_OPTS_CA_PATH='["/var/somewhere.pem", "/var/elsewhere.pem"]'`
+* `SHARELATEX_LDAP_TLS_OPTS_CA_PATH`: A JSON array of paths to the CA file for TLS, must be accessible to the docker container. E.g. `-env SHARELATEX_LDAP_TLS_OPTS_CA_PATH='["/var/one.pem", "/var/two.pem"]'`
 
 
 
