@@ -17,4 +17,6 @@ Email can be configured via environmental vars passed to the docker container
 * `SHARELATEX_EMAIL_SMTP_PORT`: SMTP port to use
 * `SHARELATEX_EMAIL_SMTP_SECURE`: Boolean if SMTP secure should be used
 * `SHARELATEX_EMAIL_SMTP_USER`: User to authenticate against the STMP server with
-* `SHARELATEX_EMAIL_SMTP_PASS`: Pssword for SMTP User
+* `SHARELATEX_EMAIL_SMTP_PASS`: Password for SMTP User
+* `SHARELATEX_EMAIL_SMTP_TLS_REJECT_UNAUTH`: Rejected unauthorized tls connections
+* `SHARELATEX_EMAIL_SMTP_IGNORE_TLS`: turns off STARTTLS support if true
