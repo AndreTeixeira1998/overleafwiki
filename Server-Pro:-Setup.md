@@ -6,5 +6,5 @@ $ docker run -d \
   -p 5000:80 \
   --name=sharelatex \
   --privileged \
-  sharelatex-server-pro
+  quay.io/sharelatex/sharelatex-pro
 ```
