@@ -25,4 +25,4 @@ Email can be configured via environmental vars passed to the docker container
 
 #### Customisation
 
-* `SHARELATEX_CUSTOM_EMAIL_FOOTER` Custom HTMl which is appended to all emails. e.g. `--env SHARELATEX_CUSTOM_EMAIL_FOOTER="<div>This system is run by department x </div> <div> If you have any questions please look at our faq <a href='https://somwhere.com'>here</a></div>"`
+* `SHARELATEX_CUSTOM_EMAIL_FOOTER` Custom HTML which is appended to all emails. e.g. `--env SHARELATEX_CUSTOM_EMAIL_FOOTER="<div>This system is run by department x </div> <div> If you have any questions please look at our faq <a href='https://somwhere.com'>here</a></div>"`
