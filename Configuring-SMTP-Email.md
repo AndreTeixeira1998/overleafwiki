@@ -20,3 +20,9 @@ Email can be configured via environmental vars passed to the docker container
 * `SHARELATEX_EMAIL_SMTP_PASS`: Password for SMTP User
 * `SHARELATEX_EMAIL_SMTP_TLS_REJECT_UNAUTH`: Rejected unauthorized tls connections
 * `SHARELATEX_EMAIL_SMTP_IGNORE_TLS`: turns off STARTTLS support if true
+
+
+
+#### Customisation
+
+* `SHARELATEX_CUSTOM_EMAIL_FOOTER` Custom HTMl which is appended to all emails. e.g. `--env SHARELATEX_CUSTOM_EMAIL_FOOTER="<div>This system is run by department x </div> <div> If you have any questions please look at our faq <a href='https://somwhere.com'>here</a></div>"`
