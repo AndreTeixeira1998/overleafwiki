@@ -18,3 +18,5 @@ switched to db sharelatex
 >
 ```
 
+#### Templates on index page
+For the templates index page templates they are grouped by tags which the user puts the projects in, e.g. Journals, Reports etc. To see all templates add /all to the url `/templates/all` which can also be used as the default url if you do not wish to use the tags for grouping.
