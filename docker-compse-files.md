@@ -1,0 +1,1 @@
+Docker compose files are a great way of getting all the dependencies and settings ShareLaTeX needs setup in one clear file. We have an example compile file you can use at https://github.com/sharelatex/sharelatex/blob/master/docker-compose.yml
