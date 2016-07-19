@@ -1,8 +1,8 @@
-### Upgrading from older versions
+## Upgrading from older versions
 
 *Please make sure to back up all Mongo, Redis and on-disk data before upgrading.*
 
-#### Migrations
+### Migrations
 Data stored in Mongodb will be automatically migrated to the latest schemea when upgrading docker releases. **This can make downgrades impossible.** 
 
 It is to test the migration first. This can be done by copying the mongodb database and doing a test run against the copied data.
@@ -13,7 +13,7 @@ db.copyDatabase(sharelatex,sharelatex-copy)
 --env SHARELATEX_MONGO_URL=mongodb://dockerhost/sharelatex-copy
 ```
 
-#### Closing Editor
+### Closing Editor
 Todo a more seamless migration of containers you can close the editor before shutting the container down. This can be done via the `close editor` tab in https://www.sharelatex.com/admin. There are 2 buttons
 
 * Close Editor - Stops anyone trying to load up the editor
@@ -21,7 +21,7 @@ Todo a more seamless migration of containers you can close the editor before shu
 
 Once the editor is closed the only way to open is to restart the docker container.
 
-#### Upgrade process
+### Upgrade process
 To use the new docker container stop and remove the currently running ShareLaTeX container:
 
 ```
