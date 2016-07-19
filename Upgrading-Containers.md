@@ -13,6 +13,14 @@ db.copyDatabase(sharelatex,sharelatex-copy)
 --env SHARELATEX_MONGO_URL=mongodb://dockerhost/sharelatex-copy
 ```
 
+#### Closing Editor
+Todo a more seamless migration of containers you can close the editor before shutting the container down. This can be done via the `close editor` tab in https://www.sharelatex.com/admin. There are 2 buttons
+
+* Close Editor - Stops anyone trying to load up the editor
+* Disconnect all users - Kicks anyone who is currently connected to the editor forcing a refresh. If the editor is closed the refresh will not take them back into the editor.
+
+Once the editor is closed the only way to open is to restart the docker container.
+
 #### Upgrade process
 To use the new docker container stop and remove the currently running ShareLaTeX container:
 
