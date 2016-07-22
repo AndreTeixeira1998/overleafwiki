@@ -1,5 +1,5 @@
 ## Setup & Managing ShareLaTeX
-- [Production Install](https://github.com/sharelatex/sharelatex/wiki/Production-Installation-Instructions)
+- [Quickstart Guide](https://github.com/sharelatex/sharelatex/wiki/Quick-Start-Guide)
 - [Upgrading Containers](https://github.com/sharelatex/sharelatex/wiki/Upgrading-Containers)
 - [Creating and managing users](https://github.com/sharelatex/sharelatex/wiki/Creating-and-managing-users)
 - [Email](https://github.com/sharelatex/sharelatex/wiki/Configuring-SMTP-Email)
