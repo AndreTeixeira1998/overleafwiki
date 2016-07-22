@@ -1,4 +1,4 @@
-** Make sure you have read this guide before running ShareLaTeX offically ** 
+**Make sure you have read this guide before running ShareLaTeX officially** 
 
 ShareLaTeX is installed run via [Docker](https://www.docker.com/), the following command will pull down the latest version and get it up and running for you:
 
