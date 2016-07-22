@@ -1,6 +1,6 @@
-### ShareLaTeX in Production
+### Setup
 
-* [[Production Installation Instructions]]
+Please look at the [Quick Start Guide](https://github.com/sharelatex/sharelatex/wiki/Quick-Start-Guide) to get up and running.
 
 ### Keeping up to date
 Sign up to the [mailing list](http://eepurl.com/bPWeiH) to get updates on ShareLaTeX Releases and development
