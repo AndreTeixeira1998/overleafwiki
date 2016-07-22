@@ -20,3 +20,15 @@ switched to db sharelatex
 
 #### Templates on index page
 For the templates index page templates they are grouped by tags which the user puts the projects in, e.g. Journals, Reports etc. To see all templates add /all to the url `/templates/all` which can also be used as the default url if you do not wish to use the tags for grouping.
+
+
+#### Template links on project list page
+When a user creates a new project they can be shown links to templates. These are set via the  SHARELATEX_NEW_PROJECT_TEMPLATE_LINKS variable
+
+`SHARELATEX_NEW_PROJECT_TEMPLATE_LINKS='[
+   {"name":"All Templates","url":"/templates/all"},
+   {"name":"All Categories","url":"/templates"},
+   {"name":"reports","url":"/templates/reports"},  {"name":"External","url":"https://somewhere.com/templates/reports"}
+]'`
+
+![ShareLaTeX Template Links](https://raw.githubusercontent.com/wiki/sharelatex/sharelatex/images/new_project_template_links.png)
