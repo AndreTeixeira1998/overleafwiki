@@ -8,4 +8,4 @@ $ docker run -d \
   quay.io/sharelatex/sharelatex-pro
 ```
 
-Basic configuration can be found on the [production install](https://github.com/sharelatex/sharelatex/wiki/Production-Installation-Instructions) page, with customizations such as [LDAP](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-LDAP-Config) and [Sandboxed Compiles](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-sandboxed-compiles) available in the Server Pro image.
+Basic configuration can be found on the [quickstart guide](https://github.com/sharelatex/sharelatex/wiki/Quick-Start-Guide) page, with customizations such as [LDAP](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-LDAP-Config) and [Sandboxed Compiles](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-sandboxed-compiles) available in the Server Pro image.
