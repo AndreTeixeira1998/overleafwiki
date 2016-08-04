@@ -7,3 +7,4 @@
 - Snappier loading of PDF pages
 - Error logs have human readable tips on what is wrong
 - Stop button when compiling pdfs
+- New texlive 2016 image for sandboxed compiles
