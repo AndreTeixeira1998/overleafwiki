@@ -8,3 +8,4 @@
 - Error logs have human readable tips on what is wrong
 - Stop button when compiling pdfs
 - New texlive 2016 image for sandboxed compiles
+- User management scripts have been moved to user:create-admin rather than the old create-admin-user
