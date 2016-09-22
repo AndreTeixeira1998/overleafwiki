@@ -5,7 +5,7 @@
 ### Migrations
 Data stored in Mongodb will be automatically migrated to the latest schemea when upgrading docker releases. **This can make downgrades impossible.** 
 
-It is to test the migration first. This can be done by copying the mongodb database and doing a test run against the copied data.
+It is easy to test the migration first. This can be done by copying the mongodb database and doing a test run against the copied data.
 
 ```
 db.copyDatabase(sharelatex,sharelatex-copy)
