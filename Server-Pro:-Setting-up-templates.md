@@ -19,7 +19,7 @@ switched to db sharelatex
 ```
 
 #### Templates on index page
-For the templates index page the templates are grouped by folder(s) which the user puts the projects in, e.g. Journals, Reports etc. To see all templates add /all to the url `/templates/all` which can also be used as the default url if you do not wish to use the folder for grouping.
+On the templates index page, /templatex, templates are nested under folders which the user puts the projects in, e.g. Journals, Reports etc. To see all templates add /all to the url `/templates/all` which can also be used as the default url if you do not wish to use the folder for grouping.
 
 
 #### Template links on project list page
