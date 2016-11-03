@@ -3,7 +3,7 @@
 Run the following command against your docker container to create your first user and make them an admin:
 
 ```
-$ docker exec sharelatex /bin/bash -c "cd /var/www/sharelatex/web; grunt create-admin-user --email joe@example.com"
+$ docker exec sharelatex /bin/bash -c "cd /var/www/sharelatex/web; grunt user:create-admin --email joe@example.com"
 
 ```
 
