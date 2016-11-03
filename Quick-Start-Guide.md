@@ -39,7 +39,7 @@ the package name.
 Use the following command to create your first user and make them an admin:
 
 ```
-$ docker exec sharelatex /bin/bash -c "cd /var/www/sharelatex/web; grunt create-admin-user --email joe@example.com"
+$ docker exec sharelatex /bin/bash -c "cd /var/www/sharelatex/web; grunt user:create-admin --email joe@example.com"
 ```
 
 This will create a user with the given email address if they don't already exist, and make them an admin user. You will be given a URL to visit where you can set the password for this user and log in for the first time.
