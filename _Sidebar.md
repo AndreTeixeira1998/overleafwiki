@@ -17,5 +17,6 @@
 - [Setup](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-setup)
 - [Sandboxed Compiles](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-sandboxed-compiles)
 - [LDAP](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-LDAP-Config)
+- [SAML](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-SAML-Config)
 - [Templates System](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-Setting-up-templates)
 - [Learn Pages](https://github.com/sharelatex/sharelatex/wiki/Adding--learn-pages)
