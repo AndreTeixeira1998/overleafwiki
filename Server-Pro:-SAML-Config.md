@@ -102,10 +102,10 @@ Internally, the [passport-saml](https://github.com/bergie/passport-saml) module 
 # Configuration Example
 
 ```
-SHARELATEX_SAML_ENTRYPOINT='https://your-saml-server.net/simplesaml/saml2/idp/SSOService.php'
-SHARELATEX_SAML_CALLBACK_URL='http://your-sharelatex-server.net/saml/callback'
-SHARELATEX_SAML_ISSUER='sharelatex-saml'
-SHARELATEX_SAML_IDENTITY_SERVICE_NAME='SAML'
+SHARELATEX_SAML_ENTRYPOINT=https://your-saml-server.net/simplesaml/saml2/idp/SSOService.php
+SHARELATEX_SAML_CALLBACK_URL=http://your-sharelatex-server.net/saml/callback
+SHARELATEX_SAML_ISSUER=sharelatex-saml
+SHARELATEX_SAML_IDENTITY_SERVICE_NAME=SAML
 ```
 
 
