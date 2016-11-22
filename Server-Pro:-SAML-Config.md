@@ -98,6 +98,10 @@ Internally, the [passport-saml](https://github.com/bergie/passport-saml) module 
 - `SHARELATEX_SAML_ADDITIONAL_LOGOUT_PARAMS`
     * JSON dictionary of additional query params to add to 'logout' requests
 
+# Using Http Post
+
+Note, if `SHARELATEX_SAML_AUTHN_REQUEST_BINDING` is set to `HTTP-POST`, then `SHARELATEX_SAML_SKIP_REQUEST_COMPRESSION` must also be set to `true`.
+
 
 # Configuration Example
 
