@@ -19,10 +19,10 @@ Internally, the [passport-saml](https://github.com/bergie/passport-saml) module 
 	  Alias: `SHARELATEX_SAML_EMAIL_FIELD_NAME`
 
 - `SHARELATEX_SAML_FIRST_NAME_FIELD`
-    * Name of the firstName field in user profile, default to 'cn'
+    * Name of the firstName field in user profile, default to 'givenName'
 
 - `SHARELATEX_SAML_LAST_NAME_FIELD`
-    * Name of the lastName field in user profile, default to 'sn'
+    * Name of the lastName field in user profile, default to 'lastName'
 
 - `SHARELATEX_SAML_ENTRYPOINT`
     * Entrypoint url for the SAML Identity Service
