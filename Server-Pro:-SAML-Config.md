@@ -21,6 +21,9 @@ Internally, the [passport-saml](https://github.com/bergie/passport-saml) module 
     * Callback URL for Sharelatex service. Should be the full URL of the `/saml/callback` path.
       Example: `http://sharelatex.example.com/saml/callback`
 
+- `SHARELATEX_SAML_EMAIL_FIELD_NAME`
+    * Name of the Email field in user profile, default to 'email'
+
 - `SHARELATEX_SAML_ISSUER`
     * The Issuer name
 
