@@ -14,15 +14,22 @@ Internally, the [passport-saml](https://github.com/bergie/passport-saml) module 
 - `SHARELATEX_SAML_IDENTITY_SERVICE_NAME`
     * Display name for the Identity service, used on the login page
 
+- `SHARELATEX_SAML_EMAIL_FIELD`
+    * Name of the Email field in user profile, default to 'nameID'.
+	  Alias: `SHARELATEX_SAML_EMAIL_FIELD_NAME`
+
+- `SHARELATEX_SAML_FIRST_NAME_FIELD`
+    * Name of the firstName field in user profile, default to 'cn'
+
+- `SHARELATEX_SAML_LAST_NAME_FIELD`
+    * Name of the lastName field in user profile, default to 'sn'
+
 - `SHARELATEX_SAML_ENTRYPOINT`
     * Entrypoint url for the SAML Identity Service
 	
 - `SHARELATEX_SAML_CALLBACK_URL`
     * Callback URL for Sharelatex service. Should be the full URL of the `/saml/callback` path.
       Example: `http://sharelatex.example.com/saml/callback`
-
-- `SHARELATEX_SAML_EMAIL_FIELD_NAME`
-    * Name of the Email field in user profile, default to 'email'
 
 - `SHARELATEX_SAML_ISSUER`
     * The Issuer name
