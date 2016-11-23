@@ -22,8 +22,7 @@ Internally, the [passport-saml](https://github.com/bergie/passport-saml) module 
       Example: `http://sharelatex.example.com/saml/callback`
 
 - `SHARELATEX_SAML_ISSUER`
-    * The Issuer name, referring to the sharelatex service provider.
-      Example: `sharelatex-saml`
+    * The Issuer name
 
 - `SHARELATEX_SAML_CERT`
     * (optional) Identity Provider certificate, used to validate incoming SAML messages.
