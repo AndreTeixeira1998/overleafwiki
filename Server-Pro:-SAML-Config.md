@@ -24,6 +24,10 @@ Internally, the [passport-saml](https://github.com/bergie/passport-saml) module 
 - `SHARELATEX_SAML_LAST_NAME_FIELD`
     * Name of the lastName field in user profile, default to 'lastName'
 
+- `SHARELATEX_SAML_UPDATE_USER_DETAILS_ON_LOGIN`
+    * If set to `true`, will update the user first_name and last_name field on each login,
+      and turn off the user-details form on `/user/settings` page.
+
 - `SHARELATEX_SAML_ENTRYPOINT`
     * Entrypoint url for the SAML Identity Service
 	
