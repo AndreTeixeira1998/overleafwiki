@@ -16,7 +16,3 @@ Sign up to the [mailing list](http://eepurl.com/bPWeiH) to get updates on ShareL
 
 ShareLaTeX offers a premium onsite version with extra security and admin features. [Click here to find out more!](https://www.sharelatex.com/university/onsite.html). This is a drop in replacement for the community version.
 
-
-### For Developers
-
-* [[Setting up a Development Environment]]
