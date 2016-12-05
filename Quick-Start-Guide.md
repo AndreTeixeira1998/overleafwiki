@@ -34,6 +34,8 @@ $ docker exec sharelatex tlmgr install scheme-full
 Or you can install packages manually as you need by replacing `scheme-full` by 
 the package name.
 
+Server Pro users have the option of [Sandbox Compiles](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-sandboxed-compiles) which will automatically pull down a full tex live image. 
+
 ### Creating and Managing users
 
 Use the following command to create your first user and make them an admin:
