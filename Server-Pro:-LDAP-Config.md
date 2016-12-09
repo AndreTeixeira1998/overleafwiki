@@ -119,7 +119,6 @@ At ShareLaTeX, we test the LDAP integration against a [test openldap server](htt
 --env SHARELATEX_LDAP_UPDATE_USER_DETAILS_ON_LOGIN='true'
 
 
-
 # as a docker env file
 
 SHARELATEX_LDAP_URL=ldap://ourldapserver:389
@@ -131,7 +130,6 @@ SHARELATEX_LDAP_EMAIL_ATT=mail
 SHARELATEX_LDAP_NAME_ATT=cn
 SHARELATEX_LDAP_LAST_NAME_ATT=sn
 SHARELATEX_LDAP_UPDATE_USER_DETAILS_ON_LOGIN=true
-
 ```
 
 
