@@ -10,6 +10,7 @@ Config
 
 Internally, ShareLaTeX LDAP uses the [passport-ldapauth](https://github.com/vesse/passport-ldapauth) library. Most of these configuration options are passed through to the `server` config object which is used to configure `passport-ldapauth`. If you are having issues configuring LDAP, it is worth reading the README for `passport-ldapauth` to get a feel for the configuration it expects.
 
+#### Environment Variables
 
 - `SHARELATEX_LDAP_URL` =
     Url of the LDAP server,
