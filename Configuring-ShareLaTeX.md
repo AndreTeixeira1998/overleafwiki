@@ -16,3 +16,4 @@ configured correctly!
 * `SHARELATEX_BEHIND_PROXY`: Set to true if running behind a proxy like nginx/apache allowing it to correctly detect the forwarded IP address
 * `SHARELATEX_SECURE_COOKIE`: Set this to something non-zero to use a secure cookie.
   Only use this if your ShareLaTeX instance is running behind a reverse proxy with SSL configured.
+* `SHARELATEX_RESTRICT_INVITES_TO_EXISTING_ACCOUNTS`: If set to `true`, will restrict project invites to email addresses which correspond with existing user accounts.
