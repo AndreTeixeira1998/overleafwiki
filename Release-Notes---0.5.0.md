@@ -19,6 +19,7 @@
 ## Server Pro 0.5.2
 
 - Correct an issue with LDAP configuration, requiring upgrade to a new configuration format.
+- Add an option to restrict project invites to existing user accounts
 
 
 ## Server Pro 0.5.3
