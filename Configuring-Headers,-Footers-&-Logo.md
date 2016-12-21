@@ -48,9 +48,6 @@ For the rare cases where you want to control the contents of that navigation-bar
 ]
 
 --env SHARELATEX_HEADER_NAV_LINKS='[{"text":"Register","url":"/register","only_when_logged_out":true},{"text":"LogIn","url":"/login","only_when_logged_out":true},{"text":"Projects","url":"/project","only_when_logged_in":true},{"text":"Account","only_when_logged_in":true,"dropdown":[{"user_email":true},{"divider":true},{"text":"AccountSettings","url":"/user/settings"},{"divider":true},{"text":"Logout","url":"/logout"}]}]'
-
-
-
 ```
 
 
