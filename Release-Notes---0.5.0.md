@@ -14,3 +14,18 @@
 - New SAML integration option, link ShareLaTeX to SAML/Shibboleth/etc.
 - Improved LDAP integration, no configuration changes required
 - Option to have user details updated on every login (LDAP and SAML) [SHARELATEX_LDAP_UPDATE_USER_DETAILS_ON_LOGIN](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-LDAP-Config#config)
+
+
+## Server Pro 0.5.2
+
+- Correct an issue with LDAP configuration, requiring upgrade to a new configuration format.
+
+
+## Server Pro 0.5.3
+
+- Fix a bug where the `/register` link in nav-bar was not being hidden when using an external auth source.
+
+
+## Server Pro 0.5.4
+
+- Fix an issue with [SHARELATEX_HEADER_NAV_LINKS](https://github.com/sharelatex/sharelatex/wiki/Configuring-Headers,-Footers-&-Logo) option
