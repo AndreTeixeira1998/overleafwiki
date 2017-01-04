@@ -9,6 +9,7 @@
 - [Server Requirements](https://github.com/sharelatex/sharelatex/wiki/Server-requirements)
 - [Backing up data](https://github.com/sharelatex/sharelatex/wiki/Backup-of-Data)
 - [Configuring Headers, Footers & Logo](https://github.com/sharelatex/sharelatex/wiki/Configuring-Headers,-Footers-&-Logo)
+- [Password Restrictions](https://github.com/sharelatex/sharelatex/wiki/Password-restrictions)
 - [F.A.Q](https://github.com/sharelatex/sharelatex/wiki/FAQ)
 
 
