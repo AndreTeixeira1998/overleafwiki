@@ -10,45 +10,34 @@ The nav title can be set with SHARELATEX_NAV_TITLE, this is used in the top left
 
 #### Header Navigation links
 
-By default, ShareLaTeX shows a dynamic navigation menu in the top-right of the screen, with links for Login, Register, etc... and a User Menu when the user is logged in.
+Extra navigation items can be added to the navigation header by setting the `SHARELATEX_HEADER_EXTRAS` option to a JSON array of objects. For example:
 
-For the rare cases where you want to control the contents of that navigation-bar, you can supply a JSON Array with the `SHARELATEX_HEADER_NAV_LINKS` option. The following example shows the default navigation in json form, and as it would be supplied as an environment option:
+    [
+      {
+        "text": "Some link",
+        "url": "http://example.com/somelink",
+        "class": "subdued",
+        "only_when_logged_out": true
+      },
+      {
+        "text": "Help",
+        "class": "subdued"
+        "dropdown": [
+          {
+            "text": "Documentation",
+            "url": "/learn"
+          },
+          {
+            "text": "Contact Admin",
+            "url": "http://example.com/contact"
+          }
+        ]
+      }
+    ]
 
-```
-[
-  {
-    "text": "Register",
-    "url": "/register",
-    "only_when_logged_out": true
-  }, {
-    "text": "Log In",
-    "url": "/login",
-    "only_when_logged_out": true
-  }, {
-    "text": "Projects",
-    "url": "/project",
-    "only_when_logged_in": true
-  }, {
-    "text": "Account",
-    "only_when_logged_in": true,
-    "dropdown": [{
-      "user_email": true
-    },{
-      "divider": true
-    }, {
-      "text": "Account Settings",
-      "url": "/user/settings"
-    }, {
-      "divider": true
-    }, {
-      "text": "Log out",
-      "url": "/logout"
-    }]
-  }
-]
+    # As an --env option
+    --env SHARELATEX_HEADER_NAV_LINKS='[{"text":"Somelink","url":"http://example.com/somelink","class":"subdued","only_when_logged_out":true},{"text":"Help","class":"subdued""dropdown":[{"text":"Documentation","url":"/learn"},{"text":"ContactAdmin","url":"http://example.com/contact"}]}]'
 
---env SHARELATEX_HEADER_NAV_LINKS='[{"text":"Register","url":"/register","only_when_logged_out":true},{"text":"LogIn","url":"/login","only_when_logged_out":true},{"text":"Projects","url":"/project","only_when_logged_in":true},{"text":"Account","only_when_logged_in":true,"dropdown":[{"user_email":true},{"divider":true},{"text":"AccountSettings","url":"/user/settings"},{"divider":true},{"text":"Logout","url":"/logout"}]}]'
-```
 
 
 #### Logo
