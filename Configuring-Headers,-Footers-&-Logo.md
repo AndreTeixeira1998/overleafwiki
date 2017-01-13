@@ -39,7 +39,6 @@ Extra navigation items can be added to the navigation header by setting the `SHA
     --env SHARELATEX_HEADER_NAV_LINKS='[{"text":"Somelink","url":"http://example.com/somelink","class":"subdued","only_when_logged_out":true},{"text":"Help","class":"subdued""dropdown":[{"text":"Documentation","url":"/learn"},{"text":"ContactAdmin","url":"http://example.com/contact"}]}]'
 
 
-
 #### Logo
 You can set a custom logo rather than using text with the variable SHARELATEX_HEADER_IMAGE_URL this points to an externally hosted image
 
