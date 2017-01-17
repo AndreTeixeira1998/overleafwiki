@@ -12,6 +12,7 @@
 - [Password Restrictions](https://github.com/sharelatex/sharelatex/wiki/Password-restrictions)
 - [i18n Languages](https://github.com/sharelatex/sharelatex/wiki/i18n-Languages)
 - [Logging](https://github.com/sharelatex/sharelatex/wiki/Log-files)
+- [Common Config Options](https://github.com/sharelatex/sharelatex/wiki/Configuring-ShareLaTeX)
 - [F.A.Q](https://github.com/sharelatex/sharelatex/wiki/FAQ)
 
 
