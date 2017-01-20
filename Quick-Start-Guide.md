@@ -12,6 +12,8 @@ $ docker run -d \
 
 This will download the ShareLaTeX image and start it running in the background on port 5000. You should be able to access it at `http://localhost:5000/` assuming it can talk to the required mongodb & redis instances.
 
+If you are using ShareLaTeX Server Pro the image name will be [slightly different](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-setup).
+
 ### Using a compose file
 
 It is also possible to use our [docker-compose.yml](https://github.com/sharelatex/sharelatex/blob/master/docker-compose.yml) file to get up and running. In addition to installing and starting ShareLaTeX it also setup redis and mongodb, with an option of https. The docker compose file also allows for a nice interface for passing settings to ShareLaTeX.
