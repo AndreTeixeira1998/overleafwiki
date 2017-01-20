@@ -23,7 +23,7 @@ We recommend a debian based operating system such as Ubuntu for ShareLaTeX, this
 
 ### Storing Data & Backups
 
-The directory you mount at /var/lib/sharelatex is where ShareLaTeX will store all its data, this is what you will need to backup, in addition to mongodb & redis. The example mounts it from  ~/sharelatex_data but it can be anywhere accessible from the docker image. 
+The directory you mount at /var/lib/sharelatex is where ShareLaTeX will store data such as images, this is what you will need to backup, in addition to mongodb & redis. The example mounts it from  ~/sharelatex_data but it can be anywhere accessible from the docker image. 
 
 ### LaTeX environment
 
