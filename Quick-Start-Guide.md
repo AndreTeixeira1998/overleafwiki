@@ -16,7 +16,7 @@ If you are using ShareLaTeX Server Pro the image name will be [slightly differen
 
 ### Using a compose file
 
-It is also possible to use our [docker-compose.yml](https://github.com/sharelatex/sharelatex/blob/master/docker-compose.yml) file to get up and running. In addition to installing and starting ShareLaTeX it also setup redis and mongodb, with an option of https. The docker compose file also allows for a nice interface for passing settings to ShareLaTeX.
+It is also recommended to use our [docker-compose.yml](https://github.com/sharelatex/sharelatex/blob/master/docker-compose.yml) file to get up and running. In addition to installing and starting ShareLaTeX it also setup redis and mongodb, with an option of https. The docker compose file also allows for a nice interface for passing settings to ShareLaTeX.
 
 ### Operating systems
 We recommend a debian based operating system such as Ubuntu for ShareLaTeX, this is what the software has been developed using and most people use when running ShareLaTeX.
