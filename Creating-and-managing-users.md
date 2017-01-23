@@ -1,6 +1,6 @@
 ## Creating the first admin user
 
-Once the sharelatex instance is running, visit the `/launchpad` page to set up your first admin user. 
+Once the sharelatex instance is running, visit the `/launchpad` page to set up your first admin user.
 
 
 Alternatively, run the following command against your docker container to create your first user and make them an admin:
