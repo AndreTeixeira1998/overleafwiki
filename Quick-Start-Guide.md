@@ -38,9 +38,12 @@ the package name.
 
 Server Pro users have the option of [Sandbox Compiles](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-sandboxed-compiles) which will automatically pull down a full tex live image. 
 
+
 ### Creating and Managing users
 
-Use the following command to create your first user and make them an admin:
+Once the sharelatex instance is running, visit the `/launchpad` page to set up your first admin user. 
+
+Altenatively, use the following command to create your first user and make them an admin:
 
 ```
 $ docker exec sharelatex /bin/bash -c "cd /var/www/sharelatex; grunt user:create-admin --email joe@example.com"
