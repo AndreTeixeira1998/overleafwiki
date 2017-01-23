@@ -1,6 +1,9 @@
 ## Creating the first admin user
 
-Run the following command against your docker container to create your first user and make them an admin:
+Once the sharelatex instance is running, visit the `/launchpad` page to set up your first admin user. 
+
+
+Alternatively, run the following command against your docker container to create your first user and make them an admin:
 
 ```
 $ docker exec sharelatex /bin/bash -c "cd /var/www/sharelatex; grunt user:create-admin --email joe@example.com"
