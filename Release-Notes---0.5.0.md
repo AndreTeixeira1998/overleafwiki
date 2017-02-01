@@ -30,3 +30,10 @@
 ## Server Pro 0.5.4
 
 - Fix an issue with [SHARELATEX_HEADER_NAV_LINKS](https://github.com/sharelatex/sharelatex/wiki/Configuring-Headers,-Footers-&-Logo) option
+
+
+## Server Pro 0.5.8
+
+- New Launchpad page to help with first setup: (`/launchpad`)
+- Fixed an issue with project invites and Saml
+- Various bugfixes
