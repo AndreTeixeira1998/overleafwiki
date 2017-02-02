@@ -37,3 +37,8 @@
 - New Launchpad page to help with first setup: (`/launchpad`)
 - Fixed an issue with project invites and Saml
 - Various bugfixes
+
+## Server Pro 0.5.9
+
+- Fixed an issue where logins were not being counted for LDAP users
+- Internal improvements to page rendering
