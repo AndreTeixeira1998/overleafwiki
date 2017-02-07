@@ -109,7 +109,6 @@ services:
             SHARELATEX_APP_NAME: 'My ShareLaTeX'
             SHARELATEX_SITE_URL: "http://sharelatex.mydomain.com"
             SHARELATEX_NAV_TITLE: "Our ShareLaTeX Instance"
-            # SHARELATEX_HEADER_IMAGE_URL: "http://somewhere.com/mylogo.png"
             SHARELATEX_ADMIN_EMAIL: "support@example.com"
             ...
             SANDBOXED_COMPILES: "true"
