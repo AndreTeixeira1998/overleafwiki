@@ -96,7 +96,6 @@ services:
         depends_on:
             - mongo
             - redis
-        privileged: true
         ports:
             - 80:80
         links:
