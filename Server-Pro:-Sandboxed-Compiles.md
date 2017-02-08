@@ -30,7 +30,7 @@ Sandboxed compiles work by running docker inside of docker and 2 levels of auFS 
 
 ## Sibling Containers
 
-Running Docker inside Docker can be hard to set up, and in many cases simply can't be made to work well. For those situations, we can use Sandboxed Compiles with "Sibling Containers" instead of the normal docker-in-docker setup.
+Running Docker inside Docker can be hard to set up, and in many cases simply can't be made to work well. For those situations, we can use Sandboxed Compiles with "Sibling Containers" instead of the normal docker-in-docker setup. (From version 0.5.11 onwards)
 
 With Sibling Containers, the Sharelatex container doesn't start the compiler containers inside of itself, instead it communicates with the Host docker instance to spawn the compilers on the Host, alongside of itself.
 
