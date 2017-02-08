@@ -2,8 +2,9 @@ ShareLaTeX Server Pro comes with the option to run compiles in a secured sandbox
 
 ##### Enable
 
-To enable this set `--env SANDBOXED_COMPILES='true' --privileged` when creating the container
+To enable this set `--env SANDBOXED_COMPILES='true' --privileged` when creating the container.
 
+You will also need to set `--privileged` flag to `true` for the sharelatex container.
 
 Once the docker container is running it will take **10-15 minutes for compiles to work** while secure version of texlive is installed in the background
 
@@ -39,6 +40,7 @@ To make this work we need to do a few things:
 - Set the `SANDBOXED_COMPILES_SIBLING_CONTAINERS` environment variable to `true`
 - Set the `SANDBOXED_COMPILES_HOST_DIR` to the path on the host where the compile files will be located
 
+Notably, the `privileged` flag is not required when using sibling containers.
 
 ### Enabling Sibling Containers
 
