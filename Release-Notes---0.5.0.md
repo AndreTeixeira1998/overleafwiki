@@ -42,3 +42,8 @@
 
 - Fixed an issue where logins were not being counted for LDAP users
 - Internal improvements to page rendering
+
+## Server Pro 0.5.11
+
+- Sandboxed Compiles with [Sibling Containers](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-sandboxed-compiles#sibling-containers)
+- Various bugfixes
