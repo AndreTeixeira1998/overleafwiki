@@ -64,7 +64,7 @@ not just those of non-admin users.
 ## Step 2: Enable the LDAP Module
 
 Once the users have updated their email addresses, we can activate the LDAP module by [setting
-the appropriate environment variables](Server-Pro:-LDAP-Config) and restarting the ShareLaTeX system.
+the appropriate environment variables](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-LDAP-Config) and restarting the ShareLaTeX system.
 This will replace the default authentication mechanism with LDAP. Users who want to log in will be
 greeted by an LDAP credentials form, instead of the default Login form.
 
