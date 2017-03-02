@@ -95,7 +95,7 @@ in from now on.
 
 ### Step 2: Disable the LDAP Module
 
-We start by [unsetting the LDAP configuration options](), and restarting the ShareLaTeX service.
+We start by [unsetting the LDAP configuration options](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-LDAP-Config), and restarting the ShareLaTeX service.
 
 
 ### Step 3: Ask Users To Perform a Password-Reset
