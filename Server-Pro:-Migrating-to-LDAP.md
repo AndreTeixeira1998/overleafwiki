@@ -78,3 +78,33 @@ access to all her existing projects.
 If, for whatever reason, we need to roll back to using Native Auth, then it's as easy as
 removing the LDAP-related configuration and restarting the ShareLaTeX service. The users old
 email/password will still be there for them to log in with.
+
+
+## Going the Other Way: Migrating from LDAP to Native Auth
+
+Let's imagine that we've been running our ShareLaTeX system with LDAP auth from the start, but
+we now want to migrate to using ShareLaTeX's default "Native Auth" system.
+
+
+### Step 1: Ensure All Users Can Use Their LDAP Email
+
+Each user account will currently be associated with an email address,
+the email from their LDAP profile. This will be the email address the user will use to log
+in from now on.
+
+
+### Step 2: Disable the LDAP Module
+
+We start by [unsetting the LDAP configuration options](), and restarting the ShareLaTeX service.
+
+
+### Step 3: Ask Users To Perform a Password-Reset
+
+When a user tries to log in now, they will be greeted by an email/password form, not the LDAP
+credentials form they would have been familiar with. Each user should now click
+the "Forgot your password?" link below the Login form. The user should fill in their email address
+(again, the email from their LDAP profile), and submit the Password-Reset form.
+
+The user should then receive an email with a link with which they can set a new password.
+
+The user can then log in using their email address and this new password.
