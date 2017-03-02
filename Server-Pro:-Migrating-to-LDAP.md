@@ -74,3 +74,7 @@ greeted by an LDAP credentials form, instead of the default Login form.
 If Alice were to go to this new login page and enter her LDAP credentials, she will be logged in
 to her existing account (because the email address matches the address in LDAP), and will have
 access to all her existing projects, and so forth.
+
+If, for whatever reason, we need to roll back to using Native Auth, then it's as easy as
+removing the LDAP-related configuration and restarting the ShareLaTeX service. The users old
+email/password will still be there for them to log in with.
