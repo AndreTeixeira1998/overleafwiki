@@ -6,7 +6,7 @@ systems like [LDAP](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-LD
 
 This document will use LDAP as an example, but the same procedure applies for SAML too.
 
-## Native -> LDAP Example
+## Native => LDAP Example
 
 By way of example, let's imagine we've been managing a ShareLaTeX system for a while, and we have
 two users, Alice and Bob. Their ShareLaTeX accounts look something like this:
