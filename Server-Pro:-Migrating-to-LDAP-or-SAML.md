@@ -1,7 +1,12 @@
-# Server Pro: Migrating to LDAP
+# Server Pro: Migrating to LDAP or SAML
 
 This document describes a process for migrating an existing ShareLaTeX Server Pro
-system from Native Auth (the default auth system) to LDAP authentication.
+system from Native Auth (the default auth system) to use an external authentication
+systems like [LDAP](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-LDAP-Config) or [SAML](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-SAML-Config).
+
+This document will use LDAP as an example, but the same procedure applies for SAML too.
+
+## Native -> LDAP Example
 
 By way of example, let's imagine we've been managing a ShareLaTeX system for a while, and we have
 two users, Alice and Bob. Their ShareLaTeX accounts look something like this:
