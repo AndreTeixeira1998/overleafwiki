@@ -51,7 +51,7 @@ To summarize: Alice currently logs in by typing `'alice@example.com'` and her Sh
 but we want her to be able to log in by typing `'alicejones'` and her LDAP password instead.
 
 
-## Step 1: Instruct Users to Update Their Emails
+### Step 1: Instruct Users to Update Their Emails
 
 ShareLaTeX user accounts are tied to email addresses, regardless of the
 authentication system being used, so the first step is to ask all of our users
@@ -66,7 +66,7 @@ update our own ShareLaTeX email address too, as this change applies to all user 
 not just those of non-admin users.
 
 
-## Step 2: Enable the LDAP Module
+### Step 2: Enable the LDAP Module
 
 Once the users have updated their email addresses, we can activate the LDAP module by [setting
 the appropriate environment variables](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-LDAP-Config) and restarting the ShareLaTeX system.
@@ -74,7 +74,7 @@ This will replace the default authentication mechanism with LDAP. Users who want
 greeted by an LDAP credentials form, instead of the default Login form.
 
 
-## Step 3: Users Log In Via LDAP
+### Step 3: Users Log In Via LDAP
 
 If Alice were to go to this new login page and enter her LDAP credentials, she will be logged in
 to her existing account (because the email address matches the address in LDAP), and will have
