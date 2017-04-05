@@ -17,3 +17,6 @@ configured correctly!
 * `SHARELATEX_SECURE_COOKIE`: Set this to something non-zero to use a secure cookie.
   Only use this if your ShareLaTeX instance is running behind a reverse proxy with SSL configured.
 * `SHARELATEX_RESTRICT_INVITES_TO_EXISTING_ACCOUNTS`: If set to `true`, will restrict project invites to email addresses which correspond with existing user accounts.
+
+
+* `SHARELATEX_ALLOW_PUBLIC_ACCESS`: If set to `'true'`, will allow non-authenticated users to view the site. The default is `false`, which means non-authenticated users will be unconditionally redirected to the login page when they try to view any part of the site. Note, setting this option does not disable authentication or security in any way. This option is necessary if your users intend to make their projects public and have non-authenticated users view those projects.
