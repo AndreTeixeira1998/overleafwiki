@@ -8,7 +8,7 @@ Data stored in Mongodb will be automatically migrated to the latest schemea when
 It is easy to test the migration first. This can be done by copying the mongodb database and doing a test run against the copied data.
 
 ```
-db.copyDatabase(sharelatex,sharelatex-copy)
+db.copyDatabase("sharelatex","sharelatex-copy","172.17.0.1")
 # start the container up pointing at the new db
 --env SHARELATEX_MONGO_URL=mongodb://dockerhost/sharelatex-copy
 ```
