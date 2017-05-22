@@ -1,3 +1,13 @@
+# Server Pro 0.6.2
+
+- Fix bug with login redirect flow
+- Enable Track Changes for all users
+- Various bug fixes
+- Protect user settings pages with "Sudo Mode",
+  Users will be prompted for their password
+  when accessing the settings page.
+
+
 # Server Pro 0.6.1
 
 - Handle errors in History feature
