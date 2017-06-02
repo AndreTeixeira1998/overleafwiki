@@ -1,3 +1,10 @@
+# Server Pro 0.6.3
+
+- Fix bug in Sibling Containers feature
+- Basic auto-complete for `\ref{}` commands
+- Assorted bug fixes
+
+
 # Server Pro 0.6.2
 
 - Fix bug with login redirect flow
