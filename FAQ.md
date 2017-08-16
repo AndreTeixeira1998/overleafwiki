@@ -19,3 +19,6 @@ Uploads are limited to 50mb per entity.
 
 ## What is a public project?
 A public project is a project which has had all authentication removed from it so anyone can access it. It will not show up on other users project lists.
+
+## Is reference search and mendeley available?
+The advance reference features  in ShareLaTeX are not currently available. We do have plans to add them into server pro in the future but they require increased hosting requirements and complexity so have held back from including them to date.
