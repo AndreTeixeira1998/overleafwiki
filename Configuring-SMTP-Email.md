@@ -12,6 +12,10 @@ Email can be configured via environmental vars passed to the docker container
 * `SHARELATEX_EMAIL_AWS_SES_ACCESS_KEY_ID`: If using AWS SES the access key
 * `SHARELATEX_EMAIL_AWS_SES_SECRET_KEY`: If using AWS SES the secret key
 
+##### AWS SES with Instance Roles
+* `SHARELATEX_EMAIL_DRIVER`: When this is set to `ses`, the email system will rely on
+  the configured instance roles to send email.
+
 ##### SMTP
 * `SHARELATEX_EMAIL_SMTP_HOST`: SMTP Host, needs to be accessible from the docker container
 * `SHARELATEX_EMAIL_SMTP_PORT`: SMTP port to use
