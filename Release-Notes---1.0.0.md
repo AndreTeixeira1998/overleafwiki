@@ -5,5 +5,5 @@
 - Improved Autocomplete
 - Improved Spellcheck
 - Fixed an issue with creating templates
-- Enable SES email configuration via Instance Roles
+- Enable SES email configuration via [Instance Roles](https://github.com/sharelatex/sharelatex/wiki/Configuring-SMTP-Email#aws-ses-with-instance-roles)
 - Various bug-fixes and improvements
