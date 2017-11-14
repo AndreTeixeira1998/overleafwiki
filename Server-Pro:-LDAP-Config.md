@@ -26,7 +26,7 @@ Internally, ShareLaTeX LDAP uses the [passport-ldapauth](https://github.com/vess
   If your LDAP server has a first and last name then this can be used in conjuction with `SHARELATEX_LDAP_NAME_ATT`
 
 - `SHARELATEX_LDAP_PLACEHOLDER` =
-  The placeholder for the login form, defaults to 'email@example.com'
+  The placeholder for the login form, defaults to 'Username'
 
 - `SHARELATEX_LDAP_UPDATE_USER_DETAILS_ON_LOGIN` =
   If set to 'true', will update the user first_name and last_name field on each login, and turn off the user-details form on /user/settings page.
