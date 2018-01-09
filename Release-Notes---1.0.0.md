@@ -1,3 +1,12 @@
+# Server Pro 1.0.2
+
+- A new [auto-compile](https://www.sharelatex.com/blog/2017/10/31/auto-compiling-in-sharelatex.html) option, keep the pdf view in sync while you type 
+- A new [link-sharing](https://www.sharelatex.com/blog/2017/11/27/integration-update-link-sharing.html) feature, replacing the public/private permissions system
+- New administration interface
+- Package-aware Autocomplete
+- Various bug fixes and performance improvements
+
+
 # Server Pro 1.0.0
 
 - Upgraded all internal services to latest node-js runtime
