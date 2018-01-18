@@ -20,3 +20,5 @@ configured correctly!
 
 
 * `SHARELATEX_ALLOW_PUBLIC_ACCESS`: If set to `'true'`, will allow non-authenticated users to view the site. The default is `false`, which means non-authenticated users will be unconditionally redirected to the login page when they try to view any part of the site. Note, setting this option does not disable authentication or security in any way. This option is necessary if your users intend to make their projects public and have non-authenticated users view those projects.
+
+* `SHARELATEX_ALLOW_ANONYMOUS_READ_AND_WRITE_SHARING`: If set to `'true'`, will allow anonymous users to view and edit projects shared via the new [link-sharing](https://www.sharelatex.com/blog/2017/11/27/integration-update-link-sharing.html) feature.
