@@ -1,3 +1,9 @@
+# Server Pro 1.1.0
+
+- Update texlive to 2017.1
+- Use `https` for the learn-wiki proxy by default
+
+
 # Server Pro 1.0.2
 
 - A new [auto-compile](https://www.sharelatex.com/blog/2017/10/31/auto-compiling-in-sharelatex.html) option, keep the pdf view in sync while you type 
