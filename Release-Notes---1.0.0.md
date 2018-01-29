@@ -1,7 +1,7 @@
 # Server Pro 1.2.0
 
 - Use both 2016 and 2017 versions of texlive, for backward compatibility
-- 
+
 
 # Server Pro 1.1.0
 
