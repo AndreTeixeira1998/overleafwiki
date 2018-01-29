@@ -6,7 +6,7 @@ Please look at the [Quick Start Guide](https://github.com/sharelatex/sharelatex/
 Sign up to the [mailing list](http://eepurl.com/bPWeiH) to get updates on ShareLaTeX Releases and development
 
 ### Release Notes
-* [[Release Notes - 1.0.0]]
+* [[Release Notes - 1.x.x]]
 * [[Release Notes - 0.6.0]]
 * [[Release Notes - 0.5.0]]
 * [[Release Notes - 0.4.0]]
