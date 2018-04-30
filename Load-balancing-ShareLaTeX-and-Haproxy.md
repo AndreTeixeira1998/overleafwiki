@@ -90,3 +90,7 @@ This is an example haproxy config. It routes the same project compiles to the sa
 		mode http
 		stats auth user:pass
 		stats uri /
+
+## HAProxy UI
+
+The haproxy UI is found on port `2811`, example: `http://sl-lin-stag-lb2-0:2811/`
