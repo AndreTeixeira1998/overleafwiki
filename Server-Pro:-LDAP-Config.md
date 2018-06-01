@@ -14,7 +14,7 @@ Internally, ShareLaTeX LDAP uses the [passport-ldapauth](https://github.com/vess
 
 - `SHARELATEX_LDAP_URL` =
     Url of the LDAP server,
-    E.g. 'ldaps://ldap.example.com:663'
+    E.g. 'ldaps://ldap.example.com:636'
 
 - `SHARELATEX_LDAP_EMAIL_ATT` =
   The email attribute the LDAP server will return, defaults to 'mail'
