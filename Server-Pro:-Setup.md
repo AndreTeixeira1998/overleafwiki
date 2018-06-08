@@ -1,11 +1,8 @@
-The ShareLaTeX Server Pro image is used and configured in the same way as the open source ShareLaTeX Docker image. Instead use the image `quay.io/sharelatex/sharelatex-pro.`
+The ShareLaTeX Server Pro image is used and configured in the same way as the open source ShareLaTeX Docker image. Instead use the image `quay.io/sharelatex/sharelatex-pro.` in your [docker-compose.yml](https://github.com/sharelatex/sharelatex/blob/master/docker-compose.yml).
+
 
 ```
-$ docker run -d \
-  -v ~/sharelatex_data:/var/lib/sharelatex \
-  -p 5000:80 \
-  --name=sharelatex \
-  quay.io/sharelatex/sharelatex-pro
+$ docker pull quay.io/sharelatex/sharelatex-pro:latest
 ```
 
 Basic configuration can be found on the [quickstart guide](https://github.com/sharelatex/sharelatex/wiki/Quick-Start-Guide) page, with customizations such as [LDAP](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-LDAP-Config) and [Sandboxed Compiles](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-sandboxed-compiles) available in the Server Pro image.
