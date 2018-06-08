@@ -3,7 +3,7 @@
 ShareLaTeX is installed run via [Docker](https://www.docker.com/), the following command will pull down the latest version:
 
 ```
-$ docker pull  sharelatex/sharelatex
+$ docker pull sharelatex/sharelatex
 ```
 
 If you are using ShareLaTeX Server Pro the image name will be [slightly different](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-setup).
