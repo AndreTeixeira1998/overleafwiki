@@ -6,7 +6,6 @@
 - [SSL & Nginx reverse proxy](https://github.com/sharelatex/sharelatex/wiki/HTTPS-reverse-proxy-using-Nginx)
 - [Load Balancing with HAproxy](https://github.com/sharelatex/sharelatex/wiki/Load-balancing-ShareLaTeX-and-Haproxy)
 - [Database & Dependencies](https://github.com/sharelatex/sharelatex/wiki/Dependencies)
-- [Server Requirements](https://github.com/sharelatex/sharelatex/wiki/Server-requirements)
 - [Backing up data](https://github.com/sharelatex/sharelatex/wiki/Backup-of-Data)
 - [Configuring Headers, Footers & Logo](https://github.com/sharelatex/sharelatex/wiki/Configuring-Headers,-Footers-&-Logo)
 - [Password Restrictions](https://github.com/sharelatex/sharelatex/wiki/Password-restrictions)
