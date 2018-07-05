@@ -103,7 +103,4 @@ $ apt-get install latexmk
 
 ## Installing ShareLaTeX
 
-Now that you've got all the dependencies installed, have a look at either:
-
-* [[Production Installation Instructions]], or
-* [[Setting up a Development Environment]]
+Now that you've got all the dependencies installed, have a look at the [[Quickstart Guide]].
