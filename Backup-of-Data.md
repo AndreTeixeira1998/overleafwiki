@@ -13,7 +13,7 @@ Backups need to be on a separate server to the one ShareLaTeX running on, ideall
 mongodb comes with a tool called [mongodump](https://docs.mongodb.com/manual/reference/program/mongodump/) which will export the dataset in a safe backup format. 
 
 ## Filesystem data 
-The path where your files are stored is specified in your settings file. This might be: `/var/lib/sharelatex`, copying this directory recursively is needed. rsync is a good tool for the job.
+The path where your files are stored is specified in your settings file. This might be: `/var/lib/sharelatex`, copying this directory recursively is needed. rsync is a good tool for the job. 
 
 ## Redis
-To backup redis you can copy the RDB to a secure location
+Redis stored short term data so is the least important thing to backup, however it is still worth doing. To backup redis you can copy the RDB file to a secure location.
