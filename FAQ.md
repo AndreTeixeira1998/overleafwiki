@@ -9,6 +9,13 @@ ShareLaTeX Server Pro's admin panel has the option to delete users, it can also 
 
 `db.users.remove({email:"delete_this_user@gmail.com"})`
 
+If you are running MongoDB under docker, you can get a mongo shell with:
+```
+docker-compose exec mongo bash
+mongo
+use sharelatex
+```
+
 ## Maximum size of projects in ShareLaTeX
 * The maximum amount of editable data in ShareLaTeX is 5mb, this does not include images or other large non editable files.
 * The maximum number of entities is 2000 per project (folder, docs, images)
