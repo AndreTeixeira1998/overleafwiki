@@ -43,3 +43,11 @@ This Nginx config is a good foundation for setting up ShareLaTeX with HTTPS, it 
 			proxy_send_timeout 3m;
 		}
 	}
+
+## Configuration for ShareLaTeX to Run with SSL
+
+You should also set the following environment variables if you are running ShareLaTeX behind a proxy with SSL:
+```
+SHARELATEX_SECURE_COOKIE=true
+SHARELATEX_BEHIND_PROXY=true
+``` 
