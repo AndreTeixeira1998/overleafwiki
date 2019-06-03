@@ -67,6 +67,23 @@ docker run -d \
   quay.io/sharelatex/sharelatex-pro
 ```
 
+
+It is important that the docker socket is owned by a group with the group id of `999` to match the group id used inside of the sharelatex container. 
+
+
+Check the group, in this case `docker`
+```
+> ls -l /var/run/docker.sock
+srw-rw---- 1 root docker 0 May 31 08:57 /var/run/docker.sock
+```
+
+See the groupid of the docker group is 999
+```
+> getent group docker
+docker:x:999:
+```
+
+
 ### Mapping the host compile directory
 
 The sharelatex container writes it's data to a directory which is mounted from the host. For this example, let's say that this mount is `/data/sharelatex_data:/var/lib/sharelatex`.
@@ -116,6 +133,4 @@ services:
             SANDBOXED_COMPILES_SIBLING_CONTAINERS: "true"    #### IMPORTANT
             SANDBOXED_COMPILES_HOST_DIR: "/data/sharelatex_data/data/compiles"  #### IMPORTANT
 ```
-
-
 
