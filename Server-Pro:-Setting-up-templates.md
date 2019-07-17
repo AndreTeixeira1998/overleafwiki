@@ -1,24 +1,16 @@
 ### Setting up the Templates User
 
-A single ShareLaTeX user is responsible to publishing the curated list templates which are visable of /templates. To set this use the env var `SHARELATEX_TEMPLATES_USER_ID`
+A single ShareLaTeX user is responsible to publishing the curated list templates which are visible on /templates. To set this use the env var `SHARELATEX_TEMPLATES_USER_ID`
 
 `--env SHARELATEX_TEMPLATES_USER_ID=56a8865231faeb5f07d69959`
 
-To obtain the user id of the user you wish to publish public templates with you can either go via the admin panel or via Mongo.
+To obtain the user id of the user you wish to publish public templates, log in as the admin user you created when you set up Server Pro, and then go to `Admin` > `Manage Users`:
 
-#### Admin panel
-![User if shown in admin panel](https://raw.githubusercontent.com/wiki/sharelatex/sharelatex/user_id_in_admin_panel.png)
+![Admin - Manage Users](https://raw.githubusercontent.com/wiki/overleaf/overleaf/admin_manage_users.png)
 
+Then find the user by their email address and click through to their user admin page. There you will find the ID:
 
-#### Via mongo
-```
-> mongo
-> use sharelatex
-switched to db sharelatex
-> db.users.find({email:"sally@sharelatex.com"}, {_id:1})
-{ "_id" : ObjectId("55d5d16ad0904571699304d4") }
->
-```
+![User ID shown in admin panel](https://raw.githubusercontent.com/wiki/overleaf/overleaf/user_id_in_admin_panel.png)
 
 ### Publishing Templates
 
@@ -26,7 +18,9 @@ For each template you want to upload:
 
 1. Log in as the templates user.
 2. As the templates user, create a project containing the template's source code and make sure it compiles.
-3. In the editor's left hand menu, choose Publish as Template.
+3. In the editor's left hand menu, choose Publish as Template:
+
+   ![Publish as Template in the editor menu](https://raw.githubusercontent.com/wiki/overleaf/overleaf/publish_as_template.png)
 
 All templates published this way from the templates user's account will be listed as templates.
 
@@ -45,4 +39,4 @@ When a user creates a new project they can be shown links to templates. These ar
    {"name":"reports","url":"/templates/reports"},  {"name":"External","url":"https://somewhere.com/templates/reports"}
 ]'`
 
-![ShareLaTeX Template Links](https://raw.githubusercontent.com/wiki/sharelatex/sharelatex/images/new_project_template_links.png)
+![ShareLaTeX Template Links](https://raw.githubusercontent.com/wiki/overleaf/overleaf/images/new_project_template_links.png)
