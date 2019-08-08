@@ -35,8 +35,8 @@ This is an example haproxy config. It routes the same project compiles to the sa
 
 		retries 3
 		timeout connect 5000ms
-		timeout client 50000ms
-		timeout server 50000ms
+		timeout client 50000ms # use 185000ms for Server Pro
+		timeout server 50000ms # use 185000ms for Server Pro
 
 	frontend incoming_http
 		bind *:80
