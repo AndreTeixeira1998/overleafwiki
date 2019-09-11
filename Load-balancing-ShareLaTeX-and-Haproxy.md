@@ -1,13 +1,13 @@
 ShareLaTeX can be easily run on multiple hosts to scale horizontally. The main things to keep in mind are:
 
-* All containers need to point to the same Mongodb, Redis and disk stores
+* All containers need to point to the same MongoDB, Redis and disk stores
 * A users should have sticky sessions to the same container
-* the ShareLaTeX Session Secret needs to be set the same
+* The ShareLaTeX Session Secret needs to be set the same
 
 
 ## Setting same Session Secret & Behind Proxy
 
-The sessionSecret needs to be set the same on all docker instances. By default a random string is generated for you. The environment variable SHARELATEX_SESSION_SECRET can be used to set this. 
+The sessionSecret needs to be set the same on all docker instances. By default a random string is generated for you. The environment variable `SHARELATEX_SESSION_SECRET` can be used to set this. 
 
 `--env SHARELATEX_SESSION_SECRET=something_random`
 
@@ -18,9 +18,9 @@ The sessionSecret needs to be set the same on all docker instances. By default a
 	
 
 
-## Haproxy
+## HAProxy
 
-This is an example haproxy config. It routes the same project compiles to the same ShareLaTeX instance, this will improve compile performance due to the caching on disk.
+This is an example HAProxy config. It routes the same project compiles to the same ShareLaTeX instance, this will improve compile performance due to the caching on disk.
 
 	global
 		log 127.0.0.1   local0
@@ -93,4 +93,4 @@ This is an example haproxy config. It routes the same project compiles to the sa
 
 ## HAProxy UI
 
-The haproxy UI is found on port `2811`, example: `http://sl-lin-stag-lb2-0:2811/`
+The HAProxy UI is found on port `2811`, example: `http://sl-lin-stag-lb2-0:2811/`
