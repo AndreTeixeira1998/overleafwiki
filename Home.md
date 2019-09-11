@@ -3,7 +3,7 @@
 Please look at the [Quick Start Guide](https://github.com/sharelatex/sharelatex/wiki/Quick-Start-Guide) to get up and running.
 
 ### Keeping up to date
-Sign up to the [mailing list](http://eepurl.com/bPWeiH) to get updates on ShareLaTeX Releases and development
+Sign up to the [mailing list](https://mailchi.mp/overleaf.com/community-edition-and-server-pro) to get updates on ShareLaTeX Releases and development
 
 ### Release Notes
 * [[Release Notes - 1.0.0]]
