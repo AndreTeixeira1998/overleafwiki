@@ -10,27 +10,26 @@ If you are using ShareLaTeX Server Pro the image name will be [slightly differen
 
 ### Using a compose file
 
-It is recommended to use our [docker-compose.yml](https://github.com/sharelatex/sharelatex/blob/master/docker-compose.yml) file to get up and running. In addition to installing and starting ShareLaTeX it also setup redis and mongodb, with an option of https. The docker compose file also allows for a nice interface for passing settings to ShareLaTeX.
+It is recommended to use our [docker-compose.yml](https://github.com/overleaf/overleaf/blob/master/docker-compose.yml) file to get up and running. In addition to installing and starting ShareLaTeX it also setup [redis](https://redis.io/) and [mongodb](https://www.mongodb.com/), with an option of HTTPS via [nginx proxy](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/). The docker compose file also allows for a nice interface for passing environment variables to ShareLaTeX.
 
 ### Operating systems
 We recommend a debian based operating system such as Ubuntu for ShareLaTeX, this is what the software has been developed using and most people use when running ShareLaTeX.
 
 ### Storing Data & Backups
 
-The directory you mount at /var/lib/sharelatex is where ShareLaTeX will store data such as images, this is what you will need to backup, in addition to mongodb & redis. The example mounts it from  ~/sharelatex_data but it can be anywhere accessible from the docker image. 
+The directory you mount at `/var/lib/sharelatex` is where ShareLaTeX will store data such as images, this is what you will need to backup, in addition to mongodb & redis. The example mounts it from  `~/sharelatex_data`t but it can be anywhere accessible from the docker image. 
 
 ### LaTeX environment
 
-To save bandwidth, the ShareLaTeX image only comes with a minimal install of TeXLive. To upgrade to a complete TeXLive installation, run the following command:
+To save bandwidth, the ShareLaTeX image only comes with a minimal install of [TeXLive](https://www.tug.org/texlive/). To upgrade to a complete TeXLive installation, run the installation script in the ShareLaTeX container with the following command:
 
-```
+```bash
 $ docker exec sharelatex tlmgr install scheme-full
 ```
 
-Or you can install packages manually as you need by replacing `scheme-full` by 
-the package name.
+Alternatively you can install packages manually as you need by replacing `scheme-full` with the package name.
 
-Server Pro users have the option of [Sandbox Compiles](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-sandboxed-compiles) which will automatically pull down a full tex live image. 
+Server Pro users have the option of using [Sandbox Compiles](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-sandboxed-compiles), which will automatically pull down a full TexLive image. 
 
 
 ### Creating and Managing users
@@ -47,5 +46,5 @@ This will create a user with the given email address if they don't already exist
 
 **Creating normal users**
 
-Once you are logged in as an admin user, you can visit `/admin/register` on your ShareLaTeX instance and create a new users. If you have an email backend configured in your settings file, the new users will be sent an email with a URL to set their password. If not, you will have to distribute the password reset URLs manually. These are shown when you create a user.
+Once you are logged in as an admin user, you can visit `/admin/register` on your ShareLaTeX instance and create new users. If you have an [email backend configured](https://github.com/overleaf/overleaf/wiki/Configuring-SMTP-Email) the new users will be sent an email with a URL to set their password. If not, you will have to distribute the password reset URLs manually. These are shown when you create a user.
 
