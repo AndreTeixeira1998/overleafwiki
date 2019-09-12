@@ -2,7 +2,13 @@
 
 ShareLaTeX Server Pro comes with the option to run compiles in a secured sandbox environment for enterprise security. It does this by running every project in its own secured docker environment. 
 
-##### Enable
+In previous versions of Server Pro (<2.0) running Docker inside Docker was one of the supported options. This can be hard to set up, and in many cases simply can't be made to work well. For those situations, we can use Sandboxed Compiles with "Sibling Containers" instead of the normal docker-in-docker setup (from version 0.5.11 onwards). 
+
+With Sibling Containers, the Sharelatex container doesn't start the compiler containers inside of itself, instead it communicates with the Host docker instance to spawn the compilers on the Host, alongside of itself.
+
+Please [check the manual for instructions](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-sandboxed-compiles) to setup Sibling Containers.
+
+### Enable
 
 To enable this set `--env DOCKER_RUNNER='true' --env SANDBOXED_COMPILES='true' --privileged` when creating the container.
 
@@ -11,7 +17,7 @@ You will also need to set `--privileged` flag to `true` for the sharelatex conta
 Once the docker container is running it will take **10-15 minutes for compiles to work** while secure version of texlive is installed in the background
 
 
-##### Potential issues
+#### Potential issues
 
 There is a debian kernel bug on 3.16 with auFS. Where you may see errors such as the following:
 
