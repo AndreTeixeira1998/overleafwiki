@@ -22,7 +22,7 @@ use sharelatex
 * The maximum size of an non editable entity is 50mb
 
 ## Maximum size of uploads
-Uploads are limited to 50mb per entity.
+Check [Learn resources](https://www.overleaf.com/learn/how-to/Uploading_a_project#Limitations_on_Uploads) for information on limits.
 
 ## What is a public project?
 A public project is a project which has had all authentication removed from it so anyone can access it. It will not show up on other users project lists.
