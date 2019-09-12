@@ -82,7 +82,7 @@ In this example, note the following:
 - `SANDBOXED_COMPILES_SIBLING_CONTAINERS` set to "true"
 - `SANDBOXED_COMPILES_HOST_DIR` set to "/data/sharelatex_data/data/compiles", the place on the host where the compile data will be written
 
-```
+```yaml
 version: '2'
 services:
     sharelatex:
