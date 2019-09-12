@@ -23,4 +23,4 @@
 - [LDAP](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-LDAP-Config)
 - [SAML](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-SAML-Config)
 - [Templates System](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-Setting-up-templates)
-- [Learn Pages](https://github.com/sharelatex/sharelatex/wiki/Adding--learn-pages)
+- [Learn Pages](https://github.com/overleaf/overleaf/wiki/Server-Pro:-Adding--learn-pages)
