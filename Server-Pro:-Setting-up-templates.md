@@ -1,6 +1,6 @@
 ### Setting up the Templates User
 
-A single ShareLaTeX user is responsible to publishing the curated list templates which are visible on /templates. To set this use the env var `SHARELATEX_TEMPLATES_USER_ID`
+A single Overleaf user is responsible to publishing the curated list templates which are visible on /templates. To set this use the env var `SHARELATEX_TEMPLATES_USER_ID`
 
 `--env SHARELATEX_TEMPLATES_USER_ID=56a8865231faeb5f07d69959`
 
