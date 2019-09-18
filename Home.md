@@ -1,3 +1,7 @@
+This is the home of Overleaf Community Edition and [Overleaf Server Pro](https://www.overleaf.com/for/enterprises) developer documentation.
+
+Please note there are still many references using Overleaf's former name (ShareLaTeX)  throughout the documentation. These are mainly internal settings, configuration parameters or environment variables that hasn't been updated yet.
+
 ### Setup
 
 Please look at the [Quick Start Guide](https://github.com/overleaf/overleaf/wiki/Quick-Start-Guide) to get up and running.
