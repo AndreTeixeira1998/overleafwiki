@@ -1,6 +1,6 @@
-ShareLaTeX has many dependencies.
+Overleaf has many dependencies.
 
-You should install ShareLaTeX with [Docker](https://www.docker.com/) and docker-compose, so they will be installed automatically.
+You should install Overleaf with [Docker](https://www.docker.com/) and docker-compose, so they will be installed automatically.
 
 Please follow the [Docker installation instructions](https://docs.docker.com/install/) for your platform to install Docker and docker-compose, if they are not already installed.
 
