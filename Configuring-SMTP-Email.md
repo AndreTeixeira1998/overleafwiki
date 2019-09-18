@@ -1,4 +1,4 @@
-ShareLaTeX only supports SMTP and AWS SES. If an e-mail server is enabled on your localhost, and it's listening to local connections, using SMTP will also work.
+Overleaf only supports SMTP and AWS SES. If an e-mail server is enabled on your localhost, and it's listening to local connections, using SMTP will also work.
 
 
 ## Configure
