@@ -1,14 +1,14 @@
-Sharelatex LDAP
+Overleaf LDAP
 ==============
 Available in ShareLaTeX Server Pro is the ability to use a LDAP server to manage users. It is also possible to use with Active Directory systems.
 
-Note, versions of ShareLaTeX Server Pro prior to v0.5.1 used a different LDAP configuration format, see [Server Pro: LDAP Config (legacy)](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-LDAP-Config-(legacy)) for more details.
+Note, versions of Overleaf Server Pro prior to v0.5.1 used a different LDAP configuration format, see [Server Pro: LDAP Config (legacy)](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-LDAP-Config-(legacy)) for more details.
 
 
 Config
 ---
 
-Internally, ShareLaTeX LDAP uses the [passport-ldapauth](https://github.com/vesse/passport-ldapauth) library. Most of these configuration options are passed through to the `server` config object which is used to configure `passport-ldapauth`. If you are having issues configuring LDAP, it is worth reading the README for `passport-ldapauth` to get a feel for the configuration it expects.
+Internally, Overleaf LDAP uses the [passport-ldapauth](https://github.com/vesse/passport-ldapauth) library. Most of these configuration options are passed through to the `server` config object which is used to configure `passport-ldapauth`. If you are having issues configuring LDAP, it is worth reading the README for `passport-ldapauth` to get a feel for the configuration it expects.
 
 #### Environment Variables
 
@@ -103,7 +103,7 @@ Internally, ShareLaTeX LDAP uses the [passport-ldapauth](https://github.com/vess
 LDAP Config Example
 ----------------
 
-At ShareLaTeX, we test the LDAP integration against a [test openldap server](https://github.com/rroemhild/docker-test-openldap). The following is an example of a working configuration:
+At Overleaf, we test the LDAP integration against a [test openldap server](https://github.com/rroemhild/docker-test-openldap). The following is an example of a working configuration:
 
 ```
 # passed as docker parameters
