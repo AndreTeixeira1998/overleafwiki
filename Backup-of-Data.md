@@ -1,13 +1,13 @@
 There are 3 things which need to be backed up
 
 * Mongodb
-* ShareLaTeX Filesystem data
+* Overleaf Filesystem data
 * Redis
 
 It is not essential to backup Redis, it is only used for short term data.
 
 ## Backup Tips
-Backups need to be on a separate server to the one ShareLaTeX running on, ideally in a different location entirely. Running multiple instances of mongodb is also not a backup as it will not prevent against corruption.
+Backups need to be on a separate server to the one Overleaf running on, ideally in a different location entirely. Running multiple instances of mongodb is also not a backup as it will not prevent against corruption.
 
 ## Mongodb
 mongodb comes with a tool called [mongodump](https://docs.mongodb.com/manual/reference/program/mongodump/) which will export the dataset in a safe backup format. 
