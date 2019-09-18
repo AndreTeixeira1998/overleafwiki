@@ -1,10 +1,10 @@
-## Setup & Managing ShareLaTeX
+## Setup & Managing Overleaf
 - [Quickstart Guide](https://github.com/sharelatex/sharelatex/wiki/Quick-Start-Guide)
 - [Upgrading Containers](https://github.com/sharelatex/sharelatex/wiki/Upgrading-Containers)
 - [Creating and managing users](https://github.com/sharelatex/sharelatex/wiki/Creating-and-managing-users)
 - [Configuring Email](https://github.com/sharelatex/sharelatex/wiki/Configuring-SMTP-Email)
 - [SSL & Nginx reverse proxy](https://github.com/sharelatex/sharelatex/wiki/HTTPS-reverse-proxy-using-Nginx)
-- [Load Balancing with HAproxy](https://github.com/sharelatex/sharelatex/wiki/Load-balancing-ShareLaTeX-and-Haproxy)
+- [Load Balancing with HAproxy](https://github.com/sharelatex/sharelatex/wiki/Load-balancing-Overleaf-and-Haproxy)
 - [Database & Dependencies](https://github.com/sharelatex/sharelatex/wiki/Dependencies)
 - [Backing up data](https://github.com/sharelatex/sharelatex/wiki/Backup-of-Data)
 - [Configuring Headers, Footers & Logo](https://github.com/sharelatex/sharelatex/wiki/Configuring-Headers,-Footers-&-Logo)
@@ -12,7 +12,7 @@
 - [i18n Languages](https://github.com/sharelatex/sharelatex/wiki/i18n-Languages)
 - [Logging](https://github.com/sharelatex/sharelatex/wiki/Log-files)
 - [Hardware Requirements](https://github.com/sharelatex/sharelatex/wiki/Hardware-Requirements)
-- [Common Config Options](https://github.com/sharelatex/sharelatex/wiki/Configuring-ShareLaTeX)
+- [Common Config Options](https://github.com/sharelatex/sharelatex/wiki/Configuring-Overleaf)
 - [F.A.Q](https://github.com/sharelatex/sharelatex/wiki/FAQ)
 
 
