@@ -1,4 +1,4 @@
-ShareLaTeX Server Pro comes with the option to run compiles in a secured sandbox environment for enterprise security. It does this by running every project in its own secured docker environment. 
+Overleaf Server Pro comes with the option to run compiles in a secured sandbox environment for enterprise security. It does this by running every project in its own secured docker environment. 
 
 > ⚠️ **Warning**: previous versions of Server Pro supported a docker-in-Docker setup for Sandboxed Compiles. This is no longer supported starting at v2.0. Original instructions to setup docker-in-docker [are available here](https://github.com/overleaf/overleaf/wiki/Docker-on-Docker-compiles)
 
@@ -7,11 +7,11 @@ ShareLaTeX Server Pro comes with the option to run compiles in a secured sandbox
 
 Running Docker inside Docker can be hard to set up, and in many cases simply can't be made to work well. For those situations, we use instead Sandboxed Compiles with "Sibling Containers" instead of the a docker-in-docker setup. (From version 0.5.11 onwards)
 
-With Sibling Containers, the Sharelatex container doesn't start the compiler containers inside of itself, instead it communicates with the Host docker instance to spawn the compilers on the Host, alongside of itself.
+With Sibling Containers, the Overleaf container doesn't start the compiler containers inside of itself, instead it communicates with the Host docker instance to spawn the compilers on the Host, alongside of itself.
 
 To make this work we need to do a few things:
 
-- Mount the host docker socket into the sharelatex container
+- Mount the host docker socket into the Overleaf container
 - Set the `SANDBOXED_COMPILES_SIBLING_CONTAINERS` environment variable to `true`
 - Set the `SANDBOXED_COMPILES_HOST_DIR` to the path on the host where the compile files will be located
 
@@ -32,7 +32,7 @@ Example:
 
 ### Mounting the docker socket
 
-We need to mount the host docker socket (usually `/var/run/docker.sock`) into the Sharelatex container.
+We need to mount the host docker socket (usually `/var/run/docker.sock`) into the Overleaf container.
 In this example, note the addition of an extra `-v` option with `/var/run/docker.sock:/var/run/docker.sock`.
 
 ```
@@ -45,7 +45,7 @@ docker run -d \
 ```
 
 
-It is important that the docker socket is owned by a group with the group id of `999` to match the group id used inside of the sharelatex container. 
+It is important that the docker socket is owned by a group with the group id of `999` to match the group id used inside of the Overleaf container. 
 
 
 Check the group, in this case `docker`
@@ -63,9 +63,9 @@ docker:x:999:
 
 ### Mapping the host compile directory
 
-The sharelatex container writes its data to a directory which is mounted from the host. For this example, let's say that this mount is `/data/sharelatex_data:/var/lib/sharelatex`.
+The Overleaf container writes its data to a directory which is mounted from the host. For this example, let's say that this mount is `/data/sharelatex_data:/var/lib/sharelatex`.
 
-Within that directory, there will be a `data/compiles` directory. Because the compiler containers will be spawned on the Host (not inside the sharelatex container), we need to specify the full path to that directory on the host:
+Within that directory, there will be a `data/compiles` directory. Because the compiler containers will be spawned on the Host (not inside the Overleaf container), we need to specify the full path to that directory on the host:
 
 ```
 --env SANDBOXED_COMPILES_HOST_DIR='/data/sharelatex_data/data/compiles'
@@ -76,7 +76,7 @@ Within that directory, there will be a `data/compiles` directory. Because the co
 
 In this example, note the following:
 
-- the docker socket volume mounted into the sharelatex container
+- the docker socket volume mounted into the Overleaf container
 - `DOCKER_RUNNER` set to "true"
 - `SANDBOXED_COMPILES` set to "true"
 - `SANDBOXED_COMPILES_SIBLING_CONTAINERS` set to "true"
