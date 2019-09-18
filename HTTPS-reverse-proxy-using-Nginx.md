@@ -1,9 +1,9 @@
-To run a ShareLaTeX Docker image on HTTPS a reverse proxy will need to be added in front. We Recommend [Nginx](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/). [HAproxy](http://www.haproxy.org/) 1.5+ would also work. Apache seems to struggle with websockets so we don't recommend it.
+To run a Overleaf Docker image on HTTPS a reverse proxy will need to be added in front. We Recommend [Nginx](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/). [HAproxy](http://www.haproxy.org/) 1.5+ would also work. Apache seems to struggle with websockets so we don't recommend it.
 
 
 ## Example Nginx SSL config
 
-This Nginx config is a good foundation for setting up ShareLaTeX with HTTPS. It will deal with websockets correctly and has some sane defaults. 
+This Nginx config is a good foundation for setting up Overleaf with HTTPS. It will deal with websockets correctly and has some sane defaults. 
 
 It assumes Nginx is running on the same host as the docker container. If this is not the case change the value of `proxy_pass` accordingly.
 
@@ -47,9 +47,9 @@ server {
 }
 ```
 
-## Configuration for ShareLaTeX to Run with SSL
+## Configuration for Overleaf to Run with SSL
 
-You should also set the following environment variables if you are running ShareLaTeX behind a proxy with SSL:
+You should also set the following environment variables if you are running Overleaf behind a proxy with SSL:
 ```
 SHARELATEX_SECURE_COOKIE=true
 SHARELATEX_BEHIND_PROXY=true
