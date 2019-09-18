@@ -1,4 +1,4 @@
-It is possible to enforce password restrictions on users when using the ShareLaTeX login system, not a SSO option such as LDAP.
+It is possible to enforce password restrictions on users when using the Overleaf login system, not a SSO option such as LDAP.
 
 * `SHARELATEX_PASSWORD_VALIDATION_MIN_LENGTH`: The minimum length required
 
