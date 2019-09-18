@@ -1,4 +1,4 @@
-ShareLaTeX has been translated into multiple languages. 
+Overleaf has been translated into multiple languages. 
 
 The language can be set via `SHARELATEX_SITE_LANGUAGE` with one of the following options:
 
@@ -23,7 +23,7 @@ Some of these are more complete than others, we always endeavour to have all sup
 
 
 ## Multi Language support
-ShareLaTeX can support multiple languages per container. This is done via different domains configured to respond in a set language using the env variable `SHARELATEX_LANG_DOMAIN_MAPPING` with an escaped JSON string.
+Overleaf can support multiple languages per container. This is done via different domains configured to respond in a set language using the env variable `SHARELATEX_LANG_DOMAIN_MAPPING` with an escaped JSON string.
 
     SHARELATEX_LANG_DOMAIN_MAPPING = '
         {
