@@ -1,12 +1,12 @@
-# Sharelatex SAML
+# Overleaf SAML
 
-Available in ShareLaTeX Server Pro is the ability to use a SAML server to manage users.
+Available in Overleaf Server Pro is the ability to use a SAML server to manage users.
 
 
 
 # Configuration
 
-In Sharelatex Server Pro, the SAML auth module is configured via environment variables.
+In Overleaf Server Pro, the SAML auth module is configured via environment variables.
 
 Internally, the [passport-saml](https://github.com/bergie/passport-saml) module is used, and these config values are passed along to `passport-saml`.
 
@@ -32,7 +32,7 @@ Internally, the [passport-saml](https://github.com/bergie/passport-saml) module 
     * Entrypoint url for the SAML Identity Service
 	
 - `SHARELATEX_SAML_CALLBACK_URL`
-    * Callback URL for Sharelatex service. Should be the full URL of the `/saml/callback` path.
+    * Callback URL for Overleaf service. Should be the full URL of the `/saml/callback` path.
       Example: `http://sharelatex.example.com/saml/callback`
 
 - `SHARELATEX_SAML_ISSUER`
@@ -132,7 +132,7 @@ SHARELATEX_SAML_LAST_NAME_FIELD=l_name
 
 # Metadata for the Identity Provider
 
-The Identity Provider will need to be configured to recognize the ShareLaTeX server as a "Service Provider". Consult the documentation for your SAML server for instructions on how to do this.
+The Identity Provider will need to be configured to recognize the Overleaf server as a "Service Provider". Consult the documentation for your SAML server for instructions on how to do this.
 
 Here is an example of appropriate Service Provider metadata, note the `AssertionConsumerService.Location`, `EntityDescriptor.entityID` and `EntityDescriptor.ID` properties, and set as appropriate.
 
