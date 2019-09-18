@@ -1,8 +1,8 @@
-ShareLaTeX can be easily run on multiple hosts to scale horizontally. The main things to keep in mind are:
+Overleaf can be easily run on multiple hosts to scale horizontally. The main things to keep in mind are:
 
 * All containers need to point to the same MongoDB, Redis and disk stores
 * A users should have sticky sessions to the same container
-* The ShareLaTeX Session Secret needs to be set the same
+* The Overleaf Session Secret needs to be set the same
 
 
 ## Setting same Session Secret & Behind Proxy
@@ -20,7 +20,7 @@ The sessionSecret needs to be set the same on all docker instances. By default a
 
 ## HAProxy
 
-This is an example HAProxy config. It routes the same project compiles to the same ShareLaTeX instance, this will improve compile performance due to the caching on disk.
+This is an example HAProxy config. It routes the same project compiles to the same Overleaf instance, this will improve compile performance due to the caching on disk.
 
 	global
 		log 127.0.0.1   local0
