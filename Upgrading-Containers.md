@@ -14,7 +14,7 @@ $ docker-compose exec mongo mongo
 > db.copyDatabase("sharelatex","sharelatex-copy")
 ```
 
-Update `docker-compose.yml` to point to the new DB and restart ShareLaTeX:
+Update `docker-compose.yml` to point to the new DB and restart Overleaf:
 
 ```
 SHARELATEX_MONGO_URL=mongodb://dockerhost/sharelatex-copy
@@ -31,14 +31,14 @@ Once the editor is closed the only way to open is to restart the docker containe
 
 ### Upgrade process
 
-To use the new docker container stop and remove the currently running ShareLaTeX container:
+To use the new docker container stop and remove the currently running Overleaf container:
 
 ```
 $ docker stop sharelatex
 $ docker rm sharelatex
 ```
 
-Start a new container with the updated version of ShareLaTeX (to upgrade to version 1.2.0 for example):
+Start a new container with the updated version of Sharelatex/Overleaf (to upgrade to version 1.2.0 for example):
 
 ```
 $ docker run -d -v ~/sharelatex_data:/var/lib/sharelatex --name=sharelatex sharelatex/sharelatex:1.2.0
