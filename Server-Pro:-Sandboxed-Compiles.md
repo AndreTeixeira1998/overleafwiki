@@ -121,6 +121,8 @@ Server Pro uses two environment variables to determine which texlive images to u
 - `TEX_LIVE_DOCKER_IMAGE`: name of the default image for new projects
 - `ALL_TEX_LIVE_DOCKER_IMAGES`: comma-separated list of all images in use
 
+When the Server Pro instance starts up, it will pull all of the images listed in `ALL_TEX_LIVE_DOCKER_IMAGES`. 
+
 The current default is `quay.io/sharelatex/texlive-full:2017.1`, but you can override these values in the `environment` section of the docker-compose file.
 
 Here's an example where we default to texlive 2018 for new projects, and keep both 2018 and 2017 in use for older projects:
