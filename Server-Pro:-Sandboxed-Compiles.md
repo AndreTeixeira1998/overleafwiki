@@ -114,3 +114,18 @@ services:
             SANDBOXED_COMPILES_HOST_DIR: "/data/sharelatex_data/data/compiles"  #### IMPORTANT
 ```
 
+### Changing the TexLive Image
+
+Server Pro uses two environment variables to determine which texlive images to use for sandboxed compiles: 
+
+- `TEX_LIVE_DOCKER_IMAGE`: name of the default image for new projects
+- `ALL_TEX_LIVE_DOCKER_IMAGES`: comma-separated list of all images in use
+
+The current default is `quay.io/sharelatex/texlive-full:2017.1`, but you can override these values in the `environment` section of the docker-compose file.
+
+Here's an example where we default to texlive 2018 for new projects, and keep both 2018 and 2017 in use for older projects:
+
+```
+    TEX_LIVE_DOCKER_IMAGE: "quay.io/sharelatex/texlive-full:2018.1"
+    ALL_TEX_LIVE_DOCKER_IMAGES: "quay.io/sharelatex/texlive-full:2018.1,quay.io/sharelatex/texlive-full:2017.1"
+```
