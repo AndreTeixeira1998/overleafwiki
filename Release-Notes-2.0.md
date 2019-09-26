@@ -42,8 +42,12 @@ And for Server Pro:
 
 - `DOCKER_RUNNER`: set to `'true'` when enabling Sandboxed Compiles with sibling containers. See the updated documentation on [Sandboxed Compiles](https://github.com/overleaf/overleaf/wiki/Server-Pro:-sandboxed-compiles).
 
-## Changes to Sibling Containers
 
+## Changes to Sandboxed Compiles
+
+We've made some changes to the way the [Sanboxed Compiles](https://github.com/overleaf/overleaf/wiki/Server-Pro:-sandboxed-compiles) work. In previous versions the administrators often needed to fiddle with user and group permissions on the docker socket to get Sibling Containers to work. In this release we've changed all that so it's handled automatically inside the Server Pro container, so it should just work in the majority of cases.
+
+From this release onward we will no longer support the old "Docker-In-Docker" method of sandboxed compiles, as it has become more and more difficult to get this to work as time goes on. We strongly encourage admins to consider the newer Sibling Containers method as an alternative.
 
 
 ## Upgrade Notes
