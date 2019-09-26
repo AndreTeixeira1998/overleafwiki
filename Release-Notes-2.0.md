@@ -8,9 +8,7 @@ A lot has changed in the last few years, with ShareLaTeX [joining forces with Ov
 
 ## New Features
 
-This release brings Community Edition and Server Pro up to date with the cloud based version of [Overleaf](https://overleaf.com). A lot has changed since the last release, with too many bug fixes and small improvements to count. 
-
-Some highlights include:
+This release brings Community Edition and Server Pro up to date with the cloud based version of [Overleaf](https://overleaf.com). A lot has changed since the last release, with too many bug fixes and small improvements to count, but here's a few highlights:
 
 - A brand new user interface theme
 - Improved project dashboard
@@ -26,7 +24,6 @@ This release of Server Pro includes a few new premium features:
 - Rich Text mode: write your document like a rich-text document, backed by nice clean LaTeX
 - Improved Sandboxed Compiles: no more fiddling with group permissions (see below)
 - Improved Admin Interface: now you can inspect the state of a project from the Admin page, plus many more small improvements
-
 
 
 ## Changes to the Docker-Compose file format
@@ -51,9 +48,9 @@ We've made some changes to the way the [Sanboxed Compiles](https://github.com/ov
 From this release onward we will no longer support the old "Docker-In-Docker" method of sandboxed compiles, as it has become more and more difficult to get this to work as time goes on. We strongly encourage admins to consider the newer Sibling Containers method as an alternative.
 
 
-## Upgrade Notes
+### Upgrading TexLive
 
-
+You can now opt in to a new version of TexLive. The default is still TexLive 2017, but you can find instructions on how to get TexLive 2018 here: https://github.com/overleaf/overleaf/wiki/Server-Pro:-sandboxed-compiles#changing-the-texlive-image
 
 
 ### Database Migrations
