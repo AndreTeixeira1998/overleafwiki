@@ -1,8 +1,5 @@
 # Server Pro v2 Release Notes
 
-** Note: These are provisional release notes for the upcoming 2.0 release**
-
-
 A lot has changed in the last few years, with ShareLaTeX [joining forces with Overleaf](https://www.overleaf.com/blog/518-exciting-news-sharelatex-is-joining-overleaf) to create one incredible authoring platform. Now that the merge is complete it's time to release a new version of ~ShareLaTeX~ Overleaf Community Edition and Server Pro!
 
 
