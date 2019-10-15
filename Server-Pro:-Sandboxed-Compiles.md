@@ -32,6 +32,8 @@ Example:
 
 ### Mounting the docker socket
 
+> This point is only relevant to Server Pro v1.x. Starting with [Server Pro 2.0.0](https://github.com/overleaf/overleaf/wiki/Release-Notes-2.0#changes-to-sandboxed-compiles) fiddling with group and user permissions is not needed.
+
 We need to mount the host docker socket (usually `/var/run/docker.sock`) into the Overleaf container.
 In this example, note the addition of an extra `-v` option with `/var/run/docker.sock:/var/run/docker.sock`.
 
