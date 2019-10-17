@@ -6,7 +6,7 @@ Once the Overleaf instance is running, visit the `/launchpad` page to set up you
 Alternatively, run the following command against your docker container to create your first user and make them an admin:
 
 ```
-$ docker exec sharelatex /bin/bash -c "cd /var/www/sharelatex; grunt user:create-admin --email joe@example.com"
+$ docker exec sharelatex /bin/bash -c "cd /var/www/sharelatex; grunt user:create-admin --email=joe@example.com"
 
 ```
 
