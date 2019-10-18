@@ -1,4 +1,9 @@
-# Server Pro v2 Release Notes
+# Server Pro 2.0.1
+
+- Fixed ["Delete Forever" button has no effect](https://github.com/overleaf/overleaf/issues/644).
+- Fixed [admin creation using CLI](https://github.com/overleaf/overleaf/issues/647).
+
+# Server Pro 2.0.0
 
 A lot has changed in the last few years, with ShareLaTeX [joining forces with Overleaf](https://www.overleaf.com/blog/518-exciting-news-sharelatex-is-joining-overleaf) to create one incredible authoring platform. Now that the merge is complete it's time to release a new version of ~ShareLaTeX~ Overleaf Community Edition and Server Pro!
 
