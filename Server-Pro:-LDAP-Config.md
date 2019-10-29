@@ -1,6 +1,6 @@
 Overleaf LDAP
 ==============
-Available in ShareLaTeX Server Pro is the ability to use a LDAP server to manage users. It is also possible to use with Active Directory systems.
+Available in Overleaf Server Pro is the ability to use a LDAP server to manage users. It is also possible to use with Active Directory systems.
 
 Note, versions of Overleaf Server Pro prior to v0.5.1 used a different LDAP configuration format, see [Server Pro: LDAP Config (legacy)](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-LDAP-Config-(legacy)) for more details.
 
@@ -133,9 +133,13 @@ SHARELATEX_LDAP_UPDATE_USER_DETAILS_ON_LOGIN=true
 ```
 
 
-### Testing config & Debugging
+### Testing, Config & Debugging
 
-As LDAP is heavily configurable and flexable by nature it can be a good starting point to have a working example with ldapsearch or even used by another applicaiton.
+After bootstrapping Server Pro for the first time, an existing LDAP user must be given admin permissions visiting `/launchpad` page (or [via CLI](https://github.com/overleaf/overleaf/wiki/Creating-and-managing-users#creating-the-first-admin-user), but in this case ignoring password confirmation). 
+
+LDAP users will appear in Overleaf Admin Panel once they log in first time with their initial credentials.
+
+As LDAP is heavily configurable and flexable by nature it can be a good starting point to have a working example with ldapsearch or even used by another application.
 
 ```
 #!bash
