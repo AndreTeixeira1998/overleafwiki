@@ -1,7 +1,11 @@
 # Server Pro 2.0.1
 
+### Bugfixes
 - Fixed ["Delete Forever" button has no effect](https://github.com/overleaf/overleaf/issues/644).
 - Fixed [admin creation using CLI](https://github.com/overleaf/overleaf/issues/647).
+
+### Known issues
+ - SyncTeX not working on Sandboxed Compiles [(see workaround instructions)](https://github.com/overleaf/overleaf/wiki/Fixing-SyncTeX-errors-in-Server-Pro-2.0.0-and-2.0.1).
 
 # Server Pro 2.0.0
 
