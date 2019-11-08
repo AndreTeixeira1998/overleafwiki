@@ -14,6 +14,7 @@ To make this work we need to do a few things:
 - Mount the host docker socket into the Overleaf container
 - Set the `SANDBOXED_COMPILES_SIBLING_CONTAINERS` environment variable to `true`
 - Set the `SANDBOXED_COMPILES_HOST_DIR` to the path on the host where the compile files will be located
+- Set the `SYNCTEX_BIN_HOST_PATH` to the path on the host where the `synctex` executable will be located
 
 Notably, the `privileged` flag is not required when using sibling containers.
 
@@ -125,6 +126,7 @@ services:
             SANDBOXED_COMPILES: "true"
             SANDBOXED_COMPILES_SIBLING_CONTAINERS: "true"    #### IMPORTANT
             SANDBOXED_COMPILES_HOST_DIR: "/data/sharelatex_data/data/compiles"  #### IMPORTANT
+            SYNCTEX_BIN_HOST_PATH: "/data/sharelatex_data/bin"  #### IMPORTANT
 ```
 
 ### Changing the TexLive Image
