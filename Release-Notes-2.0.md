@@ -19,7 +19,7 @@ This release brings Community Edition and Server Pro up to date with the cloud b
 - A brand new user interface theme
 - Improved project dashboard
 - A new interface for creating (or uploading) files in a project
-- Linked Files: import a file from another project, or from a URL
+- Linked Files: import a file from another project.
 - Improved History view
 
 
