@@ -1,16 +1,19 @@
-Overleaf has many dependencies.
+Overleaf currently support the following versions of dependencies:
 
-You should install Overleaf with [Docker](https://www.docker.com/) and docker-compose, so they will be installed automatically.
+- **Docker 19.03**
+- **MongoDB 3.6**
+- **Redis 5.0**
 
-Please follow the [Docker installation instructions](https://docs.docker.com/install/) for your platform to install Docker and docker-compose, if they are not already installed.
+`docker-compose` is generally installed with Docker.
 
-You should have a recent, supported version of Docker, at least version 17.09.
+MongoDB and Redis are automatically pulled by `docker-compose` when running Overleaf CE or Server Pro, unless configured to use a different installation.
 
-If docker is installed correctly, you should be able to run these commands without error:
+Once docker is installed correctly, you should be able to run these commands without error:
+
 ```
 docker --version
 docker-compose --version
 docker ps
 ```
 
-Once you have Docker and docker-composed installed, have a look at the [[Quick Start Guide]] to download the `docker-compose.yml` file for ShareLaTeX.
+Once you have Docker and `docker-compose` successfully installed, have a look at the [[Quick Start Guide]] to download the `docker-compose.yml` and start Overleaf.
