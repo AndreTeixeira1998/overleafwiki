@@ -1,5 +1,6 @@
 The Overleaf Server Pro image is used and configured in the same way as the open source Overleaf Docker image. Instead use the image `quay.io/sharelatex/sharelatex-pro` in your [docker-compose.yml](https://github.com/sharelatex/sharelatex/blob/master/docker-compose.yml).
 
+
 ## Obtaining Server Pro Image
 
 First use your Server Pro credentials to log in:
@@ -15,6 +16,11 @@ Then you can pull the image using Docker:
 ```
 $ docker pull quay.io/sharelatex/sharelatex-pro:latest
 ```
+
+## A Note on the Host Environment and Support
+
+We _strongly_ recommend you run Server Pro on a recent version of Ubuntu, with a recent version of Docker. It's possible to run Server Pro on many other systems, but it will be much more difficult for us to offer support for systems that are far from the default Ubuntu/Docker setup. We also can't offer support for problems with Docker itself.
+
 
 ## Updating Image versions
 
