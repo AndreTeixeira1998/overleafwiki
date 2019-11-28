@@ -78,12 +78,12 @@ Within that directory, there will be a `data/compiles` directory. Because the co
 
 > ⚠️ **Warning**: If you're running Server Pro `1.0.1` or `1.0.2` please follow this instructions instead: [Fixing-SyncTeX errors in Server Pro 2.0.0 and 2.0.1](https://github.com/overleaf/overleaf/wiki/Fixing-SyncTeX-errors-in-Server-Pro-2.0.0-and-2.0.1)
 
-Overleaf automatically places `synctex` executable in the correct location in the host, so it can be then mounted inside the compiler container. This location must be provided by `SYNCTEX_BIN_HOST_PATH` environment variable, and should point to the `bin` directory inside the directory mounted from the host.
+Overleaf automatically places `synctex` executable in the correct location in the host, so it can be then mounted inside the compiler container. This location must be provided by `SYNCTEX_BIN_HOST_PATH` environment variable, and should point to the `bin/synctex` file inside the directory mounted from the host.
 
 Let's say that the volume mount definition is `/data/sharelatex_data:/var/lib/sharelatex`, then the value of the property should be:
 
 ```
---env SYNCTEX_BIN_HOST_PATH='/data/sharelatex_data/bin'
+--env SYNCTEX_BIN_HOST_PATH='/data/sharelatex_data/bin/synctex'
 ```
 
 ### An example docker-compose file
