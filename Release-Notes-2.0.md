@@ -59,6 +59,7 @@ The new variables are:
 And for Server Pro:
 
 - `DOCKER_RUNNER`: set to `'true'` when enabling Sandboxed Compiles with sibling containers. See the updated documentation on [Sandboxed Compiles](https://github.com/overleaf/overleaf/wiki/Server-Pro:-sandboxed-compiles).
+- `SYNCTEX_BIN_HOST_PATH` (introduced in `2.0.2`): set to `<your_sharelatex_data_directory>/bin/synctex`. Check [Sibling Containers documentation](https://github.com/overleaf/overleaf/wiki/Server-Pro:-sandboxed-compiles#mapping-the-location-of-synctex-in-the-host) for extra context
 
 
 ## Changes to Sandboxed Compiles
