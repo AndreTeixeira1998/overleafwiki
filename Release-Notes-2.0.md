@@ -1,3 +1,11 @@
+# Server Pro 2.0.3
+
+### Bugfixes
+- Fixed unable to share projects via email address.
+
+### Other Changes
+- Reenabled recaptcha, which was the root cause of the issue above.
+
 # Server Pro 2.0.2
 
 ### Bugfixes
