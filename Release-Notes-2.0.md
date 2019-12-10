@@ -1,10 +1,12 @@
 # Server Pro 2.0.3
 
+2.0.3 is a Server Pro-only release, no Community Edition has been published.
+
 ### Bugfixes
 - Fixed unable to share projects via email address.
 
 ### Other Changes
-- Reenabled recaptcha, which was the root cause of the issue above (Server Pro only).
+- Reenabled recaptcha, which was the root cause of the issue above.
 
 # Server Pro 2.0.2
 
