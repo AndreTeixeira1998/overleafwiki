@@ -4,19 +4,19 @@
 - Fixed unable to share projects via email address.
 
 ### Other Changes
-- Reenabled recaptcha, which was the root cause of the issue above.
+- Reenabled recaptcha, which was the root cause of the issue above (Server Pro only).
 
 # Server Pro 2.0.2
 
 ### Bugfixes
 - Fixed link sharing for anonymous users when `SHARELATEX_ALLOW_PUBLIC_ACCESS: 'true'` and `SHARELATEX_ALLOW_ANONYMOUS_READ_AND_WRITE_SHARING: 'true'`.
 - Fixed read-only access to shared projects.
-- Fixed SAML logout.
-- Fixed sync between editor and pdf with `synctex`.
+- Fixed SAML logout (Server Pro only).
+- Fixed sync between editor and pdf with `synctex` (Server Pro only).
 - Fixed track changes slow to commit.
 
 ### Other Changes
-- Disabled recaptcha.
+- Disabled recaptcha (Server Pro only).
 - Importing external files is disabled by default.
 - **IMPORTANT**: A new `SYNCTEX_BIN_HOST_PATH` is required when using Sibling Containers. Check the setup instructions in the wiki: https://github.com/overleaf/overleaf/wiki/Server-Pro:-sandboxed-compiles#mapping-the-location-of-synctex-in-the-host.
 
