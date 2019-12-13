@@ -4,8 +4,8 @@ configured correctly!
 * `SHARELATEX_ADMIN_EMAIL`: The email address where users can reach the person who runs the site.
 * `SHARELATEX_APP_NAME`: The name to display when talking about the running app. Defaults to 'Overleaf (Community Edition)'.
 * `SHARELATEX_MONGO_URL`: The URL of the Mongo database to use
-* `SHARELATEX_REDIS_HOST`: The host name of the Redis instance to use
-* `SHARELATEX_REDIS_PORT`: The port of the Redis instance to use
+* `SHARELATEX_REDIS_HOST` and `REDIS_HOST`: The host name of the Redis instance to use. Both are required (see [release notes](https://github.com/overleaf/overleaf/wiki/Release-Notes-2.0#changes-to-the-docker-compose-file-format))
+* `SHARELATEX_REDIS_PORT` and `REDIS_PORT`: The port of the Redis instance to use. Both are required (see [release notes](https://github.com/overleaf/overleaf/wiki/Release-Notes-2.0#changes-to-the-docker-compose-file-format))
 * `SHARELATEX_REDIS_PASS`: The password to use when connecting to Redis (if applicable)
 
 
