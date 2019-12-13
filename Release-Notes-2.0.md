@@ -64,7 +64,8 @@ The new variables are:
 
 - `ENABLED_LINKED_FILE_TYPES`: a comma-separated list keys, which controls which types of "linked file" are available in the New File modal. Defaults to `'url,project_file'`, as in the example file.
 - `ENABLE_CONVERSIONS`: If set to `'true'`, will enable on-the-fly file preview conversions using ImageMagick. Set to another value to disable this feature
-- `REDIS_HOST`: should be set to the name of the redis host, same as the `SHARE_LATEX_REDIS_HOST` variable. In the case of a simple docker-compose based deployment, this will just be `'redis'`. This duplication is unfortunately necessary in the short term while users migrate to the new Community Edition and Server Pro images, and will be resolved in a later release.
+- `REDIS_HOST`: should be set to the name of the redis host, same as the `SHARELATEX_REDIS_HOST` variable. In the case of a simple docker-compose based deployment, this will just be `'redis'`. This duplication is unfortunately necessary in the short term while users migrate to the new Community Edition and Server Pro images, and will be resolved in a later release.
+- `REDIS_PORT`: In case we desire to use port for redis other than the default, we need to set the value in `REDIS_PORT` to be the same as in `SHARELATEX_REDIS_HOST`, for the same reason described above.
 
 And for Server Pro:
 
