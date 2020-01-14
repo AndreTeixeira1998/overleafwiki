@@ -1,3 +1,15 @@
+# Server Pro 2.1.0
+
+### New Features:
+- Email confirmation banner can be disabled with the new environment variable `EMAIL_CONFIRMATION_DISABLED: 'true'`
+- [New Archival/trashing workflow](https://www.overleaf.com/blog/new-feature-using-archive-and-trash-to-keep-your-projects-organized)
+- Project ownership can be changed from the admin panel.
+
+### Other Changes:
+
+- Admin: improved search using regular expressions 
+- Other minor improvements and bugfixes.
+
 # Server Pro 2.0.3
 
 2.0.3 is a Server Pro-only release, no Community Edition has been published.
