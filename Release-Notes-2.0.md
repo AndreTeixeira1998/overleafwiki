@@ -1,3 +1,8 @@
+# Server Pro 2.1.1
+
+### Bugfixes
+- Fixed unable to share projects via email address.
+
 # Server Pro 2.1.0
 
 ### New Features
