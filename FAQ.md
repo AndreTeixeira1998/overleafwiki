@@ -17,12 +17,10 @@ use sharelatex
 ```
 
 ## Maximum size of projects in Overleaf
-* The maximum amount of editable data in Overleaf is 5mb, this does not include images or other large non-editable files.
-* The maximum number of entities is 2000 per project (folder, docs, images).
-* The maximum size of a non-editable entity is 50mb.
+Please see our [learn wiki](https://www.overleaf.com/learn/how-to/Uploading_a_project#Limitations_on_Uploads) for information on project size and upload limits.
 
 ## Maximum size of uploads
-Check [Learn resources](https://www.overleaf.com/learn/how-to/Uploading_a_project#Limitations_on_Uploads) for information on limits.
+Please see our [learn wiki](https://www.overleaf.com/learn/how-to/Uploading_a_project#Limitations_on_Uploads) for information on project size and upload limits.
 
 ## What is a public project?
 A public project is a project which has had all authentication removed from it so anyone can access it. It will not show up on other users' project lists.
