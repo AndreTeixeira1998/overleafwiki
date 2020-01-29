@@ -33,6 +33,8 @@ Image ID: `d29f5373eca9`
 
 # Server Pro 2.0.2
 
+Image ID: `9907ccc100e5`
+
 ### Bugfixes
 - Fixed link sharing for anonymous users when `SHARELATEX_ALLOW_PUBLIC_ACCESS: 'true'` and `SHARELATEX_ALLOW_ANONYMOUS_READ_AND_WRITE_SHARING: 'true'`.
 - Fixed read-only access to shared projects.
@@ -47,6 +49,8 @@ Image ID: `d29f5373eca9`
 
 # Server Pro 2.0.1
 
+Image ID: `cb014e03204a`
+
 ### Bugfixes
 - Fixed ["Delete Forever" button has no effect](https://github.com/overleaf/overleaf/issues/644).
 - Fixed [admin creation using CLI](https://github.com/overleaf/overleaf/issues/647).
@@ -55,6 +59,8 @@ Image ID: `d29f5373eca9`
  - SyncTeX not working on Sandboxed Compiles [(see workaround instructions)](https://github.com/overleaf/overleaf/wiki/Fixing-SyncTeX-errors-in-Server-Pro-2.0.0-and-2.0.1).
 
 # Server Pro 2.0.0
+
+Image ID: `8fdd3419f5a5`
 
 A lot has changed in the last few years, with ShareLaTeX [joining forces with Overleaf](https://www.overleaf.com/blog/518-exciting-news-sharelatex-is-joining-overleaf) to create one incredible authoring platform. Now that the merge is complete it's time to release a new version of ~ShareLaTeX~ Overleaf Community Edition and Server Pro!
 
