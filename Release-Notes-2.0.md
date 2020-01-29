@@ -1,9 +1,13 @@
 # Server Pro 2.1.1
 
+Image ID: `23f9a28eeef2`
+
 ### Bugfixes
 - Fixed unable to share projects via email address.
 
 # Server Pro 2.1.0
+
+Image ID: `61a994c2584f`
 
 ### New Features
 - Email confirmation banner can be disabled with the new environment variable `EMAIL_CONFIRMATION_DISABLED: 'true'`
@@ -16,6 +20,8 @@
 - Other minor improvements and bugfixes.
 
 # Server Pro 2.0.3
+
+Image ID: `d29f5373eca9`
 
 2.0.3 is a Server Pro-only release, no Community Edition has been published.
 
