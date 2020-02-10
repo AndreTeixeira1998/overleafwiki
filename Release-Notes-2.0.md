@@ -1,3 +1,16 @@
+# Server Pro 2.2.0
+
+Image ID: `4b4d9f8d4fad`
+
+### Bugfixes
+
+- Incorrect template layout is now fixed
+
+### New Features
+
+- reCAPTCHA is now disabled
+- Other minor improvements and bugfixes.
+
 # Server Pro 2.1.1
 
 Image ID: `23f9a28eeef2`
