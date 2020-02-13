@@ -44,6 +44,8 @@ $ docker exec sharelatex /bin/bash -c "cd /var/www/sharelatex; grunt user:create
 
 This will create a user with the given email address if they don't already exist, and make them an admin user. You will be given a URL to visit where you can set the password for this user and log in for the first time.
 
+**NOTE**: the command above will always yield a URL pointing to `http://localhost/` if you've updated your port forwarding to something like `ports: - 8080:80`, you should use the correct port to visit the password confirmation page: ` http://localhost:8080/user/password/set?passwordResetToken=<token>`
+
 **Creating normal users**
 
 Once you are logged in as an admin user, you can visit `/admin/register` on your Overleaf instance and create new users. If you have an [email backend configured](https://github.com/overleaf/overleaf/wiki/Configuring-SMTP-Email) the new users will be sent an email with a URL to set their password. If not, you will have to distribute the password reset URLs manually. These are shown when you create a user.
