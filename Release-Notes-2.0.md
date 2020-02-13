@@ -5,6 +5,7 @@ Image ID: `4b4d9f8d4fad`
 ### Bugfixes
 
 - Incorrect template layout is now fixed
+- Node upgrade to fix CVE-2019-15605, CVE-2019-15606 and CVE-2019-15604
 
 ### New Features
 
