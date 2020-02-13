@@ -34,12 +34,18 @@ Once the editor is closed the only way to open is to restart the docker containe
 To use the new docker container stop and remove the currently running Overleaf container:
 
 ```
-$ docker stop sharelatex
-$ docker rm sharelatex
+$ docker-compose stop sharelatex
+$ docker-compose rm sharelatex
 ```
 
-Start a new container with the updated version of Sharelatex/Overleaf (to upgrade to version 1.2.0 for example):
+Checkout the latest version:
 
 ```
-$ docker run -d -v ~/sharelatex_data:/var/lib/sharelatex --name=sharelatex sharelatex/sharelatex:1.2.0
+$ docker pull sharelatex/sharelatex:latest
+```
+
+Restart the container, that will be using the updated version of Overleaf:
+
+```
+$ docker-compose up -d sharelatex
 ```
