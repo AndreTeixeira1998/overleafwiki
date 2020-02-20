@@ -63,6 +63,8 @@ See the groupid of the docker group is 999
 docker:x:999:
 ```
 
+If you are using the example docker-compose file, there is a commented-out example of this mount under the `volumes` section.
+
 
 ### Mapping the host compile directory
 
