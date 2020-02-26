@@ -1,6 +1,6 @@
 This is the home of Overleaf Community Edition and [Overleaf Server Pro](https://www.overleaf.com/for/enterprises) developer documentation.
 
-Please note there are still many references using Overleaf's former name (ShareLaTeX)  throughout the documentation. These are mainly internal settings, configuration parameters or environment variables that hasn't been updated yet.
+Please note there are still many references using Overleaf's former name (ShareLaTeX)  throughout the documentation. These are mainly internal settings, configuration parameters or environment variables that haven't been updated yet.
 
 ### Setup
 
@@ -22,5 +22,5 @@ Sign up to the [mailing list](https://mailchi.mp/overleaf.com/community-edition-
 
 ### Overleaf Server Pro
 
-Overleaf offers a premium onsite version with extra security and admin features. [Click here to find out more!](https://www.overleaf.com/for/enterprises). This is a drop in replacement for the community version.
+Overleaf offers a premium onsite version with extra security and admin features. [Click here to find out more!](https://www.overleaf.com/for/enterprises). This is a drop-in replacement for the community version.
 
