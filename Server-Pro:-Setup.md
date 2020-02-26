@@ -1,4 +1,4 @@
-The Overleaf Server Pro image is used and configured in the same way as the open source Overleaf Docker image. Instead use the image `quay.io/sharelatex/sharelatex-pro` in your [docker-compose.yml](https://github.com/sharelatex/sharelatex/blob/master/docker-compose.yml).
+The Overleaf Server Pro image is used and configured in the same way as the open-source Overleaf Docker image. Instead, use the image `quay.io/sharelatex/sharelatex-pro` in your [docker-compose.yml](https://github.com/sharelatex/sharelatex/blob/master/docker-compose.yml).
 
 
 ## Obtaining Server Pro Image
@@ -36,4 +36,4 @@ $ docker pull quay.io/sharelatex/sharelatex-pro:latest
 
 ## Where to go next
 
-Basic configuration can be found on the [quickstart guide](https://github.com/sharelatex/sharelatex/wiki/Quick-Start-Guide) page, with customizations such as [LDAP](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-LDAP-Config) and [Sandboxed Compiles](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-sandboxed-compiles) available in the Server Pro image.
+The basic configuration can be found on the [quickstart guide](https://github.com/sharelatex/sharelatex/wiki/Quick-Start-Guide) page, with customizations such as [LDAP](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-LDAP-Config) and [Sandboxed Compiles](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-sandboxed-compiles) available in the Server Pro image.
