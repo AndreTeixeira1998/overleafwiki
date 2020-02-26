@@ -1,6 +1,6 @@
 ### Setting up the Templates User
 
-A single Overleaf user is responsible to publishing the curated list templates which are visible on /templates. To set this use the env var `SHARELATEX_TEMPLATES_USER_ID`
+A single Overleaf user is responsible for publishing the curated list of templates that are visible on `/templates`. To set this, use the ENV var `SHARELATEX_TEMPLATES_USER_ID`, for instance:
 
 `--env SHARELATEX_TEMPLATES_USER_ID=56a8865231faeb5f07d69959`
 
@@ -10,7 +10,7 @@ To obtain the user id of the user you wish to publish public templates, log in a
 
 Then find the user by their email address and click through to their user admin page. There you will find the ID:
 
-![User ID shown in admin panel](https://raw.githubusercontent.com/wiki/overleaf/overleaf/user_id_in_admin_panel.png)
+![User ID is shown in admin panel](https://raw.githubusercontent.com/wiki/overleaf/overleaf/user_id_in_admin_panel.png)
 
 ### Publishing Templates
 
@@ -18,7 +18,7 @@ For each template you want to upload:
 
 1. Log in as the templates user.
 2. As the templates user, create a project containing the template's source code and make sure it compiles.
-3. In the editor's left hand menu, choose Publish as Template:
+3. In the editor's left-hand menu, choose **Publish as Template**:
 
    ![Publish as Template in the editor menu](https://raw.githubusercontent.com/wiki/overleaf/overleaf/publish_as_template.png)
 
@@ -27,11 +27,12 @@ All templates published this way from the templates user's account will be liste
 ### Configuring Links to Templates
 
 #### Templates on index page
-On the templates index page, /templatex, templates are nested under folders which the user puts the projects in, e.g. Journals, Reports etc. To see all templates add /all to the url `/templates/all` which can also be used as the default url if you do not wish to use the folder for grouping.
+On the templates index page, `/templates`, templates are nested under folders which the user puts the projects in, e.g. Journals, Reports etc. To see all templates add `/all` to the URL `/templates/all`, which can also be used as the default URL if you do not wish to use the folder for grouping.
 
 
 #### Template links on project list page
-When a user creates a new project they can be shown links to templates. These are set via the  SHARELATEX_NEW_PROJECT_TEMPLATE_LINKS variable
+
+When a user creates a new project they can be shown as linked to templates. These are set via the  `SHARELATEX_NEW_PROJECT_TEMPLATE_LINKS` variable:
 
 `SHARELATEX_NEW_PROJECT_TEMPLATE_LINKS='[
    {"name":"All Templates","url":"/templates/all"},
