@@ -10,6 +10,7 @@ Image ID: `4b4d9f8d4fad`
 ### New Features
 
 - reCAPTCHA is now disabled
+- Removed external access to Google Fonts.
 - Other minor improvements and bugfixes.
 
 # Server Pro 2.1.1
