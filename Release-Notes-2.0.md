@@ -1,3 +1,11 @@
+# Server Pro 2.2.1
+
+Image ID: `11dce4970997`
+
+### Bugfixes
+
+- TexLive image not being persisted in project entities (`project.imageName` field)
+
 # Server Pro 2.2.0
 
 Image ID: `4b4d9f8d4fad`
