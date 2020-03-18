@@ -136,6 +136,8 @@ From this release onwards we will no longer support the old "Docker-In-Docker" m
 
 You can now opt-in to a new version of TeX Live. The default is still TeX Live 2017, but you can find instructions on how to get TeX Live 2018 or later here: https://github.com/overleaf/overleaf/wiki/Server-Pro:-sandboxed-compiles#changing-the-texlive-image
 
+Before updating to a newer version of TexLive we strongly recommend [backing up your data](https://github.com/sharelatex/sharelatex/wiki/Backup-of-Data) and [update to the latest version of Server Pro available](https://github.com/overleaf/overleaf/wiki/Server-Pro:-setup#updating-image-versions).
+
 
 ### Database Migrations
 
