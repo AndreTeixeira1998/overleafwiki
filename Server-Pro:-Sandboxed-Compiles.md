@@ -148,3 +148,5 @@ Here's an example where we default to texlive 2018 for new projects, and keep bo
     TEX_LIVE_DOCKER_IMAGE: "quay.io/sharelatex/texlive-full:2018.1"
     ALL_TEX_LIVE_DOCKER_IMAGES: "quay.io/sharelatex/texlive-full:2018.1,quay.io/sharelatex/texlive-full:2017.1"
 ```
+
+Before updating to a newer version of TexLive we strongly recommend [backing up your data](https://github.com/sharelatex/sharelatex/wiki/Backup-of-Data) and [update to the latest version of Server Pro available](https://github.com/overleaf/overleaf/wiki/Server-Pro:-setup#updating-image-versions).
