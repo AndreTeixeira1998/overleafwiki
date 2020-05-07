@@ -13,7 +13,18 @@ If you are running MongoDB under docker, you can get a mongo shell with:
 ```
 docker-compose exec mongo bash
 mongo
-use sharelatex
+> use sharelatex
+```
+
+## Counting users
+
+Create a mongo shell and check the number of entries in the `users` collection:
+
+```
+docker-compose exec mongo bash
+mongo
+> use sharelatex
+> db.users.count()
 ```
 
 ## Maximum size of projects in Overleaf
