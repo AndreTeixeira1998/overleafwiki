@@ -44,7 +44,7 @@ $ docker exec sharelatex /bin/bash -c "cd /var/www/sharelatex; grunt user:create
 
 This will create a user with the given email address if they don't already exist, and make them an admin user. You will be given a URL to visit where you can set the password for this user and log in for the first time.
 
-**NOTE**: the command above will always yield a URL pointing to `http://localhost/` if you've updated your port forwarding to something like `ports: - 8080:80`, you should use the correct port to visit the password confirmation page: ` http://localhost:8080/user/password/set?passwordResetToken=<token>`
+**NOTE**: the command above will always yield a URL pointing to `http://localhost/` if you've updated your port forwarding to something like `ports: - 8080:80`, you should use the correct port to visit the password confirmation page: `http://localhost:8080/user/password/set?passwordResetToken=<token>`. Another option is to set `SHARELATEX_SITE_URL` environment variable to `http://localhost:8080` or `http://sharelatex.mydomain.com`.
 
 **Creating normal users**
 
