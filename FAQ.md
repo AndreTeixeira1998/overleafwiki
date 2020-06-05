@@ -27,6 +27,19 @@ mongo
 > db.users.count()
 ```
 
+## Giving admin rights to an existing user.
+
+Update the `isAdmin` field in the `users` collection:
+
+```
+docker-compose exec mongo bash
+mongo
+> use sharelatex
+> db.users.updateOne({email:"user@example.com"},{"$set": {isAdmin: true}})
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+```
+
+
 ## Maximum size of projects in Overleaf
 Please see our [learn wiki](https://www.overleaf.com/learn/how-to/Uploading_a_project#Limitations_on_Uploads) for information on project size and upload limits.
 
