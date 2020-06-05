@@ -32,6 +32,10 @@ mongo
 Update the `isAdmin` field in the `users` collection:
 
 ```
+db.users.updateOne({email:"<EMAIL_ADDRESS>"},{"$set": {isAdmin: true}})
+```
+
+```
 docker-compose exec mongo bash
 mongo
 > use sharelatex
