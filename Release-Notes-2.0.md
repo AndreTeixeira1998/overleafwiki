@@ -4,6 +4,7 @@ Image ID: `feb1b349654b`
 
 ### New Features
 - [TexLive version selector](https://www.overleaf.com/blog/new-feature-select-your-tex-live-compiler-version)
+  - (when using sandboxed compiles)
 - Show latexmk output in compile logs
 
 ### Bugfixes
