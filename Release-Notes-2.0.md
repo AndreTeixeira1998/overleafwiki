@@ -1,3 +1,24 @@
+# Server Pro 2.3.0
+
+Image ID: `feb1b349654b`
+
+### New Features
+- [TexLive version selector](https://www.overleaf.com/blog/new-feature-select-your-tex-live-compiler-version)
+- Show latexmk output in compile logs
+
+### Bugfixes
+- Fixed broken LuaLatex builds when not using sandboxed compiles
+- Fixed PDF/A validation broken when not using sandboxed compiles
+- Fixed project uploads from zip files with many large text files
+
+### Other changes
+- gravatar.com service is no longer used
+- Deleted documents no longer count toward overall project file limit
+- Improvements to dashboard tag management
+- Many small improvements and bugfixes
+
+
+
 # Server Pro 2.2.1
 
 Image ID: `11dce4970997`
