@@ -150,3 +150,13 @@ Here's an example where we default to texlive 2018 for new projects, and keep bo
 ```
 
 Before updating to a newer version of TexLive we strongly recommend [backing up your data](https://github.com/sharelatex/sharelatex/wiki/Backup-of-Data) and [update to the latest version of Server Pro available](https://github.com/overleaf/overleaf/wiki/Server-Pro:-setup#updating-image-versions).
+
+### Available TexLive Images
+
+These are all the TexLive images that can be added to `TEX_LIVE_DOCKER_IMAGE` and `ALL_TEX_LIVE_DOCKER_IMAGES`:
+- `quay.io/sharelatex/texlive-full:2019.1`
+- `quay.io/sharelatex/texlive-full:2018.1`
+- `quay.io/sharelatex/texlive-full:2017.1` (legacy)
+- `quay.io/sharelatex/texlive-full:2016.1` (legacy)
+- `quay.io/sharelatex/texlive-full:2015.1` (legacy)
+- `quay.io/sharelatex/texlive-full:2014.2` (legacy)
