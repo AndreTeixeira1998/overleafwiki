@@ -1,3 +1,10 @@
+# Server Pro 2.3.1
+
+Image ID: `6fc8c7709df6`
+
+### Bugfixes
+- Fixed [sync between editor and pdf with synctex when not using sandboxed compiles](https://github.com/overleaf/overleaf/issues/756).
+
 # Server Pro 2.3.0
 
 Image ID: `feb1b349654b`
