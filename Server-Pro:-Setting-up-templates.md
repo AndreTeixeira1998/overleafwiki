@@ -22,7 +22,17 @@ For each template you want to upload:
 
    ![Publish as Template in the editor menu](https://raw.githubusercontent.com/wiki/overleaf/overleaf/publish_as_template.png)
 
-All templates published this way from the templates user's account will be listed as templates.
+
+### Unpublishing Templates
+
+In order to unpublish a template you need to republish the template as described in the section above, then click the **Unpublish** button once the confirmation popup is displayed:
+
+1. Log in as the templates user.
+2. Open the previously existing project containing the template's source code.
+3. In the editor's left-hand menu, choose **Publish as Template**:.
+4. Once the confirmation popup is displayed, click **Unpublish**.
+
+The template should have been removed from the templates list.
 
 ### Configuring Links to Templates
 
