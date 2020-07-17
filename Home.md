@@ -10,7 +10,7 @@ Please look at the [Quick Start Guide](https://github.com/overleaf/overleaf/wiki
 Sign up to the [mailing list](https://mailchi.mp/overleaf.com/community-edition-and-server-pro) to get updates on Overleaf Releases and development
 
 ### Release Notes
-* [Release Notes - 2.0.0](https://github.com/overleaf/overleaf/wiki/Release-Notes-2.0)
+* [Release Notes - 2.x.x](https://github.com/overleaf/overleaf/wiki/Release-Notes-2.0)
 * [[Release Notes - 1.0.0]]
 * [[Release Notes - 0.6.0]]
 * [[Release Notes - 0.5.0]]
