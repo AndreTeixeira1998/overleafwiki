@@ -3,7 +3,7 @@ Overleaf Server Pro comes with the option to run compiles in a secured sandbox e
 > ⚠️ **Warning**: previous versions of Server Pro supported a docker-in-Docker setup for Sandboxed Compiles. This is no longer supported starting at v2.0. Original instructions to setup docker-in-docker [are available here](https://github.com/overleaf/overleaf/wiki/Docker-on-Docker-compiles)
 
 
-### Setup
+## Setup
 
 Running Docker inside Docker can be hard to set up, and in many cases simply can't be made to work well. For those situations, we use instead Sandboxed Compiles with "Sibling Containers" instead of the a docker-in-docker setup. (From version 0.5.11 onwards)
 
@@ -11,14 +11,14 @@ With Sibling Containers, the Overleaf container doesn't start the compiler conta
 
 To make this work we need to do a few things:
 
-- Mount the host docker socket into the Overleaf container
-- Update the required environment variables
-- Mapping the host compile directory
-- Mapping the location of synctex in the host
+1. Update the required environment variables
+1. Mount the host docker socket into the Overleaf container
+1. Mapping the host compile directory
+1. Mapping the location of synctex in the host
 
 Notably, the `privileged` flag is not required when using sibling containers.
 
-### Enabling Sibling Containers
+### Environment variables
 
 Set the environment variables `DOCKER_RUNNER`, `SANDBOXED_COMPILES` and `SANDBOXED_COMPILES_SIBLING_CONTAINERS` to `true`.
 
@@ -131,7 +131,7 @@ services:
             SYNCTEX_BIN_HOST_PATH: "/data/sharelatex_data/bin"  #### IMPORTANT
 ```
 
-### Changing the TexLive Image
+## Changing the TexLive Image
 
 Server Pro uses two environment variables to determine which texlive images to use for sandboxed compiles: 
 
