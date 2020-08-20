@@ -1,3 +1,16 @@
+# Server Pro 2.4.0
+
+Image ID: `6cf8c22f2903`
+
+### New Features
+- Audit log for users' account settings updates
+
+### Bugfixes
+- This release fixes an important security issue: previously, it was possible for a specially crafted websocket request to bypass project authorization checks. https://github.com/overleaf/real-time/pull/177
+
+### Other changes
+- Many small improvements and bugfixes
+
 # Server Pro 2.3.1
 
 Image ID: `6fc8c7709df6`
