@@ -1,3 +1,9 @@
+# Server Pro 2.4.1
+
+Image ID: `6cf8c22f2903`
+
+No changes from 2.4.0. This release is just to keep the version numbering consistent between Server Pro and Community Edition.
+
 # Server Pro 2.4.0
 
 Image ID: `6cf8c22f2903`
