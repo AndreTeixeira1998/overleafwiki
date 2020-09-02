@@ -1,3 +1,16 @@
+----
+
+## ! Announcing the Overleaf Toolkit !
+
+The [Overleaf Toolkit](https://github.com/overleaf/toolkit) is the new way to deploy and manage Overleaf Community Edition and Server Pro.
+
+We encourage new Overleaf users to get started with the Toolkit [Quick Start Guide](https://github.com/overleaf/toolkit/blob/master/doc/quick-start-guide.md), instead of using this guide. The instructions on this wiki will remain in place for existing docker-compose based deployments.
+
+----
+
+
+
+
 **Make sure you have read this guide before running Overleaf with any important data** 
 
 Overleaf is installed run via [Docker](https://www.docker.com/), the following command will pull down the latest version:
