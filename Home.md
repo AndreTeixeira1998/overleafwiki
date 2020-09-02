@@ -4,6 +4,17 @@ Please note there are still many references using Overleaf's former name (ShareL
 
 ### Setup
 
+----
+
+## ! Announcing the Overleaf Toolkit !
+
+The [Overleaf Toolkit](https://github.com/overleaf/toolkit) is the new way to deploy and manage Overleaf Community Edition and Server Pro.
+
+We encourage new Overleaf users to get started with the Toolkit [Quick Start Guide](https://github.com/overleaf/toolkit/blob/master/doc/quick-start-guide.md), instead of using this guide. The instructions on this wiki will remain in place for existing docker-compose based deployments.
+
+----
+
+
 Please look at the [Quick Start Guide](https://github.com/overleaf/overleaf/wiki/Quick-Start-Guide) to get up and running.
 
 ### Keeping up to date
