@@ -2,7 +2,7 @@ Overleaf currently support the following versions of dependencies:
 
 - **Docker 19.03**
 - **MongoDB 3.6**
-- **Redis 5.0**
+- **Redis 5**
 
 `docker-compose` is generally installed with Docker.
 
