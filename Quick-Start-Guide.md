@@ -42,8 +42,21 @@ $ docker exec sharelatex tlmgr install scheme-full
 
 Alternatively you can install packages manually as you need by replacing `scheme-full` with the package name.
 
-Server Pro users have the option of using [Sandbox Compiles](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-sandboxed-compiles), which will automatically pull down a full TexLive image. 
+Note that these changes made inside the `sharelatex` container with `docker exec` are ephemeral --- they will be lost if Compose recreates the container. To make them persistent, you can use `docker commit`:
+```
+docker commit sharelatex sharelatex/sharelatex:with-texlive
+```
+Then edit your `docker-compose.yml` to use that image:
+```yml
+# ...
+services:
+    sharelatex:
+        image: sharelatex/sharelatex:with-texlive
+# ...
+```
+You will still need to repeat this setup when you [upgrade](https://github.com/overleaf/overleaf/wiki/Upgrading-Containers).
 
+Server Pro users have the option of using [Sandbox Compiles](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-sandboxed-compiles), which will automatically pull down a full TexLive image. 
 
 ### Creating and Managing users
 
