@@ -44,17 +44,17 @@ Alternatively you can install packages manually as you need by replacing `scheme
 
 Note that these changes made inside the `sharelatex` container with `docker exec` are ephemeral --- they will be lost if Compose recreates the container. To make them persistent, you can use `docker commit`:
 ```
-docker commit sharelatex sharelatex/sharelatex:with-texlive
+docker commit sharelatex sharelatex/sharelatex:with-texlive-full
 ```
 Then edit your `docker-compose.yml` to use that image:
 ```yml
 # ...
 services:
     sharelatex:
-        image: sharelatex/sharelatex:with-texlive
+        image: sharelatex/sharelatex:with-texlive-full
 # ...
 ```
-You will still need to repeat this setup when you [upgrade](https://github.com/overleaf/overleaf/wiki/Upgrading-Containers).
+Note that you will need to remove this committed container and repeat these steps when you [upgrade](https://github.com/overleaf/overleaf/wiki/Upgrading-Containers).
 
 Server Pro users have the option of using [Sandbox Compiles](https://github.com/sharelatex/sharelatex/wiki/Server-Pro:-sandboxed-compiles), which will automatically pull down a full TexLive image. 
 
