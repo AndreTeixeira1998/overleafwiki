@@ -78,7 +78,7 @@ Within that directory, there will be a `data/compiles` directory. Because the co
 
 ### Mapping the location of `synctex` in the host
 
-> ⚠️ **Warning**: If you're running Server Pro `2.0.1` or `2.0.2` please follow this instructions instead: [Fixing-SyncTeX errors in Server Pro 2.0.0 and 2.0.1](https://github.com/overleaf/overleaf/wiki/Fixing-SyncTeX-errors-in-Server-Pro-2.0.0-and-2.0.1)
+> ⚠️ **Warning**: If you're running Server Pro `2.0.1` or `2.0.2` please follow these instructions instead: [Fixing-SyncTeX errors in Server Pro 2.0.0 and 2.0.1](https://github.com/overleaf/overleaf/wiki/Fixing-SyncTeX-errors-in-Server-Pro-2.0.0-and-2.0.1)
 
 Overleaf automatically places `synctex` executable in the correct location in the host, so it can be then mounted inside the compiler container. This location must be provided by `SYNCTEX_BIN_HOST_PATH` environment variable, and should point to the `bin/synctex` file inside the directory mounted from the host.
 
