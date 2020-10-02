@@ -14,7 +14,7 @@
 - [Hardware Requirements](https://github.com/sharelatex/sharelatex/wiki/Hardware-Requirements)
 - [Common Config Options](https://github.com/sharelatex/sharelatex/wiki/Configuring-Overleaf)
 - [F.A.Q](https://github.com/sharelatex/sharelatex/wiki/FAQ)
-
+- [Troubleshooting](https://github.com/overleaf/overleaf/wiki/Troubleshooting)
 
 ## Server Pro:
 - [Getting Server Pro](https://github.com/sharelatex/sharelatex/wiki/Getting-Server-Pro)
