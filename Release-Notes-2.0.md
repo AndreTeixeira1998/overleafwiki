@@ -1,3 +1,11 @@
+# Server Pro 2.4.2
+
+Image ID: `83c76915b65a`
+
+### Bugfixes
+- Fixed anonymous read/write sharing
+- Fixed html links in left footer
+
 # Server Pro 2.4.1
 
 Image ID: `6cf8c22f2903`
