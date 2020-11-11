@@ -32,11 +32,11 @@ Updating the version of Mongo during an upgrade of your Overleaf CE/SP instance 
 
 Our recommendation is to always upgrade Overleaf CE/SP **to the latest version available**, since it's always guaranteed to be supported (Server Pro Users only). In case you decide to go to an earlier version, this table shows the recommended version of Mongo for earlier releases of Overleaf CE/SP.
 
-| CE/SP Version | Mongo Version |
-| ------------- |---------------| 
-| >=2.0.0       | 3.4           | 
-| >=2.1.0       | 3.6           | 
-| >=2.5.0       | 4.4           | 
+| CE/SP Version   | Mongo Version |
+| --------------- |---------------| 
+| 2.0.x           | 3.4           | 
+| 2.1.x  to 2.4.x | 3.6           | 
+| >=2.5.0         | 4.4           | 
 
 ### Upgrading Mongo
 
