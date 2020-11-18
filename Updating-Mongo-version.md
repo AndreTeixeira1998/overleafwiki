@@ -9,6 +9,8 @@ Similarly, the version of [`mongo` docker image](https://hub.docker.com/_/mongo)
 
 You should **only** consider updating Mongo version if you're planning to upgrade your instance of Overleaf CE/SP. 
 
+If you're running a Mongo version that is newer than the recommended for your current (or target) version (e.g, Overleaf CE/SP 2.4.0 along with Mongo 4.2) there's no need to do any change. **You should never downgrade your Mongo version**.
+
 If you experience a specific problem that you think might be related to your current version of Mongo, feel free to [raise an issue](https://github.com/overleaf/overleaf/issues) (CE users) or contact support (SP users).
 
 
@@ -36,7 +38,7 @@ Our recommendation is to always upgrade Overleaf CE/SP **to the latest version a
 | --------------- |---------------| 
 | 2.0.x           | 3.4           | 
 | 2.1.x  to 2.4.x | 3.6           | 
-| >=2.5.0         | 4.4           | 
+| >=2.5.0         | 4.0           | 
 
 ### Upgrading Mongo
 
