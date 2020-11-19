@@ -1,3 +1,20 @@
+# Server Pro 2.5.0
+
+Image ID: `7ae2382c68b3`
+
+### New Features
+- [File Outline](https://www.overleaf.com/blog/new-feature-file-outline-is-now-available-on-overleaf).
+- [TexLive 2020](https://www.overleaf.com/blog/tex-live-2020-now-available) is now available.
+- Mongo version updated to 4.0 (see [upgrade instructions](https://github.com/overleaf/overleaf/wiki/Updating-Mongo-version)).
+
+### Bugfixes
+- Fixed anonymous read/write project links redirecting to the login page.
+- HTML code in SHARELATEX_LEFT_FOOTER is now correctly displayed.
+- Fixed SHARELATEX_CUSTOM_EMAIL_FOOTER not working.
+
+### Other 
+- This will be the last CE/SP release where we officially support IE11. The next release in Q1 2021 will no longer be tested on IE11.
+
 # Server Pro 2.4.2
 
 Image ID: `83c76915b65a`
