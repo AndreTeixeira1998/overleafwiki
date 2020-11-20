@@ -139,7 +139,7 @@ After bootstrapping Server Pro for the first time, an existing LDAP user must be
 
 LDAP users will appear in Overleaf Admin Panel once they log in first time with their initial credentials.
 
-As LDAP is heavily configurable and flexable by nature it can be a good starting point to have a working example with ldapsearch or even used by another application.
+As LDAP is heavily configurable and flexible by nature it can be a good starting point to have a working example with ldapsearch or even used by another application.
 
 ```
 #!bash
