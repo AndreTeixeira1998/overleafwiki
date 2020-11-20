@@ -141,7 +141,6 @@ LDAP users will appear in Overleaf Admin Panel once they log in first time with 
 
 As LDAP is heavily configurable and flexible by nature it can be a good starting point to have a working example with ldapsearch or even used by another application.
 
-```
-#!bash
+```sh
 ldapsearch -H ldap://ad.mydomain.com:389 -x -D ENUMuser@mydomain.com -w ENUMpass  -b ou=people,dc=mydomain,dc=com "CN=\*ENUMuser\*" mail
 ```
