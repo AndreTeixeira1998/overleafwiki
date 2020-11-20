@@ -1,5 +1,7 @@
 # Server Pro 2.5.0
 
+Release date: 2020-11-20
+
 Image ID: `7ae2382c68b3`
 
 ### New Features
@@ -17,6 +19,8 @@ Image ID: `7ae2382c68b3`
 
 # Server Pro 2.4.2
 
+Release date: 2020-10-5
+
 Image ID: `83c76915b65a`
 
 ### Bugfixes
@@ -25,11 +29,15 @@ Image ID: `83c76915b65a`
 
 # Server Pro 2.4.1
 
+Release date: 2020-08-26
+
 Image ID: `6cf8c22f2903`
 
 No changes from 2.4.0. This release is just to keep the version numbering consistent between Server Pro and Community Edition.
 
 # Server Pro 2.4.0
+
+Release date: 2020-08-20
 
 Image ID: `6cf8c22f2903`
 
@@ -44,12 +52,16 @@ Image ID: `6cf8c22f2903`
 
 # Server Pro 2.3.1
 
+Release date: 2020-06-30
+
 Image ID: `6fc8c7709df6`
 
 ### Bugfixes
 - Fixed [sync between editor and pdf with synctex when not using sandboxed compiles](https://github.com/overleaf/overleaf/issues/756).
 
 # Server Pro 2.3.0
+
+Release date: 2020-06-11
 
 Image ID: `feb1b349654b`
 
@@ -73,6 +85,8 @@ Image ID: `feb1b349654b`
 
 # Server Pro 2.2.1
 
+Release date: 2020-03-10
+
 Image ID: `11dce4970997`
 
 ### Bugfixes
@@ -80,6 +94,8 @@ Image ID: `11dce4970997`
 - TexLive image not being persisted in project entities (`project.imageName` field)
 
 # Server Pro 2.2.0
+
+Release date: 2020-02-10
 
 Image ID: `4b4d9f8d4fad`
 
@@ -96,12 +112,16 @@ Image ID: `4b4d9f8d4fad`
 
 # Server Pro 2.1.1
 
+Release date: 2020-01-21
+
 Image ID: `23f9a28eeef2`
 
 ### Bugfixes
 - Fixed unable to share projects via email address.
 
 # Server Pro 2.1.0
+
+Release date: 2020-01-14
 
 Image ID: `61a994c2584f`
 
@@ -117,6 +137,8 @@ Image ID: `61a994c2584f`
 
 # Server Pro 2.0.3
 
+Release date: 2019-12-06
+
 Image ID: `d29f5373eca9`
 
 2.0.3 is a Server Pro-only release, no Community Edition has been published.
@@ -128,6 +150,8 @@ Image ID: `d29f5373eca9`
 - Reenabled recaptcha, which was the root cause of the issue above.
 
 # Server Pro 2.0.2
+
+Release date: 2019-11-26
 
 Image ID: `9907ccc100e5`
 
@@ -145,6 +169,8 @@ Image ID: `9907ccc100e5`
 
 # Server Pro 2.0.1
 
+Release date: 2019-10-18
+
 Image ID: `cb014e03204a`
 
 ### Bugfixes
@@ -155,6 +181,8 @@ Image ID: `cb014e03204a`
  - SyncTeX not working on Sandboxed Compiles [(see workaround instructions)](https://github.com/overleaf/overleaf/wiki/Fixing-SyncTeX-errors-in-Server-Pro-2.0.0-and-2.0.1).
 
 # Server Pro 2.0.0
+
+Release date: 2019-10-09
 
 Image ID: `8fdd3419f5a5`
 
